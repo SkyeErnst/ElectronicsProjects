@@ -1,0 +1,112 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CY62128EV30LL-45ZXI:CY62128EV30LL-45ZXI U1
+U 1 1 5E4E0DB8
+P 4750 2450
+F 0 "U1" H 5850 2838 60  0000 C CNN
+F 1 "CY62128EV30LL-45ZXI" H 5850 2732 60  0000 C CNN
+F 2 "Package_SO:TSOP-I-32_18.4x8mm_P0.5mm" H 5850 2690 60  0001 C CNN
+F 3 "" H 4750 2450 60  0000 C CNN
+	1    4750 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x16 J1
+U 1 1 5E4E5E8B
+P 4500 3250
+F 0 "J1" H 4418 2225 50  0000 C CNN
+F 1 "A" H 4418 2316 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical" H 4500 3250 50  0001 C CNN
+F 3 "~" H 4500 3250 50  0001 C CNN
+	1    4500 3250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4700 2450 4750 2450
+Wire Wire Line
+	4700 2550 4750 2550
+Wire Wire Line
+	4700 2650 4750 2650
+Wire Wire Line
+	4700 2750 4750 2750
+Wire Wire Line
+	4700 2850 4750 2850
+Wire Wire Line
+	4700 2950 4750 2950
+Wire Wire Line
+	4700 3050 4750 3050
+Wire Wire Line
+	4700 3150 4750 3150
+Wire Wire Line
+	4700 3350 4750 3350
+Wire Wire Line
+	4700 3450 4750 3450
+Wire Wire Line
+	4700 3550 4750 3550
+Wire Wire Line
+	4700 3650 4750 3650
+Wire Wire Line
+	4700 3750 4750 3750
+Wire Wire Line
+	4700 3850 4750 3850
+Wire Wire Line
+	4700 3950 4750 3950
+NoConn ~ 4700 3250
+$Comp
+L Connector_Generic:Conn_01x16 J2
+U 1 1 5E4EB0CD
+P 7200 3150
+F 0 "J2" H 7200 4100 50  0000 C CNN
+F 1 "B" H 7200 4000 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical" H 7200 3150 50  0001 C CNN
+F 3 "~" H 7200 3150 50  0001 C CNN
+	1    7200 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 2450 7000 2450
+Wire Wire Line
+	6950 2550 7000 2550
+Wire Wire Line
+	6950 2650 7000 2650
+Wire Wire Line
+	6950 2750 7000 2750
+Wire Wire Line
+	6950 2850 7000 2850
+Wire Wire Line
+	6950 2950 7000 2950
+Wire Wire Line
+	6950 3050 7000 3050
+Wire Wire Line
+	6950 3150 7000 3150
+Wire Wire Line
+	6950 3250 7000 3250
+Wire Wire Line
+	6950 3350 7000 3350
+Wire Wire Line
+	6950 3450 7000 3450
+Wire Wire Line
+	6950 3550 7000 3550
+Wire Wire Line
+	6950 3650 7000 3650
+Wire Wire Line
+	6950 3750 7000 3750
+Wire Wire Line
+	6950 3850 7000 3850
+Wire Wire Line
+	6950 3950 7000 3950
+$EndSCHEMATC

@@ -1,0 +1,270 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 1950 2550 1200 200 
+U 6052AFD9
+F0 "InputBandpassFilter" 50
+F1 "BPfilt.sch" 50
+F2 "RF_IN" I L 1950 2650 50 
+F3 "RF_OUT_FILTERED" O R 3150 2650 50 
+$EndSheet
+Wire Wire Line
+	4150 1300 4150 1050
+Wire Wire Line
+	3900 1050 4150 1050
+NoConn ~ 3100 1050
+Wire Wire Line
+	2950 1050 3100 1050
+Wire Wire Line
+	3900 1300 3900 1250
+$Comp
+L TE_5-1634503-1:5-1634503-1 J?
+U 1 1 605325B9
+P 3600 1150
+AR Path="/6052AFD9/605325B9" Ref="J?"  Part="1" 
+AR Path="/605325B9" Ref="J?"  Part="1" 
+F 0 "J?" H 3658 1515 50  0000 C CNN
+F 1 "CAL_S" H 3658 1424 50  0000 C CNN
+F 2 "footprints:TE_5-1634503-1" H 3600 1150 50  0001 L BNN
+F 3 "" H 3600 1150 50  0001 L BNN
+F 4 "1" H 3600 1150 50  0001 L BNN "Number_of_Positions"
+F 5 "Compliant" H 3600 1150 50  0001 L BNN "EU_RoHS_Compliance"
+F 6 "5-1634503-1" H 3600 1150 50  0001 L BNN "Comment"
+	1    3600 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 1300 2950 1250
+$Comp
+L TE_5-1634503-1:5-1634503-1 J?
+U 1 1 605325C9
+P 2650 1150
+AR Path="/6052AFD9/605325C9" Ref="J?"  Part="1" 
+AR Path="/605325C9" Ref="J?"  Part="1" 
+F 0 "J?" H 2708 1515 50  0000 C CNN
+F 1 "CAL_O" H 2708 1424 50  0000 C CNN
+F 2 "footprints:TE_5-1634503-1" H 2650 1150 50  0001 L BNN
+F 3 "" H 2650 1150 50  0001 L BNN
+F 4 "1" H 2650 1150 50  0001 L BNN "Number_of_Positions"
+F 5 "Compliant" H 2650 1150 50  0001 L BNN "EU_RoHS_Compliance"
+F 6 "5-1634503-1" H 2650 1150 50  0001 L BNN "Comment"
+	1    2650 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 1100 5350 1350
+Wire Wire Line
+	5300 1100 5350 1100
+Wire Wire Line
+	5000 1100 5100 1100
+Wire Wire Line
+	5000 1350 5000 1300
+$Comp
+L TE_5-1634503-1:5-1634503-1 J?
+U 1 1 605325E2
+P 4700 1200
+AR Path="/6052AFD9/605325E2" Ref="J?"  Part="1" 
+AR Path="/605325E2" Ref="J?"  Part="1" 
+F 0 "J?" H 4758 1565 50  0000 C CNN
+F 1 "CAL_L" H 4758 1474 50  0000 C CNN
+F 2 "footprints:TE_5-1634503-1" H 4700 1200 50  0001 L BNN
+F 3 "" H 4700 1200 50  0001 L BNN
+F 4 "1" H 4700 1200 50  0001 L BNN "Number_of_Positions"
+F 5 "Compliant" H 4700 1200 50  0001 L BNN "EU_RoHS_Compliance"
+F 6 "5-1634503-1" H 4700 1200 50  0001 L BNN "Comment"
+	1    4700 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 605325E8
+P 5200 1100
+AR Path="/6052AFD9/605325E8" Ref="R?"  Part="1" 
+AR Path="/605325E8" Ref="R?"  Part="1" 
+F 0 "R?" V 5396 1100 50  0000 C CNN
+F 1 "50Ω" V 5305 1100 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5200 1100 50  0001 C CNN
+F 3 "~" H 5200 1100 50  0001 C CNN
+	1    5200 1100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 60539211
+P 1200 2650
+F 0 "J?" H 1118 2867 50  0000 C CNN
+F 1 "Antenna Input" H 1118 2776 50  0000 C CNN
+F 2 "" H 1200 2650 50  0001 C CNN
+F 3 "~" H 1200 2650 50  0001 C CNN
+	1    1200 2650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 6053C7E9
+P 1400 2850
+F 0 "#PWR?" H 1400 2600 50  0001 C CNN
+F 1 "GNDA" H 1405 2677 50  0000 C CNN
+F 2 "" H 1400 2850 50  0001 C CNN
+F 3 "" H 1400 2850 50  0001 C CNN
+	1    1400 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 2850 1400 2750
+Wire Wire Line
+	1400 2650 1950 2650
+$Sheet
+S 3200 2550 1100 200 
+U 6053DD24
+F0 "RF Preamp" 50
+F1 "RFpreamp.sch" 50
+F2 "RF_IN" I L 3200 2650 50 
+F3 "PREAMP_OUT" O R 4300 2650 50 
+$EndSheet
+Wire Wire Line
+	3200 2650 3150 2650
+$Sheet
+S 4350 2550 1200 200 
+U 60594038
+F0 "Mixer" 50
+F1 "Mixer.sch" 50
+F2 "IF_UNFILT_OUT" O R 5550 2650 50 
+F3 "RF_IN" I L 4350 2650 50 
+$EndSheet
+Wire Wire Line
+	4300 2650 4350 2650
+$Comp
+L CustomComponents:LTC455-W FL?
+U 1 1 605ACA7E
+P 6000 2850
+F 0 "FL?" H 6025 3275 50  0000 C CNN
+F 1 "LTC455-W" H 6025 3184 50  0000 C CNN
+F 2 "footprints:LTC455-W" H 5750 3150 50  0001 C CNN
+F 3 "" H 5750 3150 50  0001 C CNN
+	1    6000 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 2650 5550 2650
+$Comp
+L power:GNDA #PWR?
+U 1 1 605AE165
+P 6000 3050
+F 0 "#PWR?" H 6000 2800 50  0001 C CNN
+F 1 "GNDA" H 6005 2877 50  0000 C CNN
+F 2 "" H 6000 3050 50  0001 C CNN
+F 3 "" H 6000 3050 50  0001 C CNN
+	1    6000 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 3050 6000 3000
+Wire Wire Line
+	6000 3000 5950 3000
+Wire Wire Line
+	5950 3000 5950 2950
+Wire Wire Line
+	6000 3000 6050 3000
+Wire Wire Line
+	6050 3000 6050 2950
+Connection ~ 6000 3000
+Text Notes 5900 2350 0    50   ~ 0
+IF Filter
+$Sheet
+S 6500 2550 1300 200 
+U 606E4CAD
+F0 "IF Amplifier" 50
+F1 "IF_AMP.sch" 50
+F2 "IF_AMP_IN" I L 6500 2650 50 
+F3 "IF_AMP_OUT" O R 7800 2650 50 
+$EndSheet
+Wire Wire Line
+	6500 2650 6400 2650
+Text Notes 6700 1150 0    50   ~ 0
+REDESIGN PSU\nNEEDS\n+12\n+5\n+5 FOR AUDIO ONLY\nGND\nGNDA\n-12
+$Sheet
+S 7950 2550 1700 200 
+U 606E9971
+F0 "AM Demodulater" 50
+F1 "Demod.sch" 50
+F2 "DEMOD_IN" I L 7950 2650 50 
+F3 "DEMOD_OUT" O R 9650 2650 50 
+$EndSheet
+Wire Wire Line
+	7950 2650 7800 2650
+$Sheet
+S 7950 700  1550 800 
+U 607045AB
+F0 "Power Supply" 50
+F1 "PSU.sch" 50
+$EndSheet
+$Comp
+L power:GNDA #PWR?
+U 1 1 60704FB6
+P 2950 1300
+F 0 "#PWR?" H 2950 1050 50  0001 C CNN
+F 1 "GNDA" H 2955 1127 50  0000 C CNN
+F 2 "" H 2950 1300 50  0001 C CNN
+F 3 "" H 2950 1300 50  0001 C CNN
+	1    2950 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 60706001
+P 3900 1300
+F 0 "#PWR?" H 3900 1050 50  0001 C CNN
+F 1 "GNDA" H 3905 1127 50  0000 C CNN
+F 2 "" H 3900 1300 50  0001 C CNN
+F 3 "" H 3900 1300 50  0001 C CNN
+	1    3900 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 60706738
+P 4150 1300
+F 0 "#PWR?" H 4150 1050 50  0001 C CNN
+F 1 "GNDA" H 4155 1127 50  0000 C CNN
+F 2 "" H 4150 1300 50  0001 C CNN
+F 3 "" H 4150 1300 50  0001 C CNN
+	1    4150 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 60707F92
+P 5000 1350
+F 0 "#PWR?" H 5000 1100 50  0001 C CNN
+F 1 "GNDA" H 5005 1177 50  0000 C CNN
+F 2 "" H 5000 1350 50  0001 C CNN
+F 3 "" H 5000 1350 50  0001 C CNN
+	1    5000 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 60707F98
+P 5350 1350
+F 0 "#PWR?" H 5350 1100 50  0001 C CNN
+F 1 "GNDA" H 5355 1177 50  0000 C CNN
+F 2 "" H 5350 1350 50  0001 C CNN
+F 3 "" H 5350 1350 50  0001 C CNN
+	1    5350 1350
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

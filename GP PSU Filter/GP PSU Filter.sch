@@ -1,0 +1,376 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:L_Core_Iron L4
+U 1 1 5E73FBC3
+P 4850 2500
+F 0 "L4" V 5075 2500 50  0000 C CNN
+F 1 "100uH" V 4984 2500 50  0000 C CNN
+F 2 "footprints:Bourns-5729-RC" H 4850 2500 50  0001 C CNN
+F 3 "~" H 4850 2500 50  0001 C CNN
+F 4 "M8733-ND" V 4850 2500 50  0001 C CNN "digikey"
+	1    4850 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:L_Core_Iron L3
+U 1 1 5E741D6D
+P 4850 2200
+F 0 "L3" V 5075 2200 50  0000 C CNN
+F 1 "100uH" V 4984 2200 50  0000 C CNN
+F 2 "footprints:Bourns-5729-RC" H 4850 2200 50  0001 C CNN
+F 3 "~" H 4850 2200 50  0001 C CNN
+F 4 "M8733-ND" V 4850 2200 50  0001 C CNN "digikey"
+	1    4850 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:L_Core_Iron L2
+U 1 1 5E74262B
+P 4850 1900
+F 0 "L2" V 5075 1900 50  0000 C CNN
+F 1 "100uH" V 4984 1900 50  0000 C CNN
+F 2 "footprints:Bourns-5729-RC" H 4850 1900 50  0001 C CNN
+F 3 "~" H 4850 1900 50  0001 C CNN
+F 4 "M8733-ND" V 4850 1900 50  0001 C CNN "digikey"
+	1    4850 1900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:L_Core_Iron L1
+U 1 1 5E743104
+P 4850 1600
+F 0 "L1" V 5075 1600 50  0000 C CNN
+F 1 "100uH" V 4984 1600 50  0000 C CNN
+F 2 "footprints:Bourns-5729-RC" H 4850 1600 50  0001 C CNN
+F 3 "~" H 4850 1600 50  0001 C CNN
+F 4 "M8733-ND" V 4850 1600 50  0001 C CNN "digikey"
+	1    4850 1600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VCC #PWR0101
+U 1 1 5E73EB92
+P 3750 1700
+F 0 "#PWR0101" H 3750 1550 50  0001 C CNN
+F 1 "VCC" H 3767 1873 50  0000 C CNN
+F 2 "" H 3750 1700 50  0001 C CNN
+F 3 "" H 3750 1700 50  0001 C CNN
+	1    3750 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 5E74476D
+P 3300 2000
+F 0 "J1" H 3218 1675 50  0000 C CNN
+F 1 "Conn_01x02" H 3218 1766 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3300 2000 50  0001 C CNN
+F 3 "~" H 3300 2000 50  0001 C CNN
+	1    3300 2000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3750 1700 3750 1900
+Wire Wire Line
+	3750 1900 3500 1900
+$Comp
+L power:GND #PWR0102
+U 1 1 5E746B34
+P 3500 2400
+F 0 "#PWR0102" H 3500 2150 50  0001 C CNN
+F 1 "GND" H 3505 2227 50  0000 C CNN
+F 2 "" H 3500 2400 50  0001 C CNN
+F 3 "" H 3500 2400 50  0001 C CNN
+	1    3500 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 1900 4250 1900
+Wire Wire Line
+	4250 1900 4250 1600
+Wire Wire Line
+	4250 1600 4700 1600
+Wire Wire Line
+	4250 1900 4700 1900
+Connection ~ 4250 1900
+Wire Wire Line
+	4250 1900 4250 2200
+Wire Wire Line
+	4250 2200 4700 2200
+Wire Wire Line
+	4250 2200 4250 2500
+Wire Wire Line
+	4250 2500 4700 2500
+Connection ~ 4250 2200
+Wire Wire Line
+	5100 2500 5100 2200
+Wire Wire Line
+	5000 2500 5100 2500
+Wire Wire Line
+	5000 2200 5100 2200
+Connection ~ 5100 2200
+Wire Wire Line
+	5100 2200 5100 1900
+Wire Wire Line
+	5000 1900 5100 1900
+Connection ~ 5100 1900
+Wire Wire Line
+	5100 1900 5100 1600
+Wire Wire Line
+	5000 1600 5100 1600
+Connection ~ 3750 1900
+Wire Wire Line
+	3750 2000 3750 1900
+$Comp
+L Device:C C2
+U 1 1 5E74CDDF
+P 5250 2650
+F 0 "C2" H 5365 2696 50  0000 L CNN
+F 1 "10nF" H 5365 2605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5288 2500 50  0001 C CNN
+F 3 "~" H 5250 2650 50  0001 C CNN
+F 4 "399-17617-1-ND" H 5250 2650 50  0001 C CNN "digikey"
+	1    5250 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5E74D7A4
+P 5650 2650
+F 0 "C3" H 5765 2696 50  0000 L CNN
+F 1 "100nF" H 5765 2605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5688 2500 50  0001 C CNN
+F 3 "~" H 5650 2650 50  0001 C CNN
+F 4 "399-12977-1-ND" H 5650 2650 50  0001 C CNN "digikey"
+	1    5650 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C5
+U 1 1 5E74F581
+P 7350 2800
+F 0 "C5" H 7465 2846 50  0000 L CNN
+F 1 "1mF" H 7465 2755 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_16x17.5" H 7350 2800 50  0001 C CNN
+F 3 "~" H 7350 2800 50  0001 C CNN
+F 4 "PCE4848CT-ND" H 7350 2800 50  0001 C CNN "digikey"
+	1    7350 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 2500 5250 2500
+Connection ~ 5100 2500
+Connection ~ 5250 2500
+Wire Wire Line
+	5250 2500 5650 2500
+Connection ~ 5650 2500
+$Comp
+L dk_Banana-and-Tip-Connectors-Jacks-Plugs:105-1102-001 J2
+U 1 1 5E750143
+P 8000 2500
+F 0 "J2" V 7901 2578 50  0000 L CNN
+F 1 "105-1102-001" V 7992 2578 50  0000 L CNN
+F 2 "digikey-footprints:Test_Jack_Horiz" H 8200 2700 60  0001 L CNN
+F 3 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 8200 2800 60  0001 L CNN
+F 4 "J576-ND" H 8200 2900 60  0001 L CNN "Digi-Key_PN"
+F 5 "105-1102-001" H 8200 3000 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 8200 3100 60  0001 L CNN "Category"
+F 7 "Banana and Tip Connectors - Jacks, Plugs" H 8200 3200 60  0001 L CNN "Family"
+F 8 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 8200 3300 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/cinch-connectivity-solutions-johnson/105-1102-001/J576-ND/241121" H 8200 3400 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN TIP JACK SOLDER RED" V 8091 2578 60  0000 L CNN "Description"
+F 11 "Cinch Connectivity Solutions Johnson" H 8200 3600 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 8200 3700 60  0001 L CNN "Status"
+	1    8000 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L dk_Banana-and-Tip-Connectors-Jacks-Plugs:105-1103-001 J3
+U 1 1 5E75170F
+P 8000 2850
+F 0 "J3" V 7901 2928 50  0000 L CNN
+F 1 "105-1103-001" V 7992 2928 50  0000 L CNN
+F 2 "digikey-footprints:Test_Jack_Horiz" H 8200 3050 60  0001 L CNN
+F 3 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 8200 3150 60  0001 L CNN
+F 4 "J577-ND" H 8200 3250 60  0001 L CNN "Digi-Key_PN"
+F 5 "105-1103-001" H 8200 3350 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 8200 3450 60  0001 L CNN "Category"
+F 7 "Banana and Tip Connectors - Jacks, Plugs" H 8200 3550 60  0001 L CNN "Family"
+F 8 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 8200 3650 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/cinch-connectivity-solutions-johnson/105-1103-001/J577-ND/241122" H 8200 3750 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN TIP JACK SOLDER BLACK" V 8091 2928 60  0000 L CNN "Description"
+F 11 "Cinch Connectivity Solutions Johnson" H 8200 3950 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 8200 4050 60  0001 L CNN "Status"
+	1    8000 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5E752E79
+P 5250 3000
+F 0 "#PWR0103" H 5250 2750 50  0001 C CNN
+F 1 "GND" H 5255 2827 50  0000 C CNN
+F 2 "" H 5250 3000 50  0001 C CNN
+F 3 "" H 5250 3000 50  0001 C CNN
+	1    5250 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 2800 5250 2850
+Wire Wire Line
+	5250 2850 5650 2850
+Wire Wire Line
+	5650 2800 5650 2850
+Wire Wire Line
+	5250 3000 5250 2850
+Connection ~ 5250 2850
+Wire Wire Line
+	3500 2000 3500 2400
+$Comp
+L Device:CP1_Small C1
+U 1 1 5E7AAE00
+P 3750 2100
+F 0 "C1" H 3841 2146 50  0000 L CNN
+F 1 "330uF" H 3841 2055 50  0000 L CNN
+F 2 "" H 3750 2100 50  0001 C CNN
+F 3 "~" H 3750 2100 50  0001 C CNN
+F 4 "UCM1H331MNL1GS" H 3750 2100 50  0001 C CNN "digikey"
+	1    3750 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1_Small C4
+U 1 1 5E7AC60C
+P 3750 2300
+F 0 "C4" H 3841 2346 50  0000 L CNN
+F 1 "330uF" H 3841 2255 50  0000 L CNN
+F 2 "" H 3750 2300 50  0001 C CNN
+F 3 "~" H 3750 2300 50  0001 C CNN
+F 4 "UCM1H331MNL1GS" H 3750 2300 50  0001 C CNN "digikey"
+	1    3750 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5E7AC946
+P 3750 2400
+F 0 "#PWR01" H 3750 2150 50  0001 C CNN
+F 1 "GND" H 3755 2227 50  0000 C CNN
+F 2 "" H 3750 2400 50  0001 C CNN
+F 3 "" H 3750 2400 50  0001 C CNN
+	1    3750 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1_Small C6
+U 1 1 5E7AE203
+P 6100 2600
+F 0 "C6" H 6191 2646 50  0000 L CNN
+F 1 "330uF" H 6191 2555 50  0000 L CNN
+F 2 "" H 6100 2600 50  0001 C CNN
+F 3 "~" H 6100 2600 50  0001 C CNN
+F 4 "UCM1H331MNL1GS" H 6100 2600 50  0001 C CNN "digikey"
+	1    6100 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1_Small C7
+U 1 1 5E7AE209
+P 6100 2800
+F 0 "C7" H 6191 2846 50  0000 L CNN
+F 1 "330uF" H 6191 2755 50  0000 L CNN
+F 2 "" H 6100 2800 50  0001 C CNN
+F 3 "~" H 6100 2800 50  0001 C CNN
+F 4 "UCM1H331MNL1GS" H 6100 2800 50  0001 C CNN "digikey"
+	1    6100 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5E7AE20F
+P 6100 2900
+F 0 "#PWR02" H 6100 2650 50  0001 C CNN
+F 1 "GND" H 6105 2727 50  0000 C CNN
+F 2 "" H 6100 2900 50  0001 C CNN
+F 3 "" H 6100 2900 50  0001 C CNN
+	1    6100 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1_Small C?
+U 1 1 5E7B0B62
+P 6550 2800
+F 0 "C?" H 6641 2846 50  0000 L CNN
+F 1 "330uF" H 6641 2755 50  0000 L CNN
+F 2 "" H 6550 2800 50  0001 C CNN
+F 3 "~" H 6550 2800 50  0001 C CNN
+F 4 "UCM1H331MNL1GS" H 6550 2800 50  0001 C CNN "digikey"
+	1    6550 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E7B0B68
+P 6550 2900
+F 0 "#PWR?" H 6550 2650 50  0001 C CNN
+F 1 "GND" H 6555 2727 50  0000 C CNN
+F 2 "" H 6550 2900 50  0001 C CNN
+F 3 "" H 6550 2900 50  0001 C CNN
+	1    6550 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1_Small C?
+U 1 1 5E7B12B1
+P 6950 2800
+F 0 "C?" H 7041 2846 50  0000 L CNN
+F 1 "330uF" H 7041 2755 50  0000 L CNN
+F 2 "" H 6950 2800 50  0001 C CNN
+F 3 "~" H 6950 2800 50  0001 C CNN
+F 4 "UCM1H331MNL1GS" H 6950 2800 50  0001 C CNN "digikey"
+	1    6950 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 2700 6950 2700
+Wire Wire Line
+	6950 2900 6550 2900
+Connection ~ 6550 2900
+Wire Wire Line
+	7350 2650 6950 2650
+Wire Wire Line
+	6950 2650 6950 2700
+Connection ~ 6950 2700
+Wire Wire Line
+	7350 2950 6950 2950
+Wire Wire Line
+	6950 2950 6950 2900
+Connection ~ 6950 2900
+Wire Wire Line
+	5650 2500 6950 2500
+Wire Wire Line
+	6950 2650 6950 2500
+Connection ~ 6950 2650
+Connection ~ 6950 2500
+Wire Wire Line
+	6950 2500 7850 2500
+Wire Wire Line
+	7350 2950 7850 2950
+Wire Wire Line
+	7850 2950 7850 2850
+Connection ~ 7350 2950
+$EndSCHEMATC

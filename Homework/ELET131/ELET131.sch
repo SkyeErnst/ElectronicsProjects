@@ -1,0 +1,127 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R_Small_US R1
+U 1 1 5F927290
+P 4600 3100
+F 0 "R1" H 4668 3100 50  0000 L CNN
+F 1 "R_Small_US" H 4668 3055 50  0001 L CNN
+F 2 "" H 4600 3100 50  0001 C CNN
+F 3 "~" H 4600 3100 50  0001 C CNN
+	1    4600 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R2
+U 1 1 5F928B6F
+P 5000 3100
+F 0 "R2" H 5068 3100 50  0000 L CNN
+F 1 "R_Small_US" H 5068 3055 50  0001 L CNN
+F 2 "" H 5000 3100 50  0001 C CNN
+F 3 "~" H 5000 3100 50  0001 C CNN
+	1    5000 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R3
+U 1 1 5F9292FA
+P 4750 3400
+F 0 "R3" H 4818 3400 50  0000 L CNN
+F 1 "R_Small_US" H 4818 3355 50  0001 L CNN
+F 2 "" H 4750 3400 50  0001 C CNN
+F 3 "~" H 4750 3400 50  0001 C CNN
+	1    4750 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 3000 4600 2900
+Wire Wire Line
+	4600 2900 5000 2900
+Wire Wire Line
+	5000 2900 5000 3000
+Wire Wire Line
+	5000 3250 5000 3200
+Wire Wire Line
+	4750 3550 4750 3500
+$Comp
+L Device:R_Small_US R4
+U 1 1 5F92E1FA
+P 5000 3400
+F 0 "R4" H 5068 3400 50  0000 L CNN
+F 1 "R_Small_US" H 5068 3355 50  0001 L CNN
+F 2 "" H 5000 3400 50  0001 C CNN
+F 3 "~" H 5000 3400 50  0001 C CNN
+	1    5000 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 3550 5000 3500
+$Comp
+L Device:R_Small_US R5
+U 1 1 5F92EB93
+P 5250 3400
+F 0 "R5" H 5318 3400 50  0000 L CNN
+F 1 "R_Small_US" H 5318 3355 50  0001 L CNN
+F 2 "" H 5250 3400 50  0001 C CNN
+F 3 "~" H 5250 3400 50  0001 C CNN
+	1    5250 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 3550 5250 3500
+$Comp
+L Device:R_Small_US R6
+U 1 1 5F92F288
+P 5500 3400
+F 0 "R6" H 5568 3400 50  0000 L CNN
+F 1 "R_Small_US" H 5568 3355 50  0001 L CNN
+F 2 "" H 5500 3400 50  0001 C CNN
+F 3 "~" H 5500 3400 50  0001 C CNN
+	1    5500 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 3550 5500 3500
+Wire Wire Line
+	5000 3250 4750 3250
+Wire Wire Line
+	4750 3250 4750 3300
+Wire Wire Line
+	5000 3250 5000 3300
+Connection ~ 5000 3250
+Wire Wire Line
+	5000 3250 5250 3250
+Wire Wire Line
+	5250 3250 5250 3300
+Wire Wire Line
+	5250 3250 5500 3250
+Wire Wire Line
+	5500 3250 5500 3300
+Connection ~ 5250 3250
+Wire Wire Line
+	5500 3550 5250 3550
+Wire Wire Line
+	4600 3550 4600 3200
+Connection ~ 4750 3550
+Wire Wire Line
+	4750 3550 4600 3550
+Connection ~ 5000 3550
+Wire Wire Line
+	5000 3550 4750 3550
+Connection ~ 5250 3550
+Wire Wire Line
+	5250 3550 5000 3550
+$EndSCHEMATC

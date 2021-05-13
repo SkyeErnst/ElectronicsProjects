@@ -1,0 +1,109 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:XLR3 J?
+U 1 1 5EED0588
+P 2350 3250
+F 0 "J?" H 2350 3615 50  0000 C CNN
+F 1 "XLR3" H 2350 3524 50  0000 C CNN
+F 2 "" H 2350 3250 50  0001 C CNN
+F 3 " ~" H 2350 3250 50  0001 C CNN
+	1    2350 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:XLR3 J?
+U 1 1 5EED1475
+P 9650 3250
+F 0 "J?" H 9650 3615 50  0000 C CNN
+F 1 "XLR3" H 9650 3524 50  0000 C CNN
+F 2 "" H 9650 3250 50  0001 C CNN
+F 3 " ~" H 9650 3250 50  0001 C CNN
+	1    9650 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 3250 1850 3250
+Wire Wire Line
+	1850 3250 1850 3350
+$Comp
+L power:GNDA #PWR?
+U 1 1 5EED2395
+P 1850 3350
+F 0 "#PWR?" H 1850 3100 50  0001 C CNN
+F 1 "GNDA" H 1855 3177 50  0000 C CNN
+F 2 "" H 1850 3350 50  0001 C CNN
+F 3 "" H 1850 3350 50  0001 C CNN
+	1    1850 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 3550 2350 3650
+Text Label 3000 3250 0    50   ~ 0
+HOT
+Text Label 3000 3650 0    50   ~ 0
+COLD
+Wire Wire Line
+	2650 3250 3500 3250
+$Comp
+L power:GNDA #PWR?
+U 1 1 5EED2C22
+P 3500 4250
+F 0 "#PWR?" H 3500 4000 50  0001 C CNN
+F 1 "GNDA" H 3505 4077 50  0000 C CNN
+F 2 "" H 3500 4250 50  0001 C CNN
+F 3 "" H 3500 4250 50  0001 C CNN
+	1    3500 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5EED302A
+P 3500 3850
+F 0 "R?" H 3559 3896 50  0000 L CNN
+F 1 "TBD" H 3559 3805 50  0000 L CNN
+F 2 "" H 3500 3850 50  0001 C CNN
+F 3 "~" H 3500 3850 50  0001 C CNN
+	1    3500 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5EED4603
+P 3800 3850
+F 0 "R?" H 3859 3896 50  0000 L CNN
+F 1 "TBD" H 3859 3805 50  0000 L CNN
+F 2 "" H 3800 3850 50  0001 C CNN
+F 3 "~" H 3800 3850 50  0001 C CNN
+	1    3800 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 3650 3800 3750
+Wire Wire Line
+	2350 3650 3800 3650
+Wire Wire Line
+	3500 3750 3500 3250
+Wire Wire Line
+	3500 3950 3500 4100
+Wire Wire Line
+	3500 4100 3800 4100
+Wire Wire Line
+	3800 4100 3800 3950
+Connection ~ 3500 4100
+Wire Wire Line
+	3500 4100 3500 4250
+$EndSCHEMATC

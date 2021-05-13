@@ -1,0 +1,242 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L OPA1662AIDR:OPA1662AIDR U?
+U 1 1 5E912749
+P 3900 3300
+F 0 "U?" H 5100 3687 60  0000 C CNN
+F 1 "OPA1662AIDR" H 5100 3581 60  0000 C CNN
+F 2 "D8" H 5100 3540 60  0001 C CNN
+F 3 "" H 3900 3300 60  0000 C CNN
+	1    3900 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5E914D2C
+P 6950 3100
+F 0 "#PWR?" H 6950 2950 50  0001 C CNN
+F 1 "+12V" H 6950 3250 50  0000 C CNN
+F 2 "" H 6950 3100 50  0001 C CNN
+F 3 "" H 6950 3100 50  0001 C CNN
+	1    6950 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 3100 6950 3300
+Wire Wire Line
+	3550 3750 3550 3600
+Wire Wire Line
+	3550 3600 3900 3600
+$Comp
+L Device:R_Small R?
+U 1 1 5E917263
+P 7550 3800
+F 0 "R?" H 7450 3800 50  0000 C CNN
+F 1 "100m" V 7550 3800 20  0000 C CNN
+F 2 "" H 7550 3800 50  0001 C CNN
+F 3 "~" H 7550 3800 50  0001 C CNN
+	1    7550 3800
+	-1   0    0    1   
+$EndComp
+$Comp
+L dk_Transistors-FETs-MOSFETs-Single:FQP30N06L Q?
+U 1 1 5E918E4E
+P 7550 2300
+F 0 "Q?" H 7658 2300 60  0000 L CNN
+F 1 "FQP30N06L" H 7658 2247 60  0001 L CNN
+F 2 "digikey-footprints:TO-220-3" H 7750 2500 60  0001 L CNN
+F 3 "https://www.onsemi.com/pub/Collateral/FQP30N06L-D.pdf" H 7750 2600 60  0001 L CNN
+F 4 "FQP30N06L-ND" H 7750 2700 60  0001 L CNN "Digi-Key_PN"
+F 5 "FQP30N06L" H 7750 2800 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 7750 2900 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 7750 3000 60  0001 L CNN "Family"
+F 8 "https://www.onsemi.com/pub/Collateral/FQP30N06L-D.pdf" H 7750 3100 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/on-semiconductor/FQP30N06L/FQP30N06L-ND/1055122" H 7750 3200 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET N-CH 60V 32A TO-220" H 7750 3300 60  0001 L CNN "Description"
+F 11 "ON Semiconductor" H 7750 3400 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 7750 3500 60  0001 L CNN "Status"
+	1    7550 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E920C00
+P 7550 4000
+F 0 "#PWR?" H 7550 3750 50  0001 C CNN
+F 1 "GND" H 7555 3827 50  0000 C CNN
+F 2 "" H 7550 4000 50  0001 C CNN
+F 3 "" H 7550 4000 50  0001 C CNN
+	1    7550 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 3900 7550 4000
+$Comp
+L Device:R_Small R?
+U 1 1 5E921061
+P 7450 3600
+F 0 "R?" V 7350 3600 50  0000 C CNN
+F 1 "100m" V 7450 3600 20  0000 C CNN
+F 2 "" H 7450 3600 50  0001 C CNN
+F 3 "~" H 7450 3600 50  0001 C CNN
+	1    7450 3600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7550 2500 7550 2600
+Connection ~ 7550 3600
+Wire Wire Line
+	7550 3600 7550 3700
+Wire Wire Line
+	7350 3600 6300 3600
+Wire Wire Line
+	6300 3500 6550 3500
+Wire Wire Line
+	6550 3500 6550 3450
+Wire Wire Line
+	6550 3400 6300 3400
+$Comp
+L Device:R_POT RV?
+U 1 1 5E922CEB
+P 3000 3500
+F 0 "RV?" H 2930 3546 50  0000 R CNN
+F 1 "10k 10-turn pot" H 2930 3455 50  0000 R CNN
+F 2 "" H 3000 3500 50  0001 C CNN
+F 3 "~" H 3000 3500 50  0001 C CNN
+	1    3000 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5E92523A
+P 3000 2750
+F 0 "#PWR?" H 3000 2600 50  0001 C CNN
+F 1 "+12V" H 3015 2923 50  0000 C CNN
+F 2 "" H 3000 2750 50  0001 C CNN
+F 3 "" H 3000 2750 50  0001 C CNN
+	1    3000 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 2750 3000 3350
+Wire Wire Line
+	3150 3500 3900 3500
+$Comp
+L power:GND #PWR?
+U 1 1 5E925919
+P 3000 3750
+F 0 "#PWR?" H 3000 3500 50  0001 C CNN
+F 1 "GND" H 3005 3577 50  0000 C CNN
+F 2 "" H 3000 3750 50  0001 C CNN
+F 3 "" H 3000 3750 50  0001 C CNN
+	1    3000 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 3650 3000 3750
+Wire Wire Line
+	6550 3450 6850 3450
+Connection ~ 6550 3450
+Wire Wire Line
+	6550 3450 6550 3400
+Wire Wire Line
+	3900 3300 3900 2400
+Wire Wire Line
+	3900 2400 7250 2400
+Wire Wire Line
+	7550 2600 3850 2600
+Wire Wire Line
+	3850 2600 3850 3400
+Wire Wire Line
+	3850 3400 3900 3400
+Connection ~ 7550 2600
+Wire Wire Line
+	7550 2600 7550 3600
+Text Label 6850 3450 0    50   ~ 0
+Current_Sense
+Text HLabel 7450 1700 0    50   Input ~ 0
+DUT_Vin
+Wire Wire Line
+	7550 1700 7550 2100
+Wire Wire Line
+	7450 1700 7550 1700
+$Comp
+L Device:C_Small C?
+U 1 1 5E92E687
+P 6350 3000
+F 0 "C?" H 6100 3100 50  0000 L CNN
+F 1 "0.1uF" H 6050 3000 50  0000 L CNN
+F 2 "" H 6350 3000 50  0001 C CNN
+F 3 "~" H 6350 3000 50  0001 C CNN
+	1    6350 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 3100 6350 3300
+Connection ~ 6350 3300
+Wire Wire Line
+	6350 3300 6300 3300
+Wire Wire Line
+	6550 2750 6500 2750
+Wire Wire Line
+	6350 2750 6350 2900
+$Comp
+L power:GNDA #PWR?
+U 1 1 5E9329CE
+P 3550 3750
+F 0 "#PWR?" H 3550 3500 50  0001 C CNN
+F 1 "GNDA" H 3555 3577 50  0000 C CNN
+F 2 "" H 3550 3750 50  0001 C CNN
+F 3 "" H 3550 3750 50  0001 C CNN
+	1    3550 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5E93502D
+P 6500 3000
+F 0 "C?" H 6600 3100 50  0000 L CNN
+F 1 "1uF" H 6600 3000 50  0000 L CNN
+F 2 "" H 6500 3000 50  0001 C CNN
+F 3 "~" H 6500 3000 50  0001 C CNN
+	1    6500 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 3300 6500 3300
+Wire Wire Line
+	6500 3100 6500 3300
+Connection ~ 6500 3300
+Wire Wire Line
+	6500 3300 6950 3300
+Wire Wire Line
+	6500 2900 6500 2750
+Connection ~ 6500 2750
+Wire Wire Line
+	6500 2750 6350 2750
+$Comp
+L power:GNDA #PWR?
+U 1 1 5E938031
+P 6550 2750
+F 0 "#PWR?" H 6550 2500 50  0001 C CNN
+F 1 "GNDA" V 6550 2500 50  0000 C CNN
+F 2 "" H 6550 2750 50  0001 C CNN
+F 3 "" H 6550 2750 50  0001 C CNN
+	1    6550 2750
+	0    -1   -1   0   
+$EndComp
+$EndSCHEMATC

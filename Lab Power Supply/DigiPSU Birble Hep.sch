@@ -1,0 +1,500 @@
+EESchema Schematic File Version 4
+LIBS:Lab Power Supply-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 4
+Title ""
+Date "2019-11-14"
+Rev "A"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Microchip_ATmega:ATxmega32E5-AU MPU1
+U 1 1 5E534706
+P 5250 3620
+F 0 "MPU1" H 4750 4670 50  0000 C CNN
+F 1 "ATxmega32E5-AU" H 5725 4670 50  0000 C CNN
+F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 5250 3620 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-8153-8-and-16-bit-AVR-Microcontroller-XMEGA-E-ATxmega8E5-ATxmega16E5-ATxmega32E5_Datasheet.pdf" H 5250 3620 50  0001 C CNN
+	1    5250 3620
+	1    0    0    -1  
+$EndComp
+Text HLabel 6500 3420 2    50   Input ~ 0
+Vo1_POP
+Text HLabel 6500 3520 2    50   Input ~ 0
+Vo2_POP
+Wire Wire Line
+	6500 3420 5950 3420
+Wire Wire Line
+	6500 3520 5950 3520
+$Comp
+L power:+3.3V #PWR06
+U 1 1 5DE04F0B
+P 5250 1750
+F 0 "#PWR06" H 5250 1600 50  0001 C CNN
+F 1 "+3.3V" H 5265 1923 50  0000 C CNN
+F 2 "" H 5250 1750 50  0001 C CNN
+F 3 "" H 5250 1750 50  0001 C CNN
+	1    5250 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Rotary_Encoder_Switch SW1
+U 1 1 5DD6E665
+P 7600 3020
+F 0 "SW1" H 7600 3387 50  0000 C CNN
+F 1 "RE Switch A" H 7600 3296 50  0000 C CNN
+F 2 "Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm" H 7450 3180 50  0001 C CNN
+F 3 "~" H 7600 3280 50  0001 C CNN
+	1    7600 3020
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 3020 6500 3020
+Wire Wire Line
+	5950 3120 6500 3120
+Text Label 6500 3020 0    50   ~ 0
+DAC0_OUT
+Text Label 6500 3120 0    50   ~ 0
+DAC1_OUT
+$Comp
+L power:GNDA #PWR011
+U 1 1 5DD70C8D
+P 6500 2820
+F 0 "#PWR011" H 6500 2570 50  0001 C CNN
+F 1 "GNDA" V 6505 2692 50  0000 R CNN
+F 2 "" H 6500 2820 50  0001 C CNN
+F 3 "" H 6500 2820 50  0001 C CNN
+	1    6500 2820
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6500 2820 5950 2820
+Wire Wire Line
+	7300 2920 5950 2920
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J1
+U 1 1 5DD8896B
+P 3725 2925
+F 0 "J1" V 3700 2675 50  0000 L CNN
+F 1 "Programing Header" H 3775 3241 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x03_P2.54mm_Vertical_SMD" H 3725 2925 50  0001 C CNN
+F 3 "~" H 3725 2925 50  0001 C CNN
+F 4 "PDI PROGRAMMING JACK" V 3290 2465 50  0000 L CNN "Function"
+	1    3725 2925
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP1_Small C2
+U 1 1 5DD8B43A
+P 5900 2150
+F 0 "C2" H 5991 2196 50  0000 L CNN
+F 1 "1uF" H 5991 2105 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_4x5.8" H 5900 2150 50  0001 C CNN
+F 3 "~" H 5900 2150 50  0001 C CNN
+	1    5900 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DFAA81B
+P 10750 1675
+AR Path="/5E4C5D6E/5DFAA81B" Ref="#PWR?"  Part="1" 
+AR Path="/5E4C5EF7/5DFAA81B" Ref="#PWR05"  Part="1" 
+F 0 "#PWR05" H 10750 1425 50  0001 C CNN
+F 1 "GND" H 10755 1502 50  0000 C CNN
+F 2 "" H 10750 1675 50  0001 C CNN
+F 3 "" H 10750 1675 50  0001 C CNN
+	1    10750 1675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10750 1675 10500 1675
+$Comp
+L power:+5V #PWR?
+U 1 1 5DFAA824
+P 8750 2075
+AR Path="/5E4C5D6E/5DFAA824" Ref="#PWR?"  Part="1" 
+AR Path="/5E4C5EF7/5DFAA824" Ref="#PWR07"  Part="1" 
+F 0 "#PWR07" H 8750 1925 50  0001 C CNN
+F 1 "+5V" V 8765 2203 50  0000 L CNN
+F 2 "" H 8750 2075 50  0001 C CNN
+F 3 "" H 8750 2075 50  0001 C CNN
+	1    8750 2075
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8750 2075 8825 2075
+$Comp
+L Device:CP1_Small C?
+U 1 1 5DFAA82B
+P 8825 2175
+AR Path="/5E4C5D6E/5DFAA82B" Ref="C?"  Part="1" 
+AR Path="/5E4C5EF7/5DFAA82B" Ref="C3"  Part="1" 
+F 0 "C3" H 8916 2221 50  0000 L CNN
+F 1 "1uF" H 8916 2130 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_4x5.8" H 8825 2175 50  0001 C CNN
+F 3 "~" H 8825 2175 50  0001 C CNN
+	1    8825 2175
+	1    0    0    -1  
+$EndComp
+Connection ~ 8825 2075
+Wire Wire Line
+	8825 2075 8900 2075
+$Comp
+L power:GND #PWR?
+U 1 1 5DFAA833
+P 8825 2325
+AR Path="/5E4C5D6E/5DFAA833" Ref="#PWR?"  Part="1" 
+AR Path="/5E4C5EF7/5DFAA833" Ref="#PWR09"  Part="1" 
+F 0 "#PWR09" H 8825 2075 50  0001 C CNN
+F 1 "GND" H 8830 2152 50  0000 C CNN
+F 2 "" H 8825 2325 50  0001 C CNN
+F 3 "" H 8825 2325 50  0001 C CNN
+	1    8825 2325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8825 2275 8825 2325
+Wire Wire Line
+	10500 1175 10625 1175
+Wire Wire Line
+	10500 1275 10625 1275
+Wire Notes Line
+	11025 2575 8350 2575
+Wire Notes Line
+	8350 2575 8350 600 
+Wire Notes Line
+	8350 600  11025 600 
+Wire Notes Line
+	11025 600  11025 2575
+Text Notes 10025 750  0    79   ~ 0
+Opamp Follower
+Wire Wire Line
+	10500 1175 10500 1075
+Wire Wire Line
+	10500 1275 10500 1450
+Wire Wire Line
+	10500 1450 8900 1450
+Wire Wire Line
+	8900 1450 8900 1575
+Wire Wire Line
+	8900 1075 10500 1075
+Wire Wire Line
+	8900 1075 8900 1275
+Connection ~ 10500 1275
+Connection ~ 10500 1175
+$Comp
+L LM2904DR:LM2904DR U?
+U 1 1 5DFAA849
+P 8900 1275
+AR Path="/5E4C5D6E/5DFAA849" Ref="U?"  Part="1" 
+AR Path="/5E4C5EF7/5DFAA849" Ref="U1"  Part="1" 
+F 0 "U1" H 9700 1762 60  0000 C CNN
+F 1 "LM2904DR" H 9700 1656 60  0000 C CNN
+F 2 "footprints:LM2904DR" H 9700 1615 60  0001 C CNN
+F 3 "" H 8900 1275 60  0000 C CNN
+	1    8900 1275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 1375 8900 1375
+Wire Wire Line
+	8750 1675 8900 1675
+Text HLabel 10625 1175 2    50   Output ~ 0
+Vo1_POP
+Text HLabel 10625 1275 2    50   Output ~ 0
+Vo2_POP
+$Comp
+L Device:CP1_Small C1
+U 1 1 5E0F35F7
+P 5750 2150
+F 0 "C1" H 5575 2200 50  0000 L CNN
+F 1 "10uF" H 5500 2100 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_4x5.8" H 5750 2150 50  0001 C CNN
+F 3 "~" H 5750 2150 50  0001 C CNN
+	1    5750 2150
+	1    0    0    -1  
+$EndComp
+Text HLabel 5350 1800 2    50   Input ~ 0
+3.3v_D
+Wire Wire Line
+	5350 1800 5350 1875
+Wire Wire Line
+	5250 1750 5250 2520
+Connection ~ 5350 1875
+Wire Wire Line
+	5350 1875 5350 2520
+Wire Wire Line
+	5750 2050 5750 1975
+Wire Wire Line
+	5750 1975 5825 1975
+Wire Wire Line
+	5825 1975 5825 1875
+Wire Wire Line
+	5350 1875 5825 1875
+Wire Wire Line
+	5900 2050 5900 1975
+Wire Wire Line
+	5900 1975 5825 1975
+Connection ~ 5825 1975
+Wire Wire Line
+	5750 2250 5750 2275
+Wire Wire Line
+	5900 2250 5900 2275
+Wire Wire Line
+	5750 2275 5825 2275
+$Comp
+L power:GND #PWR08
+U 1 1 5E1036F4
+P 5825 2275
+F 0 "#PWR08" H 5825 2025 50  0001 C CNN
+F 1 "GND" H 5830 2102 50  0000 C CNN
+F 2 "" H 5825 2275 50  0001 C CNN
+F 3 "" H 5825 2275 50  0001 C CNN
+	1    5825 2275
+	1    0    0    -1  
+$EndComp
+Connection ~ 5825 2275
+Wire Wire Line
+	5825 2275 5900 2275
+$Comp
+L dk_Pushbutton-Switches:GPTS203211B S1
+U 1 1 5E10CDF1
+P 2900 2625
+F 0 "S1" H 2900 2930 50  0000 C CNN
+F 1 "GPTS203211B" H 2900 2809 50  0001 C CNN
+F 2 "digikey-footprints:PushButton_12x12mm_THT_GPTS203211B" H 3100 2825 50  0001 L CNN
+F 3 "http://switches-connectors-custom.cwind.com/Asset/GPTS203211BR2.pdf" H 3100 2925 60  0001 L CNN
+F 4 "CW181-ND" H 3100 3025 60  0001 L CNN "Digi-Key_PN"
+F 5 "GPTS203211B" H 3100 3125 60  0001 L CNN "MPN"
+F 6 "Switches" H 3100 3225 60  0001 L CNN "Category"
+F 7 "Pushbutton Switches" H 3100 3325 60  0001 L CNN "Family"
+F 8 "http://switches-connectors-custom.cwind.com/Asset/GPTS203211BR2.pdf" H 3100 3425 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/cw-industries/GPTS203211B/CW181-ND/3190590" H 3100 3525 60  0001 L CNN "DK_Detail_Page"
+F 10 "SWITCH PUSHBUTTON SPST 1A 30V" H 3100 3625 60  0001 L CNN "Description"
+F 11 "CW Industries" H 3100 3725 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 3100 3825 60  0001 L CNN "Status"
+F 13 "RESET_SWITCH" H 2900 2845 50  0000 C CNN "Purpose"
+	1    2900 2625
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R1
+U 1 1 5E10FE3A
+P 4425 2600
+F 0 "R1" H 4484 2646 50  0000 L CNN
+F 1 "2k" V 4425 2550 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4425 2600 50  0001 C CNN
+F 3 "~" H 4425 2600 50  0001 C CNN
+	1    4425 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4425 2700 4425 2820
+Wire Wire Line
+	4425 2820 4550 2820
+Wire Wire Line
+	4425 2400 4425 2500
+Wire Wire Line
+	3725 2725 3725 2625
+Wire Wire Line
+	3725 2625 4250 2625
+Wire Wire Line
+	4250 2625 4250 2820
+Wire Wire Line
+	4250 2820 4425 2820
+Connection ~ 4425 2820
+Wire Wire Line
+	3825 2725 3825 2675
+Wire Wire Line
+	3825 2675 4175 2675
+Wire Wire Line
+	4175 2675 4175 2920
+Wire Wire Line
+	4175 2920 4550 2920
+Wire Wire Line
+	3825 3225 3825 3250
+Wire Wire Line
+	3825 3250 4250 3250
+Wire Wire Line
+	4250 3250 4250 3120
+Wire Wire Line
+	4250 3120 4550 3120
+Wire Wire Line
+	3725 3225 3725 3300
+Wire Wire Line
+	3725 3300 4300 3300
+Wire Wire Line
+	4300 3300 4300 3220
+Wire Wire Line
+	4300 3220 4550 3220
+Text HLabel 8750 1375 0    50   Input ~ 0
+Vo1_MES
+Text HLabel 8750 1675 0    50   Input ~ 0
+Vo2_MES
+$Comp
+L power:GND #PWR013
+U 1 1 5E12AD62
+P 5250 4850
+F 0 "#PWR013" H 5250 4600 50  0001 C CNN
+F 1 "GND" H 5255 4677 50  0000 C CNN
+F 2 "" H 5250 4850 50  0001 C CNN
+F 3 "" H 5250 4850 50  0001 C CNN
+	1    5250 4850
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3625 2725
+NoConn ~ 3625 3225
+Wire Wire Line
+	3725 2625 3100 2625
+Connection ~ 3725 2625
+Text HLabel 4425 2400 2    50   Input ~ 0
+3.3v_D
+$Comp
+L power:GNDD #PWR010
+U 1 1 5DE077A5
+P 2550 2650
+F 0 "#PWR010" H 2550 2400 50  0001 C CNN
+F 1 "GNDD" H 2554 2495 50  0000 C CNN
+F 2 "" H 2550 2650 50  0001 C CNN
+F 3 "" H 2550 2650 50  0001 C CNN
+	1    2550 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 2625 2550 2625
+Wire Wire Line
+	2550 2625 2550 2650
+Wire Wire Line
+	7900 3120 8030 3120
+Wire Wire Line
+	4350 5250 4350 4420
+Wire Wire Line
+	4350 4420 4550 4420
+Wire Wire Line
+	7900 2920 8060 2920
+Wire Wire Line
+	4320 5280 4320 4320
+Wire Wire Line
+	4320 4320 4550 4320
+Text HLabel 10700 2800 2    50   Output ~ 0
+PWM_0_OUT
+Text HLabel 10700 3000 2    50   Output ~ 0
+PWM_1_OUT
+Text Label 10500 2800 2    50   ~ 0
+DAC0_OUT
+Text Label 10500 3000 2    50   ~ 0
+DAC1_OUT
+Wire Wire Line
+	10500 2800 10700 2800
+Wire Wire Line
+	10500 3000 10700 3000
+Wire Wire Line
+	6090 4420 6300 4420
+Connection ~ 6090 4420
+Wire Wire Line
+	6090 4800 6090 4420
+$Comp
+L power:GND #PWR012
+U 1 1 5E02ADFA
+P 6300 4020
+F 0 "#PWR012" H 6300 3770 50  0001 C CNN
+F 1 "GND" V 6305 3892 50  0000 R CNN
+F 2 "" H 6300 4020 50  0001 C CNN
+F 3 "" H 6300 4020 50  0001 C CNN
+	1    6300 4020
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6300 3820 6300 3920
+Connection ~ 6300 3820
+Wire Wire Line
+	5950 3820 6300 3820
+Wire Wire Line
+	6300 3920 6300 4020
+Connection ~ 6300 3920
+Wire Wire Line
+	6300 3720 6300 3820
+Wire Wire Line
+	5950 3920 6300 3920
+Connection ~ 6300 4020
+Wire Wire Line
+	5950 3720 6300 3720
+Wire Wire Line
+	5950 4020 6300 4020
+Wire Wire Line
+	6300 4120 6300 4220
+Connection ~ 6300 4120
+Wire Wire Line
+	5950 4120 6300 4120
+Wire Wire Line
+	6300 4220 6300 4320
+Connection ~ 6300 4220
+Wire Wire Line
+	6300 4020 6300 4120
+Wire Wire Line
+	5950 4220 6300 4220
+Connection ~ 6300 4320
+Wire Wire Line
+	5950 4320 6300 4320
+Wire Wire Line
+	6300 4420 6300 4320
+Wire Wire Line
+	5950 4420 6090 4420
+Wire Wire Line
+	8060 2920 8060 5280
+Wire Wire Line
+	4350 5250 8030 5250
+Wire Wire Line
+	8030 3120 8030 5250
+Wire Wire Line
+	4320 5280 8060 5280
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5E05D4F3
+P 8530 3320
+F 0 "SW?" H 8530 3605 50  0000 C CNN
+F 1 "Rail Edit Select Switch" H 8530 3514 50  0000 C CNN
+F 2 "" H 8530 3520 50  0001 C CNN
+F 3 "~" H 8530 3520 50  0001 C CNN
+	1    8530 3320
+	1    0    0    -1  
+$EndComp
+Text HLabel 8730 3320 2    50   Input ~ 0
+3.3v_D
+Wire Wire Line
+	6090 4800 5250 4800
+Wire Wire Line
+	5250 4720 5250 4800
+Connection ~ 5250 4800
+Wire Wire Line
+	5250 4800 5250 4850
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5E06A135
+P 7200 2800
+F 0 "#PWR?" H 7200 2650 50  0001 C CNN
+F 1 "+3.3V" H 7215 2973 50  0000 C CNN
+F 2 "" H 7200 2800 50  0001 C CNN
+F 3 "" H 7200 2800 50  0001 C CNN
+	1    7200 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 2800 7200 3020
+Wire Wire Line
+	7200 3020 7300 3020
+Wire Wire Line
+	5950 3220 7300 3220
+Wire Wire Line
+	7300 3220 7300 3120
+Wire Wire Line
+	5950 3320 8330 3320
+$EndSCHEMATC

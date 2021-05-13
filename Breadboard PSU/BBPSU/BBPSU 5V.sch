@@ -1,0 +1,399 @@
+EESchema Schematic File Version 4
+LIBS:BBPSU 5V-cache
+EELAYER 30 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "Breadboard PSU 5v"
+Date "2019-10-15"
+Rev "A"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L L78S05CV:L78S05CV VR102
+U 1 1 5DA6C834
+P 4000 3000
+F 0 "VR102" H 4800 3477 60  0000 C CNN
+F 1 "L78S05CV" H 4800 3371 60  0000 C CNN
+F 2 "footprints:L78S05CV" H 4800 3240 60  0001 C CNN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/e9/be/53/a3/1f/6f/4f/75/CD00000449.pdf/files/CD00000449.pdf/jcr:content/translations/en.CD00000449.pdf" H 4000 3000 60  0001 C CNN
+F 4 "497-1468-5-ND" H 4000 3000 50  0001 C CNN "digikey"
+F 5 "5V @ 2A" H 4800 3273 50  0000 C CNN "Output"
+	1    4000 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5DA722A2
+P 3175 3550
+F 0 "#PWR0102" H 3175 3300 50  0001 C CNN
+F 1 "GND" H 3180 3377 50  0000 C CNN
+F 2 "" H 3175 3550 50  0001 C CNN
+F 3 "" H 3175 3550 50  0001 C CNN
+	1    3175 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C101
+U 1 1 5DA7662D
+P 3175 3150
+F 0 "C101" H 3290 3196 50  0000 L CNN
+F 1 "0.33uF" H 3290 3105 50  0000 L CNN
+F 2 "Capacitor_THT:C_Radial_D6.3mm_H11.0mm_P2.50mm" H 3213 3000 50  0001 C CNN
+F 3 "~" H 3175 3150 50  0001 C CNN
+	1    3175 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C103
+U 1 1 5DA76DAA
+P 3550 3400
+F 0 "C103" V 3675 3425 50  0000 C CNN
+F 1 "0.1uF" V 3750 3425 50  0000 C CNN
+F 2 "Capacitor_THT:C_Radial_D6.3mm_H11.0mm_P2.50mm" H 3588 3250 50  0001 C CNN
+F 3 "~" H 3550 3400 50  0001 C CNN
+	1    3550 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5DA7E2FB
+P 1275 3500
+F 0 "#PWR0101" H 1275 3250 50  0001 C CNN
+F 1 "GND" H 1280 3327 50  0000 C CNN
+F 2 "" H 1275 3500 50  0001 C CNN
+F 3 "" H 1275 3500 50  0001 C CNN
+	1    1275 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 2700 1275 2700
+Wire Wire Line
+	2750 3000 3175 3000
+Wire Wire Line
+	3175 3300 3175 3550
+Connection ~ 3175 3000
+Wire Wire Line
+	3175 3000 4000 3000
+Wire Wire Line
+	3400 3400 3400 3550
+Wire Wire Line
+	4000 3100 3975 3100
+Wire Wire Line
+	3700 3100 3700 3400
+Wire Wire Line
+	3700 3400 3700 3750
+Connection ~ 3700 3400
+Wire Wire Line
+	5600 3100 5600 3325
+Wire Wire Line
+	5600 3325 4250 3325
+Wire Wire Line
+	4250 3325 4250 3275
+Wire Wire Line
+	4250 3275 3725 3275
+Wire Wire Line
+	3725 3275 3725 3250
+Wire Wire Line
+	3725 3250 3675 3250
+Wire Wire Line
+	3675 3250 3675 3275
+Wire Wire Line
+	3675 3275 3400 3275
+Wire Wire Line
+	3400 3275 3400 3400
+Connection ~ 3400 3400
+$Comp
+L Connector:Barrel_Jack J101
+U 1 1 5DA65D7D
+P 950 2600
+F 0 "J101" H 1007 2925 50  0000 C CNN
+F 1 "PJ-063AH" H 1007 2834 50  0000 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-063AH_Horizontal" H 1000 2560 50  0001 C CNN
+F 3 "~" H 1000 2560 50  0001 C CNN
+F 4 "CP-063AH-ND" H 950 2600 50  0001 C CNN "digikey"
+	1    950  2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 2500 2750 3000
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5DABF60B
+P 1575 2500
+F 0 "#FLG0101" H 1575 2575 50  0001 C CNN
+F 1 "PWR_FLAG" H 1550 2625 39  0000 C CNN
+F 2 "" H 1575 2500 50  0001 C CNN
+F 3 "~" H 1575 2500 50  0001 C CNN
+	1    1575 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 2500 2750 2500
+$Comp
+L Connector_Generic:Conn_02x02_Top_Bottom J102
+U 1 1 5DACF689
+P 8175 4000
+F 0 "J102" H 8225 4100 50  0000 C CNN
+F 1 "2.54mm pitch" H 8225 4126 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" H 8175 4000 50  0001 C CNN
+F 3 "~" H 8175 4000 50  0001 C CNN
+	1    8175 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8725 3750 8725 4000
+Wire Wire Line
+	8725 4000 8475 4000
+Wire Wire Line
+	7725 4100 7975 4100
+Wire Wire Line
+	8475 4100 8725 4100
+Wire Wire Line
+	8725 4100 8725 4500
+Wire Wire Line
+	8725 4500 7725 4500
+Wire Wire Line
+	7750 3750 7750 4000
+Wire Wire Line
+	7750 4000 7975 4000
+Connection ~ 7750 3750
+Wire Wire Line
+	7750 3750 8725 3750
+Wire Wire Line
+	7725 4100 7725 4500
+Wire Wire Line
+	7725 4100 5525 4100
+Wire Wire Line
+	5525 4100 5525 3900
+Wire Wire Line
+	5525 3900 3400 3900
+Wire Wire Line
+	3400 3900 3400 3550
+Connection ~ 7725 4100
+Connection ~ 3400 3550
+Wire Wire Line
+	1850 2600 1850 2875
+Connection ~ 3175 3550
+Wire Wire Line
+	3175 3550 3400 3550
+Wire Wire Line
+	1750 2500 1750 2400
+Wire Wire Line
+	1750 2400 1850 2400
+$Comp
+L Device:R R105
+U 1 1 5DB3159B
+P 1700 2875
+F 0 "R105" V 1775 2875 50  0000 C CNN
+F 1 "100K" V 1700 2875 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1630 2875 50  0001 C CNN
+F 3 "~" H 1700 2875 50  0001 C CNN
+	1    1700 2875
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1275 2700 1275 2875
+Wire Wire Line
+	1550 2875 1275 2875
+Connection ~ 1275 2875
+Wire Wire Line
+	1275 2875 1275 3500
+Text GLabel 1300 2500 1    50   Input ~ 0
+PWR_IN
+Connection ~ 1575 2500
+Wire Wire Line
+	1575 2500 1750 2500
+Wire Wire Line
+	1250 2500 1575 2500
+$Comp
+L power:+5V #PWR0109
+U 1 1 5DA7E170
+P 3975 3100
+F 0 "#PWR0109" H 3975 2950 50  0001 C CNN
+F 1 "+5V" H 3900 3200 50  0000 C CNN
+F 2 "" H 3975 3100 50  0001 C CNN
+F 3 "" H 3975 3100 50  0001 C CNN
+	1    3975 3100
+	-1   0    0    1   
+$EndComp
+Connection ~ 3975 3100
+Wire Wire Line
+	3975 3100 3700 3100
+$Comp
+L dk_Toggle-Switches:100SP1T1B4M2QE S101
+U 1 1 5DAF4EF7
+P 2050 2500
+F 0 "S101" H 2050 2153 60  0000 C CNN
+F 1 "100SP1T1B4M2QE" H 2050 2259 60  0000 C CNN
+F 2 "digikey-footprints:Toggle_Switch_100SP1T1B4M2QE" H 2250 2700 60  0001 L CNN
+F 3 "http://spec_sheets.e-switch.com/specs/T111597.pdf" H 2250 2800 60  0001 L CNN
+F 4 "EG2355-ND" H 2250 2900 60  0001 L CNN "Digi-Key_PN"
+F 5 "100SP1T1B4M2QE" H 2250 3000 60  0001 L CNN "MPN"
+F 6 "Switches" H 2250 3100 60  0001 L CNN "Category"
+F 7 "Toggle Switches" H 2250 3200 60  0001 L CNN "Family"
+F 8 "http://spec_sheets.e-switch.com/specs/T111597.pdf" H 2250 3300 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/e-switch/100SP1T1B4M2QE/EG2355-ND/378824" H 2250 3400 60  0001 L CNN "DK_Detail_Page"
+F 10 "SWITCH TOGGLE SPDT 5A 120V" H 2250 3500 60  0001 L CNN "Description"
+F 11 "E-Switch" H 2250 3600 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 2250 3700 60  0001 L CNN "Status"
+	1    2050 2500
+	-1   0    0    1   
+$EndComp
+Text Label 2750 2500 0    50   ~ 0
+PWR_AFT_SW
+Wire Wire Line
+	3700 3750 7750 3750
+$Comp
+L L78S05CV:L78S05CV VR101
+U 1 1 5DA95760
+P 3900 4525
+F 0 "VR101" H 4700 5002 60  0000 C CNN
+F 1 "L78S05CV" H 4700 4896 60  0000 C CNN
+F 2 "footprints:L78S05CV" H 4700 4765 60  0001 C CNN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/e9/be/53/a3/1f/6f/4f/75/CD00000449.pdf/files/CD00000449.pdf/jcr:content/translations/en.CD00000449.pdf" H 3900 4525 60  0001 C CNN
+F 4 "497-1468-5-ND" H 3900 4525 50  0001 C CNN "digikey"
+F 5 "5V @ 2A" H 4700 4798 50  0000 C CNN "Output"
+	1    3900 4525
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5DA95766
+P 3075 5075
+F 0 "#PWR0103" H 3075 4825 50  0001 C CNN
+F 1 "GND" H 3080 4902 50  0000 C CNN
+F 2 "" H 3075 5075 50  0001 C CNN
+F 3 "" H 3075 5075 50  0001 C CNN
+	1    3075 5075
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C102
+U 1 1 5DA9576C
+P 3075 4675
+F 0 "C102" H 3190 4721 50  0000 L CNN
+F 1 "0.33uF" H 3190 4630 50  0000 L CNN
+F 2 "Capacitor_THT:C_Radial_D6.3mm_H11.0mm_P2.50mm" H 3113 4525 50  0001 C CNN
+F 3 "~" H 3075 4675 50  0001 C CNN
+	1    3075 4675
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C104
+U 1 1 5DA95772
+P 3450 4925
+F 0 "C104" V 3575 4950 50  0000 C CNN
+F 1 "0.1uF" V 3650 4950 50  0000 C CNN
+F 2 "Capacitor_THT:C_Radial_D6.3mm_H11.0mm_P2.50mm" H 3488 4775 50  0001 C CNN
+F 3 "~" H 3450 4925 50  0001 C CNN
+	1    3450 4925
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2650 4525 3075 4525
+Wire Wire Line
+	3075 4825 3075 5075
+Connection ~ 3075 4525
+Wire Wire Line
+	3075 4525 3900 4525
+Wire Wire Line
+	3300 4925 3300 5075
+Wire Wire Line
+	3900 4625 3875 4625
+Wire Wire Line
+	3600 4625 3600 4925
+Wire Wire Line
+	3600 4925 3600 5275
+Connection ~ 3600 4925
+Wire Wire Line
+	5500 4625 5500 4850
+Wire Wire Line
+	5500 4850 4150 4850
+Wire Wire Line
+	4150 4850 4150 4800
+Wire Wire Line
+	4150 4800 3625 4800
+Wire Wire Line
+	3625 4800 3625 4775
+Wire Wire Line
+	3625 4775 3575 4775
+Wire Wire Line
+	3575 4775 3575 4800
+Wire Wire Line
+	3575 4800 3300 4800
+Wire Wire Line
+	3300 4800 3300 4925
+Connection ~ 3300 4925
+$Comp
+L Connector_Generic:Conn_02x02_Top_Bottom J103
+U 1 1 5DA9578B
+P 8075 5525
+F 0 "J103" H 8125 5625 50  0000 C CNN
+F 1 "2.54mm pitch" H 8125 5651 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" H 8075 5525 50  0001 C CNN
+F 3 "~" H 8075 5525 50  0001 C CNN
+	1    8075 5525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8625 5275 8625 5525
+Wire Wire Line
+	8625 5525 8375 5525
+Wire Wire Line
+	7625 5625 7875 5625
+Wire Wire Line
+	8375 5625 8625 5625
+Wire Wire Line
+	8625 5625 8625 6025
+Wire Wire Line
+	8625 6025 7625 6025
+Wire Wire Line
+	7650 5275 7650 5525
+Wire Wire Line
+	7650 5525 7875 5525
+Connection ~ 7650 5275
+Wire Wire Line
+	7650 5275 8625 5275
+Wire Wire Line
+	7625 5625 7625 6025
+Wire Wire Line
+	7625 5625 5425 5625
+Wire Wire Line
+	5425 5625 5425 5425
+Wire Wire Line
+	5425 5425 3300 5425
+Wire Wire Line
+	3300 5425 3300 5075
+Connection ~ 7625 5625
+Connection ~ 3300 5075
+Connection ~ 3075 5075
+Wire Wire Line
+	3075 5075 3300 5075
+$Comp
+L power:+5V #PWR0104
+U 1 1 5DA957A4
+P 3875 4625
+F 0 "#PWR0104" H 3875 4475 50  0001 C CNN
+F 1 "+5V" H 3800 4725 50  0000 C CNN
+F 2 "" H 3875 4625 50  0001 C CNN
+F 3 "" H 3875 4625 50  0001 C CNN
+	1    3875 4625
+	-1   0    0    1   
+$EndComp
+Connection ~ 3875 4625
+Wire Wire Line
+	3875 4625 3600 4625
+Wire Wire Line
+	3600 5275 7650 5275
+Wire Wire Line
+	2650 4525 2650 3000
+Wire Wire Line
+	2650 3000 2750 3000
+Connection ~ 2750 3000
+$EndSCHEMATC

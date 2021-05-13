@@ -1,0 +1,710 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 9 9
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 74xx:74LS08 U?
+U 1 1 5EFAA8CF
+P 2800 3250
+AR Path="/5E69EF97/5E69F0FB/5EFAA8CF" Ref="U?"  Part="1" 
+AR Path="/5E69EF97/5EFAA8CF" Ref="U?"  Part="1" 
+AR Path="/5E5FA579/5EF8905F/5EFAA8CF" Ref="U?"  Part="1" 
+F 0 "U?" V 2900 2950 50  0000 C CNN
+F 1 "74AHC08" V 2800 2950 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_SMDSocket_SmallPads" H 2800 3250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 2800 3250 50  0001 C CNN
+	1    2800 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D?
+U 1 1 5EFAA8D5
+P 2700 1150
+AR Path="/5E69EF97/5E69F0FB/5EFAA8D5" Ref="D?"  Part="1" 
+AR Path="/5E69EF97/5EFAA8D5" Ref="D?"  Part="1" 
+AR Path="/5E5FA579/5EF8905F/5EFAA8D5" Ref="D?"  Part="1" 
+F 0 "D?" V 2550 1050 50  0000 L CNN
+F 1 "GREEN" V 2750 650 50  0001 L CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2700 1150 50  0001 C CNN
+F 3 "~" V 2700 1150 50  0001 C CNN
+	1    2700 1150
+	0    1    1    0   
+$EndComp
+Text HLabel 2700 3650 0    50   Input ~ 0
+CLK
+Wire Wire Line
+	2700 3650 2700 3550
+Text HLabel 1300 3050 0    50   Input ~ 0
+~RESET
+$Comp
+L Device:R_Small R?
+U 1 1 5EFAA8DE
+P 1450 3250
+AR Path="/5E69EF97/5E69F0FB/5EFAA8DE" Ref="R?"  Part="1" 
+AR Path="/5E69EF97/5EFAA8DE" Ref="R?"  Part="1" 
+AR Path="/5E5FA579/5EF8905F/5EFAA8DE" Ref="R?"  Part="1" 
+F 0 "R?" H 1509 3296 50  0000 L CNN
+F 1 "1k" V 1450 3200 34  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 1450 3250 50  0001 C CNN
+F 3 "~" H 1450 3250 50  0001 C CNN
+	1    1450 3250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5EFAA8E4
+P 1450 3350
+AR Path="/5E69EF97/5E69F0FB/5EFAA8E4" Ref="#PWR?"  Part="1" 
+AR Path="/5E69EF97/5EFAA8E4" Ref="#PWR?"  Part="1" 
+AR Path="/5E5FA579/5EF8905F/5EFAA8E4" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1450 3200 50  0001 C CNN
+F 1 "+5V" H 1465 3523 50  0000 C CNN
+F 2 "" H 1450 3350 50  0001 C CNN
+F 3 "" H 1450 3350 50  0001 C CNN
+	1    1450 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EFAA8EA
+P 2100 3500
+AR Path="/5E69EF97/5E69F0FB/5EFAA8EA" Ref="#PWR?"  Part="1" 
+AR Path="/5E69EF97/5EFAA8EA" Ref="#PWR?"  Part="1" 
+AR Path="/5E5FA579/5EF8905F/5EFAA8EA" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2100 3250 50  0001 C CNN
+F 1 "GND" H 2105 3327 50  0000 C CNN
+F 2 "" H 2100 3500 50  0001 C CNN
+F 3 "" H 2100 3500 50  0001 C CNN
+	1    2100 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 3500 2100 3350
+Text HLabel 2900 4250 0    50   Input ~ 0
+~WE_ALU_A
+$Comp
+L 74xx:74LS04 U?
+U 1 1 5EFAA902
+P 2900 3900
+AR Path="/5E69EF97/5E69F0FB/5EFAA902" Ref="U?"  Part="1" 
+AR Path="/5E69EF97/5EFAA902" Ref="U?"  Part="1" 
+AR Path="/5E5FA579/5EF8905F/5EFAA902" Ref="U?"  Part="1" 
+F 0 "U?" V 2946 3720 50  0000 R CNN
+F 1 "74AHC04" V 2855 3720 50  0000 R CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_SMDSocket_SmallPads" H 2900 3900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 2900 3900 50  0001 C CNN
+	1    2900 3900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2900 4250 2900 4200
+Wire Wire Line
+	2700 1400 2700 1250
+$Comp
+L power:GND #PWR?
+U 1 1 5EFAA90B
+P 2400 1050
+AR Path="/5E69EF97/5E69F0FB/5EFAA90B" Ref="#PWR?"  Part="1" 
+AR Path="/5E69EF97/5EFAA90B" Ref="#PWR?"  Part="1" 
+AR Path="/5E5FA579/5EF8905F/5EFAA90B" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2400 800 50  0001 C CNN
+F 1 "GND" H 2405 877 50  0000 C CNN
+F 2 "" H 2400 1050 50  0001 C CNN
+F 3 "" H 2400 1050 50  0001 C CNN
+	1    2400 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D?
+U 1 1 5EFAA911
+P 2850 1150
+AR Path="/5E69EF97/5E69F0FB/5EFAA911" Ref="D?"  Part="1" 
+AR Path="/5E69EF97/5EFAA911" Ref="D?"  Part="1" 
+AR Path="/5E5FA579/5EF8905F/5EFAA911" Ref="D?"  Part="1" 
+F 0 "D?" V 2700 1050 50  0000 L CNN
+F 1 "GREEN" V 2900 650 50  0001 L CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2850 1150 50  0001 C CNN
+F 3 "~" V 2850 1150 50  0001 C CNN
+	1    2850 1150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2850 1400 2850 1250
+$Comp
+L Device:LED_Small D?
+U 1 1 5EFAA918
+P 3000 1150
+AR Path="/5E69EF97/5E69F0FB/5EFAA918" Ref="D?"  Part="1" 
+AR Path="/5E69EF97/5EFAA918" Ref="D?"  Part="1" 
+AR Path="/5E5FA579/5EF8905F/5EFAA918" Ref="D?"  Part="1" 
+F 0 "D?" V 2850 1050 50  0000 L CNN
+F 1 "GREEN" V 3050 650 50  0001 L CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3000 1150 50  0001 C CNN
+F 3 "~" V 3000 1150 50  0001 C CNN
+	1    3000 1150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3000 1400 3000 1250
+$Comp
+L Device:LED_Small D?
+U 1 1 5EFAA91F
+P 3150 1150
+AR Path="/5E69EF97/5E69F0FB/5EFAA91F" Ref="D?"  Part="1" 
+AR Path="/5E69EF97/5EFAA91F" Ref="D?"  Part="1" 
+AR Path="/5E5FA579/5EF8905F/5EFAA91F" Ref="D?"  Part="1" 
+F 0 "D?" V 3000 1050 50  0000 L CNN
+F 1 "GREEN" V 3200 650 50  0001 L CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3150 1150 50  0001 C CNN
+F 3 "~" V 3150 1150 50  0001 C CNN
+	1    3150 1150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3150 1400 3150 1250
+$Comp
+L Device:LED_Small D?
+U 1 1 5EFAA926
+P 3300 1150
+AR Path="/5E69EF97/5E69F0FB/5EFAA926" Ref="D?"  Part="1" 
+AR Path="/5E69EF97/5EFAA926" Ref="D?"  Part="1" 
+AR Path="/5E5FA579/5EF8905F/5EFAA926" Ref="D?"  Part="1" 
+F 0 "D?" V 3150 1050 50  0000 L CNN
+F 1 "GREEN" V 3350 650 50  0001 L CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3300 1150 50  0001 C CNN
+F 3 "~" V 3300 1150 50  0001 C CNN
+	1    3300 1150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3300 1400 3300 1250
+$Comp
+L Device:LED_Small D?
+U 1 1 5EFAA92D
+P 3450 1150
+AR Path="/5E69EF97/5E69F0FB/5EFAA92D" Ref="D?"  Part="1" 
+AR Path="/5E69EF97/5EFAA92D" Ref="D?"  Part="1" 
+AR Path="/5E5FA579/5EF8905F/5EFAA92D" Ref="D?"  Part="1" 
+F 0 "D?" V 3300 1050 50  0000 L CNN
+F 1 "GREEN" V 3500 650 50  0001 L CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3450 1150 50  0001 C CNN
+F 3 "~" V 3450 1150 50  0001 C CNN
+	1    3450 1150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3450 1400 3450 1250
+$Comp
+L Device:LED_Small D?
+U 1 1 5EFAA934
+P 3600 1150
+AR Path="/5E69EF97/5E69F0FB/5EFAA934" Ref="D?"  Part="1" 
+AR Path="/5E69EF97/5EFAA934" Ref="D?"  Part="1" 
+AR Path="/5E5FA579/5EF8905F/5EFAA934" Ref="D?"  Part="1" 
+F 0 "D?" V 3450 1050 50  0000 L CNN
+F 1 "GREEN" V 3650 650 50  0001 L CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3600 1150 50  0001 C CNN
+F 3 "~" V 3600 1150 50  0001 C CNN
+	1    3600 1150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3600 1400 3600 1250
+$Comp
+L Device:LED_Small D?
+U 1 1 5EFAA93B
+P 3750 1150
+AR Path="/5E69EF97/5E69F0FB/5EFAA93B" Ref="D?"  Part="1" 
+AR Path="/5E69EF97/5EFAA93B" Ref="D?"  Part="1" 
+AR Path="/5E5FA579/5EF8905F/5EFAA93B" Ref="D?"  Part="1" 
+F 0 "D?" V 3600 1050 50  0000 L CNN
+F 1 "GREEN" V 3800 650 50  0001 L CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3750 1150 50  0001 C CNN
+F 3 "~" V 3750 1150 50  0001 C CNN
+	1    3750 1150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3750 1400 3750 1250
+Wire Wire Line
+	2400 1050 2400 650 
+Wire Wire Line
+	2400 650  3300 650 
+Wire Wire Line
+	3300 650  3300 1050
+Wire Wire Line
+	2700 1050 2850 1050
+Connection ~ 2850 1050
+Wire Wire Line
+	2850 1050 3000 1050
+Connection ~ 3000 1050
+Wire Wire Line
+	3000 1050 3150 1050
+Connection ~ 3150 1050
+Wire Wire Line
+	3150 1050 3300 1050
+Connection ~ 3300 1050
+Wire Wire Line
+	3300 1050 3450 1050
+Connection ~ 3450 1050
+Wire Wire Line
+	3450 1050 3600 1050
+Connection ~ 3600 1050
+Wire Wire Line
+	3600 1050 3750 1050
+Wire Wire Line
+	2900 3600 2900 3550
+$Comp
+L 74xx:74AHC273 U?
+U 1 1 5EFAA95F
+P 2100 2550
+AR Path="/5E69EF97/5EFAA95F" Ref="U?"  Part="1" 
+AR Path="/5E5FA579/5EF8905F/5EFAA95F" Ref="U?"  Part="1" 
+F 0 "U?" H 2300 3300 50  0000 C CNN
+F 1 "74AHC273" H 2300 3200 50  0000 C CNN
+F 2 "Package_DIP:DIP-20_W8.89mm_SMDSocket_LongPads" H 2100 2550 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74AHC_AHCT273.pdf" H 2100 2550 50  0001 C CNN
+	1    2100 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 3050 1450 3050
+Wire Wire Line
+	1450 3050 1450 3150
+Connection ~ 1450 3050
+Wire Wire Line
+	1450 3050 1600 3050
+Wire Wire Line
+	1600 2950 1550 2950
+Wire Wire Line
+	1550 2950 1550 3750
+Wire Wire Line
+	1550 3750 2450 3750
+Wire Wire Line
+	2450 3750 2450 2950
+Wire Wire Line
+	2450 2950 2800 2950
+Connection ~ 2800 2950
+Wire Wire Line
+	2600 2050 3750 2050
+Connection ~ 3750 2050
+Wire Wire Line
+	2600 2150 3600 2150
+Connection ~ 3600 2150
+Wire Wire Line
+	2600 2250 3450 2250
+Connection ~ 3450 2250
+Wire Wire Line
+	3450 2250 3450 1600
+Wire Wire Line
+	2600 2350 3300 2350
+Connection ~ 3300 2350
+Wire Wire Line
+	3300 2350 3300 1600
+Wire Wire Line
+	2600 2450 3150 2450
+Connection ~ 3150 2450
+Wire Wire Line
+	3150 2450 3150 1600
+Wire Wire Line
+	2600 2550 3000 2550
+Connection ~ 3000 2550
+Wire Wire Line
+	3000 2550 3000 1600
+Wire Wire Line
+	2600 2650 2850 2650
+Connection ~ 2850 2650
+Wire Wire Line
+	2850 2650 2850 1600
+Wire Wire Line
+	2600 2750 2700 2750
+Connection ~ 2700 2750
+Wire Wire Line
+	2700 2750 2700 1600
+$Comp
+L Device:R_Small R?
+U 1 1 5EFAA985
+P 3750 1500
+AR Path="/5E69EF97/5E69F0FB/5EFAA985" Ref="R?"  Part="1" 
+AR Path="/5E69EF97/5EFAA985" Ref="R?"  Part="1" 
+AR Path="/5E5FA579/5EF8905F/5EFAA985" Ref="R?"  Part="1" 
+F 0 "R?" H 3850 1400 50  0000 R CNN
+F 1 "220" V 3750 1550 33  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 3750 1500 50  0001 C CNN
+F 3 "~" H 3750 1500 50  0001 C CNN
+	1    3750 1500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5EFAA98B
+P 3600 1500
+AR Path="/5E69EF97/5E69F0FB/5EFAA98B" Ref="R?"  Part="1" 
+AR Path="/5E69EF97/5EFAA98B" Ref="R?"  Part="1" 
+AR Path="/5E5FA579/5EF8905F/5EFAA98B" Ref="R?"  Part="1" 
+F 0 "R?" H 3700 1400 50  0000 R CNN
+F 1 "220" V 3600 1550 33  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 3600 1500 50  0001 C CNN
+F 3 "~" H 3600 1500 50  0001 C CNN
+	1    3600 1500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5EFAA991
+P 3450 1500
+AR Path="/5E69EF97/5E69F0FB/5EFAA991" Ref="R?"  Part="1" 
+AR Path="/5E69EF97/5EFAA991" Ref="R?"  Part="1" 
+AR Path="/5E5FA579/5EF8905F/5EFAA991" Ref="R?"  Part="1" 
+F 0 "R?" H 3550 1400 50  0000 R CNN
+F 1 "220" V 3450 1550 33  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 3450 1500 50  0001 C CNN
+F 3 "~" H 3450 1500 50  0001 C CNN
+	1    3450 1500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5EFAA997
+P 3300 1500
+AR Path="/5E69EF97/5E69F0FB/5EFAA997" Ref="R?"  Part="1" 
+AR Path="/5E69EF97/5EFAA997" Ref="R?"  Part="1" 
+AR Path="/5E5FA579/5EF8905F/5EFAA997" Ref="R?"  Part="1" 
+F 0 "R?" H 3400 1400 50  0000 R CNN
+F 1 "220" V 3300 1550 33  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 3300 1500 50  0001 C CNN
+F 3 "~" H 3300 1500 50  0001 C CNN
+	1    3300 1500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5EFAA99D
+P 3150 1500
+AR Path="/5E69EF97/5E69F0FB/5EFAA99D" Ref="R?"  Part="1" 
+AR Path="/5E69EF97/5EFAA99D" Ref="R?"  Part="1" 
+AR Path="/5E5FA579/5EF8905F/5EFAA99D" Ref="R?"  Part="1" 
+F 0 "R?" H 3250 1400 50  0000 R CNN
+F 1 "220" V 3150 1550 33  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 3150 1500 50  0001 C CNN
+F 3 "~" H 3150 1500 50  0001 C CNN
+	1    3150 1500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5EFAA9A3
+P 3000 1500
+AR Path="/5E69EF97/5E69F0FB/5EFAA9A3" Ref="R?"  Part="1" 
+AR Path="/5E69EF97/5EFAA9A3" Ref="R?"  Part="1" 
+AR Path="/5E5FA579/5EF8905F/5EFAA9A3" Ref="R?"  Part="1" 
+F 0 "R?" H 3100 1400 50  0000 R CNN
+F 1 "220" V 3000 1550 33  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 3000 1500 50  0001 C CNN
+F 3 "~" H 3000 1500 50  0001 C CNN
+	1    3000 1500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5EFAA9A9
+P 2850 1500
+AR Path="/5E69EF97/5E69F0FB/5EFAA9A9" Ref="R?"  Part="1" 
+AR Path="/5E69EF97/5EFAA9A9" Ref="R?"  Part="1" 
+AR Path="/5E5FA579/5EF8905F/5EFAA9A9" Ref="R?"  Part="1" 
+F 0 "R?" H 2950 1400 50  0000 R CNN
+F 1 "220" V 2850 1550 33  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 2850 1500 50  0001 C CNN
+F 3 "~" H 2850 1500 50  0001 C CNN
+	1    2850 1500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5EFAA9AF
+P 2700 1500
+AR Path="/5E69EF97/5E69F0FB/5EFAA9AF" Ref="R?"  Part="1" 
+AR Path="/5E69EF97/5EFAA9AF" Ref="R?"  Part="1" 
+AR Path="/5E5FA579/5EF8905F/5EFAA9AF" Ref="R?"  Part="1" 
+F 0 "R?" H 2800 1400 50  0000 R CNN
+F 1 "220" V 2700 1550 33  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 2700 1500 50  0001 C CNN
+F 3 "~" H 2700 1500 50  0001 C CNN
+	1    2700 1500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5EFAA9B5
+P 2350 1450
+AR Path="/5EFAA9B5" Ref="C?"  Part="1" 
+AR Path="/5E69EF97/5EFAA9B5" Ref="C?"  Part="1" 
+AR Path="/5E5FA579/5EF8905F/5EFAA9B5" Ref="C?"  Part="1" 
+F 0 "C?" H 2400 1650 50  0000 L CNN
+F 1 "1nF" H 2400 1550 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2350 1450 50  0001 C CNN
+F 3 "~" H 2350 1450 50  0001 C CNN
+	1    2350 1450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5EFAA9BB
+P 2100 1450
+AR Path="/5EFAA9BB" Ref="C?"  Part="1" 
+AR Path="/5E69EF97/5EFAA9BB" Ref="C?"  Part="1" 
+AR Path="/5E5FA579/5EF8905F/5EFAA9BB" Ref="C?"  Part="1" 
+F 0 "C?" H 2150 1650 50  0000 L CNN
+F 1 "10nF" H 2150 1550 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2100 1450 50  0001 C CNN
+F 3 "~" H 2100 1450 50  0001 C CNN
+	1    2100 1450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5EFAA9C1
+P 1850 1450
+AR Path="/5EFAA9C1" Ref="C?"  Part="1" 
+AR Path="/5E69EF97/5EFAA9C1" Ref="C?"  Part="1" 
+AR Path="/5E5FA579/5EF8905F/5EFAA9C1" Ref="C?"  Part="1" 
+F 0 "C?" H 1900 1650 50  0000 L CNN
+F 1 "100nF" H 1900 1550 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1850 1450 50  0001 C CNN
+F 3 "~" H 1850 1450 50  0001 C CNN
+	1    1850 1450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2350 1350 2350 1300
+Wire Wire Line
+	2350 1300 2100 1300
+Wire Wire Line
+	1850 1300 1850 1350
+Wire Wire Line
+	2100 1300 2100 1350
+Connection ~ 2100 1300
+Wire Wire Line
+	2100 1300 1850 1300
+$Comp
+L power:GND #PWR?
+U 1 1 5EFAA9CD
+P 2000 1200
+AR Path="/5EFAA9CD" Ref="#PWR?"  Part="1" 
+AR Path="/5E69EF97/5EFAA9CD" Ref="#PWR?"  Part="1" 
+AR Path="/5E5FA579/5EF8905F/5EFAA9CD" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2000 950 50  0001 C CNN
+F 1 "GND" H 2005 1027 50  0000 C CNN
+F 2 "" H 2000 1200 50  0001 C CNN
+F 3 "" H 2000 1200 50  0001 C CNN
+	1    2000 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 1550 2350 1700
+Wire Wire Line
+	2350 1700 2100 1700
+Wire Wire Line
+	2100 1700 2100 1550
+Wire Wire Line
+	1850 1550 1850 1700
+Wire Wire Line
+	1850 1700 2100 1700
+Connection ~ 2100 1700
+Wire Wire Line
+	2100 1750 2100 1700
+Wire Wire Line
+	2100 1300 2100 1150
+Wire Wire Line
+	2100 1150 2000 1150
+Wire Wire Line
+	2000 1150 2000 1200
+Wire Wire Line
+	2800 2950 3350 2950
+Wire Wire Line
+	2700 2750 4600 2750
+Wire Wire Line
+	2850 2650 4500 2650
+Wire Wire Line
+	3000 2550 4400 2550
+Wire Wire Line
+	3150 2450 4300 2450
+Wire Wire Line
+	3300 2350 4200 2350
+Wire Wire Line
+	3450 2250 4100 2250
+Wire Wire Line
+	3600 2150 4000 2150
+Wire Wire Line
+	3750 2050 3900 2050
+Wire Wire Line
+	3350 2950 3350 3600
+Wire Wire Line
+	3750 1600 3750 2050
+Wire Wire Line
+	3600 1600 3600 2150
+Wire Wire Line
+	3900 2050 3900 1250
+Wire Wire Line
+	4000 2150 4000 1250
+Wire Wire Line
+	4100 1250 4100 2250
+Wire Wire Line
+	4200 1250 4200 2350
+Wire Wire Line
+	4300 1250 4300 2450
+Wire Wire Line
+	4400 1250 4400 2550
+Wire Wire Line
+	4500 1250 4500 2650
+Wire Wire Line
+	4600 1250 4600 2750
+Wire Wire Line
+	3650 3250 3750 3250
+Wire Wire Line
+	3650 3550 3650 3250
+Wire Wire Line
+	4400 3250 4300 3250
+Wire Wire Line
+	4400 3600 4400 3250
+Wire Wire Line
+	4400 3600 4300 3600
+Connection ~ 4400 3600
+Wire Wire Line
+	4600 3600 4400 3600
+$Comp
+L power:GND #PWR?
+U 1 1 5EFAAA38
+P 4600 3600
+AR Path="/5E69EF97/5EFAAA38" Ref="#PWR?"  Part="1" 
+AR Path="/5E5FA579/5EF8905F/5EFAAA38" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4600 3350 50  0001 C CNN
+F 1 "GND" H 4605 3427 50  0000 C CNN
+F 2 "" H 4600 3600 50  0001 C CNN
+F 3 "" H 4600 3600 50  0001 C CNN
+	1    4600 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 3600 4100 3600
+Wire Wire Line
+	3950 3250 4100 3250
+$Comp
+L Device:R_Small R?
+U 1 1 5EFAAA22
+P 3850 3250
+AR Path="/5E69EF97/5E69F0FB/5EFAAA22" Ref="R?"  Part="1" 
+AR Path="/5E69EF97/5EFAAA22" Ref="R?"  Part="1" 
+AR Path="/5E5FA579/5EF8905F/5EFAAA22" Ref="R?"  Part="1" 
+F 0 "R?" V 3750 3300 50  0000 R CNN
+F 1 "220" V 3850 3300 33  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 3850 3250 50  0001 C CNN
+F 3 "~" H 3850 3250 50  0001 C CNN
+	1    3850 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5EFAAA1C
+P 3850 3600
+AR Path="/5E69EF97/5E69F0FB/5EFAAA1C" Ref="R?"  Part="1" 
+AR Path="/5E69EF97/5EFAAA1C" Ref="R?"  Part="1" 
+AR Path="/5E5FA579/5EF8905F/5EFAAA1C" Ref="R?"  Part="1" 
+F 0 "R?" V 3750 3650 50  0000 R CNN
+F 1 "220" V 3850 3650 33  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 3850 3600 50  0001 C CNN
+F 3 "~" H 3850 3600 50  0001 C CNN
+	1    3850 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D?
+U 1 1 5EFAAA10
+P 4200 3600
+AR Path="/5E69EF97/5EFAAA10" Ref="D?"  Part="1" 
+AR Path="/5E5FA579/5EF8905F/5EFAAA10" Ref="D?"  Part="1" 
+F 0 "D?" H 4200 3500 50  0000 C CNN
+F 1 "GREEN" H 4200 3486 50  0001 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4200 3600 50  0001 C CNN
+F 3 "~" V 4200 3600 50  0001 C CNN
+	1    4200 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED_Small D?
+U 1 1 5EFAAA0A
+P 4200 3250
+AR Path="/5E69EF97/5EFAAA0A" Ref="D?"  Part="1" 
+AR Path="/5E5FA579/5EF8905F/5EFAAA0A" Ref="D?"  Part="1" 
+F 0 "D?" H 4200 3150 50  0000 C CNN
+F 1 "GREEN" H 4200 3136 50  0001 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4200 3250 50  0001 C CNN
+F 3 "~" V 4200 3250 50  0001 C CNN
+	1    4200 3250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3750 3600 3350 3600
+Wire Wire Line
+	3650 3550 2900 3550
+Connection ~ 2900 3550
+Text HLabel 1150 2050 0    50   Input ~ 0
+ALU_RA_IN_0
+Text HLabel 1150 2150 0    50   Input ~ 0
+ALU_RA_IN_1
+Text HLabel 1150 2250 0    50   Input ~ 0
+ALU_RA_IN_2
+Text HLabel 1150 2350 0    50   Input ~ 0
+ALU_RA_IN_3
+Text HLabel 1150 2450 0    50   Input ~ 0
+ALU_RA_IN_4
+Text HLabel 1150 2550 0    50   Input ~ 0
+ALU_RA_IN_5
+Text HLabel 1150 2650 0    50   Input ~ 0
+ALU_RA_IN_6
+Text HLabel 1150 2750 0    50   Input ~ 0
+ALU_RA_IN_7
+Wire Wire Line
+	1150 2050 1600 2050
+Wire Wire Line
+	1150 2150 1600 2150
+Wire Wire Line
+	1150 2250 1600 2250
+Wire Wire Line
+	1150 2350 1600 2350
+Wire Wire Line
+	1150 2450 1600 2450
+Wire Wire Line
+	1150 2550 1600 2550
+Wire Wire Line
+	1150 2650 1600 2650
+Wire Wire Line
+	1150 2750 1600 2750
+Text HLabel 3900 1250 1    50   Output ~ 0
+ALU_A_0
+Text HLabel 4000 1250 1    50   Output ~ 0
+ALU_A_1
+Text HLabel 4100 1250 1    50   Output ~ 0
+ALU_A_2
+Text HLabel 4200 1250 1    50   Output ~ 0
+ALU_A_3
+Text HLabel 4300 1250 1    50   Output ~ 0
+ALU_A_4
+Text HLabel 4400 1250 1    50   Output ~ 0
+ALU_A_5
+Text HLabel 4500 1250 1    50   Output ~ 0
+ALU_A_6
+Text HLabel 4600 1250 1    50   Output ~ 0
+ALU_A_7
+$EndSCHEMATC

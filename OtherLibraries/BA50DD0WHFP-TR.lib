@@ -1,0 +1,31 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# BA50DD0WHFP-TR
+#
+DEF BA50DD0WHFP-TR U 0 40 Y Y 1 L N
+F0 "U" -400 320 50 H V L BNN
+F1 "BA50DD0WHFP-TR" -401 -401 50 H V L BNN
+F2 "TO172P1054X2005-6N" 0 0 50 H I L BNN
+F3 "https://www.digikey.com/product-detail/en/rohm-semiconductor/BA50DD0WHFP-TR/BA50DD0WHFPCT-ND/3663768?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol" 0 0 50 H I L BNN
+F4 "BA50DD0WHFP-TR" 0 0 50 H I L BNN
+F5 "TO-263-6 Rohm" 0 0 50 H I L BNN
+F6 "Rohm" 0 0 50 H I L BNN
+F7 "LDO Regulator Pos 5V 2A 6-Pin_5+Tab_ HRP T/R" 0 0 50 H I L BNN
+F8 "BA50DD0WHFPCT-ND" 0 0 50 H I L BNN
+DRAW
+P 2 0 0 10 -400 300 400 300 N
+P 2 0 0 10 400 300 400 -300 N
+P 2 0 0 10 400 -300 -400 -300 N
+P 2 0 0 10 -400 -300 -400 300 N
+X CTL 1 -500 100 100 R 40 40 0 0 I 
+X VCC 2 500 200 100 L 40 40 0 0 W 
+X GND 3 500 -200 100 L 40 40 0 0 W 
+X GND 6 500 -200 100 L 40 40 0 0 W 
+X OUT 4 500 0 100 L 40 40 0 0 O 
+ENDDRAW
+ENDDEF
+#
+# End Library

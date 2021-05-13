@@ -1,0 +1,61 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Battery BT1
+U 1 1 5F5F2C79
+P 1500 2000
+F 0 "BT1" H 1608 2046 50  0001 L CNN
+F 1 "+5v" H 1600 2000 50  0000 L CNN
+F 2 "" V 1500 2060 50  0001 C CNN
+F 3 "~" V 1500 2060 50  0001 C CNN
+	1    1500 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 1800 1500 1650
+Wire Wire Line
+	1500 2200 1500 2350
+$Comp
+L Device:R_Small_US R1
+U 1 1 5F5F4F89
+P 2050 1800
+F 0 "R1" H 2118 1846 50  0000 L CNN
+F 1 "10k" H 2118 1755 50  0000 L CNN
+F 2 "" H 2050 1800 50  0001 C CNN
+F 3 "~" H 2050 1800 50  0001 C CNN
+	1    2050 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPST SW1
+U 1 1 5F5F5856
+P 2050 2150
+F 0 "SW1" V 2096 2062 50  0000 R CNN
+F 1 "SPST" V 2005 2062 50  0000 R CNN
+F 2 "" H 2050 2150 50  0001 C CNN
+F 3 "~" H 2050 2150 50  0001 C CNN
+	1    2050 2150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2050 1700 2050 1650
+Wire Wire Line
+	1500 1650 2050 1650
+Wire Wire Line
+	1500 2350 2050 2350
+Wire Wire Line
+	2050 1950 2050 1900
+$EndSCHEMATC

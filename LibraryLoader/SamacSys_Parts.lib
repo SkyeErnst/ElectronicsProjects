@@ -1,0 +1,59 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model NE555DR
+#/6648/2/2.37/8/4/Integrated Circuit
+DEF NE555DR IC 0 30 Y Y 1 F N
+F0 "IC" 1050 600 50 H V L CNN
+F1 "NE555DR" 1050 500 50 H V L CNN
+F2 "SOIC127P600X175-8N" 1050 400 50 H I L CNN
+F3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" 1050 300 50 H I L CNN
+F4 "Single Precision Timer" 1050 200 50 H I L CNN "Description"
+F5 "1.75" 1050 100 50 H I L CNN "Height"
+F6 "Texas Instruments" 1050 0 50 H I L CNN "Manufacturer_Name"
+F7 "NE555DR" 1050 -100 50 H I L CNN "Manufacturer_Part_Number"
+F8 "595-NE555DR" 1050 -200 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.com/Search/Refine.aspx?Keyword=595-NE555DR" 1050 -300 50 H I L CNN "Mouser Price/Stock"
+F10 "1218414" 1050 -400 50 H I L CNN "RS Part Number"
+F11 "http//uk.rs-online.com/web/p/products/1218414" 1050 -500 50 H I L CNN "RS Price/Stock"
+DRAW
+X GND 1 600 -1000 200 U 50 50 0 0 B
+X TRIG 2 0 -400 200 R 50 50 0 0 B
+X OUT 3 1200 -200 200 L 50 50 0 0 B
+X ~RESET 4 0 0 200 R 50 50 0 0 B
+X CONT 5 500 600 200 D 50 50 0 0 B
+X THRES 6 0 -300 200 R 50 50 0 0 B
+X DISCH 7 0 -100 200 R 50 50 0 0 B
+X VCC 8 700 600 200 D 50 50 0 0 B
+P 5 0 1 6 200 400 1000 400 1000 -800 200 -800 200 400 N
+ENDDRAW
+ENDDEF
+#
+#SamacSys ECAD Model PTL45-15O0-105A2
+#/278420/184579/2.44/6/4/Variable Resistor
+DEF PTL45-15O0-105A2 VR 0 30 Y Y 1 F N
+F0 "VR" 1050 300 50 H V L CNN
+F1 "PTL45-15O0-105A2" 1050 200 50 H V L CNN
+F2 "PTL4515O0105A2" 1050 100 50 H I L CNN
+F3 "https://www.bourns.com/docs/Product-Datasheets/PTL.pdf" 1050 0 50 H I L CNN
+F4 "Slide Potentiometers 15MM LEVER 1MOHMS 45MM TRVL OR LED" 1050 -100 50 H I L CNN "Description"
+F5 "22" 1050 -200 50 H I L CNN "Height"
+F6 "Bourns" 1050 -300 50 H I L CNN "Manufacturer_Name"
+F7 "PTL45-15O0-105A2" 1050 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "652-PTL45-15O0-105A2" 1050 -500 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.com/Search/Refine.aspx?Keyword=652-PTL45-15O0-105A2" 1050 -600 50 H I L CNN "Mouser Price/Stock"
+F10 "" 1050 -700 50 H I L CNN "RS Part Number"
+F11 "" 1050 -800 50 H I L CNN "RS Price/Stock"
+F12 "70774538" 1050 -900 50 H I L CNN "Allied_Number"
+F13 "https://www.alliedelec.com/bourns-ptl45-15o0-105a2/70774538/" 1050 -1000 50 H I L CNN "Allied Price/Stock"
+DRAW
+X CCW 1 0 0 200 R 50 50 0 0 B
+X WIPER 2 0 -100 200 R 50 50 0 0 B
+X CW 3 0 -200 200 R 50 50 0 0 B
+X + B1 1200 0 200 L 50 50 0 0 B
+X - E1 1200 -100 200 L 50 50 0 0 B
+X DUMMY L1 1200 -200 200 L 50 50 0 0 B
+P 5 0 1 6 200 100 1000 100 1000 -300 200 -300 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library

@@ -1,0 +1,8 @@
+(module "FD8-16 Board Attach" (layer F.Cu) (tedit 5E98C31C)
+  (fp_text reference REF** (at 0 -31) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value "FD8-16 Board Attach" (at 0 -36.5) (layer F.Fab)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+)

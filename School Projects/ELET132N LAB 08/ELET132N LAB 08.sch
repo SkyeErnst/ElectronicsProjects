@@ -1,0 +1,76 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:L L1
+U 1 1 606B6130
+P 4300 2500
+F 0 "L1" V 4490 2500 50  0000 C CNN
+F 1 "100mH" V 4399 2500 50  0000 C CNN
+F 2 "" H 4300 2500 50  0001 C CNN
+F 3 "~" H 4300 2500 50  0001 C CNN
+	1    4300 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 606B73C3
+P 4900 2750
+F 0 "C1" H 5015 2796 50  0000 L CNN
+F 1 "0.01uF" H 5015 2705 50  0000 L CNN
+F 2 "" H 4938 2600 50  0001 C CNN
+F 3 "~" H 4900 2750 50  0001 C CNN
+	1    4900 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 606B7D60
+P 4900 3200
+F 0 "R1" H 4970 3246 50  0000 L CNN
+F 1 "100Ω" H 4970 3155 50  0000 L CNN
+F 2 "" V 4830 3200 50  0001 C CNN
+F 3 "~" H 4900 3200 50  0001 C CNN
+	1    4900 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint_2Pole A1
+U 1 1 606B8BC6
+P 3600 2900
+F 0 "A1" V 3646 2812 50  0001 R CNN
+F 1 "Generator" V 3600 2850 50  0000 R CNN
+F 2 "" H 3600 2900 50  0001 C CNN
+F 3 "~" H 3600 2900 50  0001 C CNN
+	1    3600 2900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3600 2700 3600 2500
+Wire Wire Line
+	3600 2500 4150 2500
+Wire Wire Line
+	4450 2500 4900 2500
+Wire Wire Line
+	4900 2500 4900 2600
+Wire Wire Line
+	4900 2900 4900 3050
+Wire Wire Line
+	4900 3350 4900 3400
+Wire Wire Line
+	4900 3400 3600 3400
+Wire Wire Line
+	3600 3400 3600 3100
+$EndSCHEMATC

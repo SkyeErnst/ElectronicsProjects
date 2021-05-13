@@ -1,0 +1,191 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 7 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Conn_WallPlug_Earth J?
+U 1 1 6070A6CF
+P 700 1850
+F 0 "J?" H 767 2084 50  0000 C CNN
+F 1 "Conn_WallPlug_Earth" H 767 2084 50  0001 C CNN
+F 2 "" H 1100 1850 50  0001 C CNN
+F 3 "~" H 1100 1850 50  0001 C CNN
+	1    700  1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR?
+U 1 1 6070C00A
+P 1050 2200
+F 0 "#PWR?" H 1050 1950 50  0001 C CNN
+F 1 "Earth" H 1050 2050 50  0001 C CNN
+F 2 "" H 1050 2200 50  0001 C CNN
+F 3 "~" H 1050 2200 50  0001 C CNN
+	1    1050 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 2200 1050 2150
+Wire Wire Line
+	1050 2150 1000 2150
+Text Notes 650  2500 0    50   ~ 0
+STAR GROUND
+$Comp
+L power:GNDA #PWR?
+U 1 1 6070EB69
+P 1300 2600
+AR Path="/6070EB69" Ref="#PWR?"  Part="1" 
+AR Path="/607045AB/6070EB69" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1300 2350 50  0001 C CNN
+F 1 "GNDA" H 1305 2427 50  0000 C CNN
+F 2 "" H 1300 2600 50  0001 C CNN
+F 3 "" H 1300 2600 50  0001 C CNN
+	1    1300 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6070EB71
+P 1600 2600
+AR Path="/6070EB71" Ref="#PWR?"  Part="1" 
+AR Path="/607045AB/6070EB71" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1600 2350 50  0001 C CNN
+F 1 "GND" H 1605 2427 50  0000 C CNN
+F 2 "" H 1600 2600 50  0001 C CNN
+F 3 "" H 1600 2600 50  0001 C CNN
+	1    1600 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Net-Tie_3 NT?
+U 1 1 6070EDCF
+P 1450 2450
+F 0 "NT?" H 1450 2631 50  0000 C CNN
+F 1 "Net-Tie_3" H 1450 2540 50  0000 C CNN
+F 2 "" H 1450 2450 50  0001 C CNN
+F 3 "~" H 1450 2450 50  0001 C CNN
+	1    1450 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 2450 1350 2450
+Wire Wire Line
+	1300 2600 1300 2550
+Wire Wire Line
+	1300 2550 1350 2550
+Wire Wire Line
+	1600 2600 1600 2450
+Wire Wire Line
+	1600 2450 1550 2450
+Wire Wire Line
+	1200 2450 1200 2150
+Wire Wire Line
+	1200 2150 1050 2150
+Connection ~ 1050 2150
+Wire Wire Line
+	1000 1750 1050 1750
+$Comp
+L Device:Fuse F?
+U 1 1 5EB5803D
+P 1200 1750
+F 0 "F?" V 1003 1750 50  0000 C CNN
+F 1 "Fuse" V 1094 1750 50  0000 C CNN
+F 2 "" V 1130 1750 50  0001 C CNN
+F 3 "~" H 1200 1750 50  0001 C CNN
+	1    1200 1750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1000 1950 1350 1950
+$Comp
+L Mechanical:Heatsink_Pad HS?
+U 1 1 5F8B5226
+P 5800 7400
+F 0 "HS?" H 5942 7521 50  0000 L CNN
+F 1 "Heatsink" H 5942 7430 50  0000 L CNN
+F 2 "footprints:VM1-038-1AE" H 5812 7400 50  0001 C CNN
+F 3 "~" H 5812 7400 50  0001 C CNN
+	1    5800 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Heatsink_Pad HS?
+U 1 1 5F8B522C
+P 6450 7400
+F 0 "HS?" H 6592 7521 50  0000 L CNN
+F 1 "Heatsink" H 6592 7430 50  0000 L CNN
+F 2 "footprints:VM1-038-1AE" H 6462 7400 50  0001 C CNN
+F 3 "~" H 6462 7400 50  0001 C CNN
+	1    6450 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F8B5232
+P 5800 7550
+F 0 "#PWR?" H 5800 7300 50  0001 C CNN
+F 1 "GND" H 5805 7377 50  0000 C CNN
+F 2 "" H 5800 7550 50  0001 C CNN
+F 3 "" H 5800 7550 50  0001 C CNN
+	1    5800 7550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 7550 5800 7500
+$Comp
+L power:GND #PWR?
+U 1 1 5F8B5239
+P 6450 7550
+F 0 "#PWR?" H 6450 7300 50  0001 C CNN
+F 1 "GND" H 6455 7377 50  0000 C CNN
+F 2 "" H 6450 7550 50  0001 C CNN
+F 3 "" H 6450 7550 50  0001 C CNN
+	1    6450 7550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 7550 6450 7500
+Text Label 2500 1950 0    39   ~ 0
+TRANS_AC_N
+Wire Wire Line
+	2300 1000 2350 1000
+Text Label 2350 1000 0    39   ~ 0
+DC_REC+
+Wire Wire Line
+	2000 1400 2000 1300
+Text Label 2000 1400 0    39   ~ 0
+TRANS_AC_N
+Wire Wire Line
+	2000 650  2000 700 
+Text Label 2000 650  0    39   ~ 0
+TRANS_AC_P
+$Comp
+L Device:D_Bridge_-AA+ D?
+U 1 1 5EB58031
+P 2000 1000
+F 0 "D?" H 2200 900 50  0000 L CNN
+F 1 "GBU606" H 2200 800 50  0000 L CNN
+F 2 "Diode_THT:Diode_Bridge_Vishay_GBU" H 2000 1000 50  0001 C CNN
+F 3 "http://www.smc-diodes.com/propdf/GBU6005-GBU610%20N1791%20REV.A.pdf" H 2000 1000 50  0001 C CNN
+F 4 "GBU606TB" H 2000 1000 50  0001 C CNN "digikey"
+	1    2000 1000
+	1    0    0    -1  
+$EndComp
+Text Label 2500 1750 0    39   ~ 0
+TRANS_AC_P
+Text Label 1650 1000 2    50   ~ 0
+DC_REC-
+Wire Wire Line
+	1650 1000 1700 1000
+$EndSCHEMATC

@@ -1,0 +1,230 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 3950 3000 0    50   Input ~ 0
+DEMOD_IN
+Text HLabel 7000 3000 2    50   Output ~ 0
+DEMOD_OUT
+$Comp
+L Device:D D?
+U 1 1 606EA642
+P 4600 3000
+F 0 "D?" H 4600 2784 50  0000 C CNN
+F 1 "D" H 4600 2875 50  0000 C CNN
+F 2 "" H 4600 3000 50  0001 C CNN
+F 3 "~" H 4600 3000 50  0001 C CNN
+	1    4600 3000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 606EB908
+P 5000 3200
+F 0 "C?" H 5092 3246 50  0000 L CNN
+F 1 "2.2nF" H 5092 3155 50  0000 L CNN
+F 2 "" H 5000 3200 50  0001 C CNN
+F 3 "~" H 5000 3200 50  0001 C CNN
+	1    5000 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 606EC38C
+P 5400 3200
+F 0 "R?" H 5459 3246 50  0000 L CNN
+F 1 "10k" V 5400 3150 39  0000 L CNN
+F 2 "" H 5400 3200 50  0001 C CNN
+F 3 "~" H 5400 3200 50  0001 C CNN
+	1    5400 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 606ED541
+P 5750 3000
+F 0 "R?" V 5850 3000 50  0000 C CNN
+F 1 "100k" V 5750 3000 39  0000 C CNN
+F 2 "" H 5750 3000 50  0001 C CNN
+F 3 "~" H 5750 3000 50  0001 C CNN
+	1    5750 3000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 606ED905
+P 6000 3200
+F 0 "C?" H 6092 3246 50  0000 L CNN
+F 1 "1nF" H 6092 3155 50  0000 L CNN
+F 2 "" H 6000 3200 50  0001 C CNN
+F 3 "~" H 6000 3200 50  0001 C CNN
+	1    6000 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 606EDE43
+P 6300 3000
+F 0 "C?" V 6529 3000 50  0000 C CNN
+F 1 "1nF" V 6438 3000 50  0000 C CNN
+F 2 "" H 6300 3000 50  0001 C CNN
+F 3 "~" H 6300 3000 50  0001 C CNN
+	1    6300 3000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 606EE068
+P 6700 3200
+F 0 "R?" H 6759 3246 50  0000 L CNN
+F 1 "1M" H 6759 3155 50  0000 L CNN
+F 2 "" H 6700 3200 50  0001 C CNN
+F 3 "~" H 6700 3200 50  0001 C CNN
+	1    6700 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 606EE4ED
+P 5200 3400
+F 0 "#PWR?" H 5200 3150 50  0001 C CNN
+F 1 "GND" H 5205 3227 50  0000 C CNN
+F 2 "" H 5200 3400 50  0001 C CNN
+F 3 "" H 5200 3400 50  0001 C CNN
+	1    5200 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 3300 5000 3350
+Wire Wire Line
+	5000 3350 5200 3350
+Wire Wire Line
+	5200 3350 5200 3400
+Wire Wire Line
+	5200 3350 5400 3350
+Wire Wire Line
+	5400 3350 5400 3300
+Connection ~ 5200 3350
+Wire Wire Line
+	4750 3000 5000 3000
+Wire Wire Line
+	5400 3000 5400 3100
+Wire Wire Line
+	5000 3100 5000 3000
+Connection ~ 5000 3000
+Wire Wire Line
+	5000 3000 5400 3000
+Wire Wire Line
+	5400 3000 5650 3000
+Connection ~ 5400 3000
+Wire Wire Line
+	5850 3000 6000 3000
+Wire Wire Line
+	6000 3000 6000 3100
+$Comp
+L power:GND #PWR?
+U 1 1 606EFBA8
+P 6000 3350
+F 0 "#PWR?" H 6000 3100 50  0001 C CNN
+F 1 "GND" H 6005 3177 50  0000 C CNN
+F 2 "" H 6000 3350 50  0001 C CNN
+F 3 "" H 6000 3350 50  0001 C CNN
+	1    6000 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 3350 6000 3300
+Wire Wire Line
+	6400 3000 6700 3000
+Wire Wire Line
+	6700 3000 6700 3100
+$Comp
+L power:GND #PWR?
+U 1 1 606F04D4
+P 6700 3350
+F 0 "#PWR?" H 6700 3100 50  0001 C CNN
+F 1 "GND" H 6705 3177 50  0000 C CNN
+F 2 "" H 6700 3350 50  0001 C CNN
+F 3 "" H 6700 3350 50  0001 C CNN
+	1    6700 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 3350 6700 3300
+Wire Wire Line
+	6000 3000 6200 3000
+Connection ~ 6000 3000
+$Comp
+L Device:R_Small R?
+U 1 1 606F11C8
+P 4200 2850
+F 0 "R?" V 4300 2850 50  0000 C CNN
+F 1 "100k" V 4200 2850 39  0000 C CNN
+F 2 "" H 4200 2850 50  0001 C CNN
+F 3 "~" H 4200 2850 50  0001 C CNN
+	1    4200 2850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3950 3000 4200 3000
+$Comp
+L Device:R_Small R?
+U 1 1 606F25F6
+P 4200 3150
+F 0 "R?" V 4300 3150 50  0000 C CNN
+F 1 "33k" V 4200 3150 39  0000 C CNN
+F 2 "" H 4200 3150 50  0001 C CNN
+F 3 "~" H 4200 3150 50  0001 C CNN
+	1    4200 3150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4200 3050 4200 3000
+Connection ~ 4200 3000
+Wire Wire Line
+	4200 3000 4450 3000
+Wire Wire Line
+	4200 3000 4200 2950
+$Comp
+L power:+5V #PWR?
+U 1 1 606F2E7F
+P 4200 2700
+F 0 "#PWR?" H 4200 2550 50  0001 C CNN
+F 1 "+5V" H 4215 2873 50  0000 C CNN
+F 2 "" H 4200 2700 50  0001 C CNN
+F 3 "" H 4200 2700 50  0001 C CNN
+	1    4200 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 2700 4200 2750
+Text Notes 4350 3200 0    50   ~ 0
+Test for \nspecific diode
+Wire Wire Line
+	6700 3000 7000 3000
+Connection ~ 6700 3000
+Wire Wire Line
+	4200 3300 4200 3250
+$Comp
+L power:GND #PWR?
+U 1 1 606F3582
+P 4200 3300
+F 0 "#PWR?" H 4200 3050 50  0001 C CNN
+F 1 "GND" H 4205 3127 50  0000 C CNN
+F 2 "" H 4200 3300 50  0001 C CNN
+F 3 "" H 4200 3300 50  0001 C CNN
+	1    4200 3300
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

@@ -1,0 +1,623 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "2-Tone Sinewave Generator for SSB Transmitter Testing"
+Date "2020-05-04"
+Rev "A"
+Comp ""
+Comment1 "DK71H, PETER RACHOW 2015"
+Comment2 "KICAD IMPORT BY SKYE ERNST"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R8
+U 1 1 5EB0D4E8
+P 4200 2400
+F 0 "R8" H 4270 2446 50  0000 L CNN
+F 1 "2.2k" H 4270 2355 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P15.24mm_Horizontal" V 4130 2400 50  0001 C CNN
+F 3 "~" H 4200 2400 50  0001 C CNN
+	1    4200 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C5
+U 1 1 5EB0DE18
+P 3400 2350
+F 0 "C5" H 3515 2396 50  0000 L CNN
+F 1 "10uF" H 3515 2305 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 3400 2350 50  0001 C CNN
+F 3 "~" H 3400 2350 50  0001 C CNN
+	1    3400 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR03
+U 1 1 5EB11B17
+P 3400 2550
+F 0 "#PWR03" H 3400 2300 50  0001 C CNN
+F 1 "GNDD" H 3404 2395 50  0000 C CNN
+F 2 "" H 3400 2550 50  0001 C CNN
+F 3 "" H 3400 2550 50  0001 C CNN
+	1    3400 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 2550 3400 2500
+Wire Wire Line
+	3400 2200 3400 2150
+Wire Wire Line
+	4200 2250 4200 2150
+$Comp
+L Device:R R5
+U 1 1 5EB1568F
+P 3750 3100
+F 0 "R5" H 3820 3146 50  0000 L CNN
+F 1 "150k" H 3820 3055 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P15.24mm_Horizontal" V 3680 3100 50  0001 C CNN
+F 3 "~" H 3750 3100 50  0001 C CNN
+	1    3750 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NPN_CBE Q2
+U 1 1 5EB15D07
+P 4100 3400
+F 0 "Q2" H 4291 3446 50  0000 L CNN
+F 1 "BC547B" H 4291 3355 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92" H 4300 3500 50  0001 C CNN
+F 3 "~" H 4100 3400 50  0001 C CNN
+	1    4100 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 2150 4200 2150
+Connection ~ 4200 2150
+Wire Wire Line
+	4200 2150 4750 2150
+Wire Wire Line
+	3750 3250 3750 3400
+Wire Wire Line
+	3750 3400 3900 3400
+Wire Wire Line
+	3750 2950 3750 2800
+Wire Wire Line
+	3750 2800 4200 2800
+Wire Wire Line
+	4200 2800 4200 2550
+Wire Wire Line
+	4200 2800 4200 3200
+Connection ~ 4200 2800
+$Comp
+L Device:C C1
+U 1 1 5EB19D7F
+P 2550 3400
+F 0 "C1" V 2298 3400 50  0000 C CNN
+F 1 "6.8nF" V 2389 3400 50  0000 C CNN
+F 2 "footprints:QYX1H682JTP" H 2588 3250 50  0001 C CNN
+F 3 "~" H 2550 3400 50  0001 C CNN
+	1    2550 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5EB1A82B
+P 3050 3400
+F 0 "C3" V 2798 3400 50  0000 C CNN
+F 1 "6.8nF" V 2889 3400 50  0000 C CNN
+F 2 "footprints:QYX1H682JTP" H 3088 3250 50  0001 C CNN
+F 3 "~" H 3050 3400 50  0001 C CNN
+	1    3050 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C7
+U 1 1 5EB1AF3F
+P 3550 3400
+F 0 "C7" V 3298 3400 50  0000 C CNN
+F 1 "6.8nF" V 3389 3400 50  0000 C CNN
+F 2 "footprints:QYX1H682JTP" H 3588 3250 50  0001 C CNN
+F 3 "~" H 3550 3400 50  0001 C CNN
+	1    3550 3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3700 3400 3750 3400
+Connection ~ 3750 3400
+Wire Wire Line
+	3400 3400 3300 3400
+Wire Wire Line
+	2900 3400 2800 3400
+Wire Wire Line
+	2400 3400 2300 3400
+Wire Wire Line
+	2300 3400 2300 2800
+Wire Wire Line
+	2300 2800 3750 2800
+Connection ~ 3750 2800
+$Comp
+L Device:R R1
+U 1 1 5EB1E6A7
+P 2800 3750
+F 0 "R1" H 2870 3796 50  0000 L CNN
+F 1 "4.7k" H 2870 3705 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P15.24mm_Horizontal" V 2730 3750 50  0001 C CNN
+F 3 "~" H 2800 3750 50  0001 C CNN
+	1    2800 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5EB1ECA8
+P 3300 3750
+F 0 "R3" H 3370 3796 50  0000 L CNN
+F 1 "4.7k" H 3370 3705 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P15.24mm_Horizontal" V 3230 3750 50  0001 C CNN
+F 3 "~" H 3300 3750 50  0001 C CNN
+	1    3300 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 3600 2800 3400
+Connection ~ 2800 3400
+Wire Wire Line
+	2800 3400 2700 3400
+Wire Wire Line
+	3300 3600 3300 3400
+Connection ~ 3300 3400
+Wire Wire Line
+	3300 3400 3200 3400
+Wire Wire Line
+	2800 3900 2800 3950
+Wire Wire Line
+	2800 3950 3300 3950
+Wire Wire Line
+	3300 3950 3300 3900
+$Comp
+L power:GNDD #PWR01
+U 1 1 5EB20678
+P 3300 3950
+F 0 "#PWR01" H 3300 3700 50  0001 C CNN
+F 1 "GNDD" H 3304 3795 50  0000 C CNN
+F 2 "" H 3300 3950 50  0001 C CNN
+F 3 "" H 3300 3950 50  0001 C CNN
+	1    3300 3950
+	1    0    0    -1  
+$EndComp
+Connection ~ 3300 3950
+Wire Wire Line
+	3300 3950 4200 3950
+Wire Wire Line
+	4200 3600 4200 3950
+$Comp
+L Device:R_POT RV1
+U 1 1 5EB21F49
+P 5250 3100
+F 0 "RV1" H 5180 3146 50  0000 R CNN
+F 1 "4.7k" H 5180 3055 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3266W_Vertical" H 5250 3100 50  0001 C CNN
+F 3 "~" H 5250 3100 50  0001 C CNN
+	1    5250 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 2150 4750 4200
+Connection ~ 4750 2150
+$Comp
+L Device:CP1 C6
+U 1 1 5EB25192
+P 3450 4350
+F 0 "C6" H 3565 4396 50  0000 L CNN
+F 1 "10uF" H 3565 4305 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 3450 4350 50  0001 C CNN
+F 3 "~" H 3450 4350 50  0001 C CNN
+	1    3450 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR04
+U 1 1 5EB25654
+P 3450 4550
+F 0 "#PWR04" H 3450 4300 50  0001 C CNN
+F 1 "GNDD" H 3454 4395 50  0000 C CNN
+F 2 "" H 3450 4550 50  0001 C CNN
+F 3 "" H 3450 4550 50  0001 C CNN
+	1    3450 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 4550 3450 4500
+Text Label 5000 2150 0    50   ~ 0
+V+
+$Comp
+L Device:CP1 C9
+U 1 1 5EB2828E
+P 4450 2800
+F 0 "C9" V 4300 2750 50  0000 L CNN
+F 1 "10uF" V 4200 2700 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 4450 2800 50  0001 C CNN
+F 3 "~" H 4450 2800 50  0001 C CNN
+	1    4450 2800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5250 2800 5250 2950
+$Comp
+L Device:R R7
+U 1 1 5EB2A1C5
+P 4100 4400
+F 0 "R7" H 4170 4446 50  0000 L CNN
+F 1 "2.2k" H 4170 4355 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P15.24mm_Horizontal" V 4030 4400 50  0001 C CNN
+F 3 "~" H 4100 4400 50  0001 C CNN
+	1    4100 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 4200 4100 4200
+Wire Wire Line
+	4100 4250 4100 4200
+Connection ~ 4100 4200
+$Comp
+L Device:CP1 C10
+U 1 1 5EB2C5A2
+P 4350 4750
+F 0 "C10" V 4200 4700 50  0000 L CNN
+F 1 "10uF" V 4100 4650 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 4350 4750 50  0001 C CNN
+F 3 "~" H 4350 4750 50  0001 C CNN
+	1    4350 4750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4100 4550 4100 4750
+Wire Wire Line
+	4100 4750 4200 4750
+$Comp
+L Device:R R6
+U 1 1 5EB2D816
+P 3800 4900
+F 0 "R6" H 3870 4946 50  0000 L CNN
+F 1 "150k" H 3870 4855 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P15.24mm_Horizontal" V 3730 4900 50  0001 C CNN
+F 3 "~" H 3800 4900 50  0001 C CNN
+	1    3800 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 4750 4100 4750
+Connection ~ 4100 4750
+$Comp
+L Device:C C2
+U 1 1 5EB32024
+P 2550 5250
+F 0 "C2" V 2298 5250 50  0000 C CNN
+F 1 "22nF" V 2389 5250 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W2.5mm_P5.00mm" H 2588 5100 50  0001 C CNN
+F 3 "~" H 2550 5250 50  0001 C CNN
+	1    2550 5250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5EB3202A
+P 3050 5250
+F 0 "C4" V 2798 5250 50  0000 C CNN
+F 1 "22nF" V 2889 5250 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W2.5mm_P5.00mm" H 3088 5100 50  0001 C CNN
+F 3 "~" H 3050 5250 50  0001 C CNN
+	1    3050 5250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C8
+U 1 1 5EB32030
+P 3550 5250
+F 0 "C8" V 3298 5250 50  0000 C CNN
+F 1 "22nF" V 3389 5250 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W2.5mm_P5.00mm" H 3588 5100 50  0001 C CNN
+F 3 "~" H 3550 5250 50  0001 C CNN
+	1    3550 5250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3400 5250 3300 5250
+Wire Wire Line
+	2900 5250 2800 5250
+Wire Wire Line
+	2800 5450 2800 5250
+Connection ~ 2800 5250
+Wire Wire Line
+	2800 5250 2700 5250
+Wire Wire Line
+	3300 5450 3300 5250
+Connection ~ 3300 5250
+Wire Wire Line
+	3300 5250 3200 5250
+Wire Wire Line
+	3700 5250 3800 5250
+Wire Wire Line
+	3800 5250 3800 5050
+$Comp
+L Device:R_POT RV2
+U 1 1 5EB33DDC
+P 5600 3350
+F 0 "RV2" H 5530 3396 50  0000 R CNN
+F 1 "4.7k" H 5530 3305 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3266W_Vertical" H 5600 3350 50  0001 C CNN
+F 3 "~" H 5600 3350 50  0001 C CNN
+	1    5600 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 3100 5600 3100
+Wire Wire Line
+	5600 3100 5600 3200
+Wire Wire Line
+	4500 4750 5250 4750
+Wire Wire Line
+	5250 4750 5250 3250
+$Comp
+L Device:CP1 C11
+U 1 1 5EB370E3
+P 6000 3350
+F 0 "C11" V 5850 3300 50  0000 L CNN
+F 1 "10uF" V 5750 3250 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 6000 3350 50  0001 C CNN
+F 3 "~" H 6000 3350 50  0001 C CNN
+	1    6000 3350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5850 3350 5750 3350
+Text Label 6300 3350 0    50   ~ 0
+Audio+
+Wire Wire Line
+	4200 3950 5600 3950
+Connection ~ 4200 3950
+Wire Wire Line
+	5600 3500 5600 3950
+Connection ~ 5600 3950
+Wire Wire Line
+	5600 3950 6700 3950
+$Comp
+L Device:Net-Tie_2 NT1
+U 1 1 5EB3CE9D
+P 6700 3750
+F 0 "NT1" V 6654 3794 50  0000 L CNN
+F 1 "Net-Tie_2" V 6745 3794 50  0000 L CNN
+F 2 "NetTie:NetTie-2_SMD_Pad0.5mm" H 6700 3750 50  0001 C CNN
+F 3 "~" H 6700 3750 50  0001 C CNN
+	1    6700 3750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6700 3950 6700 3850
+Text Label 6700 3650 0    50   ~ 0
+Audio-
+Wire Wire Line
+	6700 3950 7400 3950
+Connection ~ 6700 3950
+$Comp
+L Device:R R2
+U 1 1 5EB45626
+P 2800 5600
+F 0 "R2" H 2870 5646 50  0000 L CNN
+F 1 "4.7k" H 2870 5555 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P15.24mm_Horizontal" V 2730 5600 50  0001 C CNN
+F 3 "~" H 2800 5600 50  0001 C CNN
+	1    2800 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5EB4562C
+P 3300 5600
+F 0 "R4" H 3370 5646 50  0000 L CNN
+F 1 "4.7k" H 3370 5555 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P15.24mm_Horizontal" V 3230 5600 50  0001 C CNN
+F 3 "~" H 3300 5600 50  0001 C CNN
+	1    3300 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 5750 2800 5800
+Wire Wire Line
+	2800 5800 3300 5800
+Wire Wire Line
+	3300 5800 3300 5750
+$Comp
+L power:GNDD #PWR02
+U 1 1 5EB45635
+P 3300 5800
+F 0 "#PWR02" H 3300 5550 50  0001 C CNN
+F 1 "GNDD" H 3304 5645 50  0000 C CNN
+F 2 "" H 3300 5800 50  0001 C CNN
+F 3 "" H 3300 5800 50  0001 C CNN
+	1    3300 5800
+	1    0    0    -1  
+$EndComp
+Connection ~ 3300 5800
+Wire Wire Line
+	3300 5800 4100 5800
+Wire Wire Line
+	2400 5250 2350 5250
+Wire Wire Line
+	2350 5250 2350 4750
+$Comp
+L Device:Q_NPN_CBE Q1
+U 1 1 5EB48590
+P 4000 5250
+F 0 "Q1" H 4191 5296 50  0000 L CNN
+F 1 "BC547B" H 4191 5205 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92" H 4200 5350 50  0001 C CNN
+F 3 "~" H 4000 5250 50  0001 C CNN
+	1    4000 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 5800 4100 5450
+Wire Wire Line
+	2350 4750 3800 4750
+Connection ~ 3800 4750
+Wire Wire Line
+	3450 4200 4100 4200
+Wire Wire Line
+	4100 5050 4100 4750
+Text Label 7300 3950 0    50   ~ 0
+V-
+$Comp
+L Connector_Generic:Conn_01x01 J1
+U 1 1 5EB55B61
+P 5400 2150
+F 0 "J1" H 5480 2192 50  0000 L CNN
+F 1 "Simple hole for cable" H 5480 2101 50  0000 L CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_Drill1mm" H 5400 2150 50  0001 C CNN
+F 3 "~" H 5400 2150 50  0001 C CNN
+	1    5400 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 2150 5200 2150
+$Comp
+L Connector_Generic:Conn_01x01 J4
+U 1 1 5EB58054
+P 7600 3950
+F 0 "J4" H 7680 3992 50  0000 L CNN
+F 1 "Simple hole for cable" H 7680 3901 50  0000 L CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_Drill1mm" H 7600 3950 50  0001 C CNN
+F 3 "~" H 7600 3950 50  0001 C CNN
+	1    7600 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J2
+U 1 1 5EB5A16C
+P 7600 3350
+F 0 "J2" H 7680 3392 50  0000 L CNN
+F 1 "Simple hole for cable" H 7680 3301 50  0000 L CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_Drill1mm" H 7600 3350 50  0001 C CNN
+F 3 "~" H 7600 3350 50  0001 C CNN
+	1    7600 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 3350 7400 3350
+$Comp
+L Connector_Generic:Conn_01x01 J3
+U 1 1 5EB5D2E5
+P 7600 3650
+F 0 "J3" H 7680 3692 50  0000 L CNN
+F 1 "Simple hole for cable" H 7680 3601 50  0000 L CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_Drill1mm" H 7600 3650 50  0001 C CNN
+F 3 "~" H 7600 3650 50  0001 C CNN
+	1    7600 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 3650 7400 3650
+Wire Wire Line
+	4200 2800 4300 2800
+Wire Wire Line
+	4600 2800 5250 2800
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5EB38140
+P 950 1000
+F 0 "H1" H 1050 1049 50  0000 L CNN
+F 1 "#4 SCREW" H 1050 958 50  0000 L CNN
+F 2 "footprints:1591XXAFL Mounting Hole" H 950 1000 50  0001 C CNN
+F 3 "~" H 950 1000 50  0001 C CNN
+	1    950  1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR05
+U 1 1 5EB38663
+P 950 1150
+F 0 "#PWR05" H 950 900 50  0001 C CNN
+F 1 "GNDD" H 954 995 50  0000 C CNN
+F 2 "" H 950 1150 50  0001 C CNN
+F 3 "" H 950 1150 50  0001 C CNN
+	1    950  1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	950  1150 950  1100
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5EB3A7E5
+P 1650 1000
+F 0 "H2" H 1750 1049 50  0000 L CNN
+F 1 "#4 SCREW" H 1750 958 50  0000 L CNN
+F 2 "footprints:1591XXAFL Mounting Hole" H 1650 1000 50  0001 C CNN
+F 3 "~" H 1650 1000 50  0001 C CNN
+	1    1650 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR06
+U 1 1 5EB3A7EB
+P 1650 1150
+F 0 "#PWR06" H 1650 900 50  0001 C CNN
+F 1 "GNDD" H 1654 995 50  0000 C CNN
+F 2 "" H 1650 1150 50  0001 C CNN
+F 3 "" H 1650 1150 50  0001 C CNN
+	1    1650 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 5EB3D7E7
+P 2300 1000
+F 0 "H3" H 2400 1049 50  0000 L CNN
+F 1 "#4 SCREW" H 2400 958 50  0000 L CNN
+F 2 "footprints:1591XXAFL Mounting Hole" H 2300 1000 50  0001 C CNN
+F 3 "~" H 2300 1000 50  0001 C CNN
+	1    2300 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR07
+U 1 1 5EB3D7ED
+P 2300 1150
+F 0 "#PWR07" H 2300 900 50  0001 C CNN
+F 1 "GNDD" H 2304 995 50  0000 C CNN
+F 2 "" H 2300 1150 50  0001 C CNN
+F 3 "" H 2300 1150 50  0001 C CNN
+	1    2300 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 1150 2300 1100
+Wire Wire Line
+	1650 1100 1650 1150
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 5EB40989
+P 3000 1000
+F 0 "H4" H 3100 1049 50  0000 L CNN
+F 1 "#4 SCREW" H 3100 958 50  0000 L CNN
+F 2 "footprints:1591XXAFL Mounting Hole" H 3000 1000 50  0001 C CNN
+F 3 "~" H 3000 1000 50  0001 C CNN
+	1    3000 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR08
+U 1 1 5EB4098F
+P 3000 1150
+F 0 "#PWR08" H 3000 900 50  0001 C CNN
+F 1 "GNDD" H 3004 995 50  0000 C CNN
+F 2 "" H 3000 1150 50  0001 C CNN
+F 3 "" H 3000 1150 50  0001 C CNN
+	1    3000 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 1150 3000 1100
+$EndSCHEMATC

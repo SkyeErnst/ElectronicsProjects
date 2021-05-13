@@ -1,0 +1,112 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x16 J1
+U 1 1 5E560AB6
+P 4100 3300
+F 0 "J1" H 4100 2250 50  0000 C CNN
+F 1 "A" H 4100 2350 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Horizontal" H 4100 3300 50  0001 C CNN
+F 3 "~" H 4100 3300 50  0001 C CNN
+	1    4100 3300
+	-1   0    0    1   
+$EndComp
+NoConn ~ 4300 3300
+$Comp
+L Connector_Generic:Conn_01x16 J2
+U 1 1 5E5645D1
+P 6900 3200
+F 0 "J2" H 6900 4150 50  0000 C CNN
+F 1 "B" H 6900 4050 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Horizontal" H 6900 3200 50  0001 C CNN
+F 3 "~" H 6900 3200 50  0001 C CNN
+	1    6900 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 2500 4400 2500
+Wire Wire Line
+	4300 2600 4400 2600
+Wire Wire Line
+	4300 2700 4400 2700
+Wire Wire Line
+	4300 2800 4400 2800
+Wire Wire Line
+	4300 2900 4400 2900
+Wire Wire Line
+	4300 3000 4400 3000
+Wire Wire Line
+	4300 3100 4400 3100
+Wire Wire Line
+	4300 3200 4400 3200
+Wire Wire Line
+	4300 3400 4400 3400
+Wire Wire Line
+	4300 3500 4400 3500
+Wire Wire Line
+	4300 3600 4400 3600
+Wire Wire Line
+	4300 3700 4400 3700
+Wire Wire Line
+	4300 3800 4400 3800
+Wire Wire Line
+	4300 3900 4400 3900
+Wire Wire Line
+	4300 4000 4400 4000
+Wire Wire Line
+	6600 4000 6700 4000
+Wire Wire Line
+	6600 3900 6700 3900
+Wire Wire Line
+	6600 3800 6700 3800
+Wire Wire Line
+	6600 3700 6700 3700
+Wire Wire Line
+	6600 3600 6700 3600
+Wire Wire Line
+	6600 3500 6700 3500
+Wire Wire Line
+	6600 3400 6700 3400
+Wire Wire Line
+	6600 3300 6700 3300
+Wire Wire Line
+	6600 3200 6700 3200
+Wire Wire Line
+	6600 3100 6700 3100
+Wire Wire Line
+	6600 3000 6700 3000
+Wire Wire Line
+	6600 2900 6700 2900
+Wire Wire Line
+	6600 2800 6700 2800
+Wire Wire Line
+	6600 2700 6700 2700
+Wire Wire Line
+	6600 2600 6700 2600
+Wire Wire Line
+	6600 2500 6700 2500
+$Comp
+L CY7C109D-10ZXI:CY7C109D-10ZXI U1
+U 1 1 5E55DEFA
+P 4400 2500
+F 0 "U1" H 5500 2888 60  0000 C CNN
+F 1 "CY7C109D-10ZXI" H 5500 2782 60  0000 C CNN
+F 2 "footprints:CY7C109D-10ZXI" H 5500 2740 60  0001 C CNN
+F 3 "" H 4400 2500 60  0000 C CNN
+	1    4400 2500
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

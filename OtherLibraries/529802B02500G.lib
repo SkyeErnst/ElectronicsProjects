@@ -1,0 +1,26 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# 529802B02500G
+#
+DEF 529802B02500G HS 0 40 Y Y 1 L N
+F0 "HS" -200 125 50 H V L BNN
+F1 "529802B02500G" -200 -200 50 H V L BNN
+F2 "HSINK_529802B02500G" 0 0 50 H I L BNN
+F3 "TO-220 Package 4.5 C/W Thermal Resistance Large Radial Fin Heat Sink" 0 0 50 H I L BNN
+F4 "529802B02500G" 0 0 50 H I L BNN
+F5 "https://www.digikey.com/product-detail/en/aavid-thermal-division-of-boyd-corporation/529802B02500G/HS350-ND/1216357?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol" 0 0 50 H I L BNN
+F6 "TO-220 Aavid Thermalloy" 0 0 50 H I L BNN
+F7 "HS350-ND" 0 0 50 H I L BNN
+F8 "Aavid, Thermal" 0 0 50 H I L BNN
+DRAW
+P 2 0 0 10 -200 -100 -200 100 N
+P 2 0 0 10 -200 100 200 100 N
+P 2 0 0 10 200 -100 -200 -100 N
+P 2 0 0 10 200 100 200 -100 N
+X 1 S1 -400 -100 200 R 40 40 0 0 P
+X 1 S2 -400 100 200 R 40 40 0 0 P
+ENDDRAW
+ENDDEF
+#
+#End Library

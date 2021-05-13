@@ -1,0 +1,365 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 4000 1500 2    50   Output ~ 0
+Oscillator32768Output
+$Comp
+L power:GND #PWR0202
+U 1 1 5E1C40BD
+P 3650 2950
+F 0 "#PWR0202" H 3650 2700 50  0001 C CNN
+F 1 "GND" H 3655 2777 50  0000 C CNN
+F 2 "" H 3650 2950 50  0001 C CNN
+F 3 "" H 3650 2950 50  0001 C CNN
+	1    3650 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0201
+U 1 1 5E1C3D60
+P 3350 2950
+F 0 "#PWR0201" H 3350 2700 50  0001 C CNN
+F 1 "GND" H 3355 2777 50  0000 C CNN
+F 2 "" H 3350 2950 50  0001 C CNN
+F 3 "" H 3350 2950 50  0001 C CNN
+	1    3350 2950
+	1    0    0    -1  
+$EndComp
+Connection ~ 3200 1500
+Connection ~ 3350 2500
+Wire Wire Line
+	3200 1900 3200 1500
+Wire Wire Line
+	3350 1900 3200 1900
+Wire Wire Line
+	3350 2500 3350 1900
+Wire Wire Line
+	3350 2500 3350 2650
+Connection ~ 3650 2500
+Wire Wire Line
+	3650 2500 3650 2650
+Wire Wire Line
+	3650 2200 3650 2500
+Wire Wire Line
+	3800 1500 4000 1500
+Connection ~ 3800 1500
+Wire Wire Line
+	3800 1900 3650 1900
+Wire Wire Line
+	3800 1500 3800 1900
+Wire Wire Line
+	3800 1150 3800 1500
+Wire Wire Line
+	3850 1150 3800 1150
+Wire Wire Line
+	3850 1000 3850 1150
+Wire Wire Line
+	3200 1150 3200 1500
+Wire Wire Line
+	3150 1150 3200 1150
+Wire Wire Line
+	3150 1000 3150 1150
+Wire Wire Line
+	3450 1000 3550 1000
+$Comp
+L Device:R R202
+U 1 1 5E1C21A5
+P 3700 1000
+F 0 "R202" V 3493 1000 50  0000 C CNN
+F 1 "6.5Meg" V 3584 1000 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3630 1000 50  0001 C CNN
+F 3 "~" H 3700 1000 50  0001 C CNN
+	1    3700 1000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R201
+U 1 1 5E1C1A97
+P 3300 1000
+F 0 "R201" V 3093 1000 50  0000 C CNN
+F 1 "6.5Meg" V 3184 1000 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3230 1000 50  0001 C CNN
+F 3 "~" H 3300 1000 50  0001 C CNN
+	1    3300 1000
+	0    1    1    0   
+$EndComp
+$Comp
+L 74xx:74HC04 U201
+U 1 1 5E1BE631
+P 3500 1500
+F 0 "U201" H 3500 1817 50  0000 C CNN
+F 1 "74HCU04E" H 3500 1726 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 3500 1500 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 3500 1500 50  0001 C CNN
+	1    3500 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R203
+U 1 1 5E1BDCBB
+P 3650 2050
+F 0 "R203" H 3720 2096 50  0000 L CNN
+F 1 "270k" H 3720 2005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3580 2050 50  0001 C CNN
+F 3 "~" H 3650 2050 50  0001 C CNN
+	1    3650 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C202
+U 1 1 5E1BD24A
+P 3650 2800
+F 0 "C202" H 3765 2846 50  0000 L CNN
+F 1 "22pF" H 3765 2755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3688 2650 50  0001 C CNN
+F 3 "~" H 3650 2800 50  0001 C CNN
+	1    3650 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C201
+U 1 1 5E1BC8A0
+P 3350 2800
+F 0 "C201" H 3050 2850 50  0000 L CNN
+F 1 "22pF" H 3050 2750 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3388 2650 50  0001 C CNN
+F 3 "~" H 3350 2800 50  0001 C CNN
+	1    3350 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Crystal Y201
+U 1 1 5E1BBBC1
+P 3500 2500
+F 0 "Y201" H 3500 2768 50  0000 C CNN
+F 1 "32.768kHz" H 3500 2677 50  0000 C CNN
+F 2 "Crystal:Crystal_Round_D2.0mm_Vertical" H 3500 2500 50  0001 C CNN
+F 3 "~" H 3500 2500 50  0001 C CNN
+	1    3500 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC04 U201
+U 7 1 5E46B685
+P 1200 1300
+F 0 "U201" H 1430 1346 50  0000 L CNN
+F 1 "74HCU04E" H 1430 1255 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 1200 1300 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 1200 1300 50  0001 C CNN
+	7    1200 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 5E46CC6E
+P 1200 1800
+F 0 "#PWR0105" H 1200 1550 50  0001 C CNN
+F 1 "GND" H 1205 1627 50  0000 C CNN
+F 2 "" H 1200 1800 50  0001 C CNN
+F 3 "" H 1200 1800 50  0001 C CNN
+	1    1200 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0106
+U 1 1 5E46D466
+P 1675 675
+F 0 "#PWR0106" H 1675 525 50  0001 C CNN
+F 1 "+5V" H 1675 825 50  0000 C CNN
+F 2 "" H 1675 675 50  0001 C CNN
+F 3 "" H 1675 675 50  0001 C CNN
+	1    1675 675 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5E23CF44
+P 1850 850
+AR Path="/5E1BB8D2/5E23CF44" Ref="C?"  Part="1" 
+AR Path="/5E1BB75E/5E23CF44" Ref="C204"  Part="1" 
+F 0 "C204" H 1942 896 50  0000 L CNN
+F 1 "0.1uF" H 1942 805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1850 850 50  0001 C CNN
+F 3 "~" H 1850 850 50  0001 C CNN
+	1    1850 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5E23CF4A
+P 1525 850
+AR Path="/5E1BB8D2/5E23CF4A" Ref="C?"  Part="1" 
+AR Path="/5E1BB75E/5E23CF4A" Ref="C203"  Part="1" 
+F 0 "C203" H 1617 896 50  0000 L CNN
+F 1 "1uF" H 1617 805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1525 850 50  0001 C CNN
+F 3 "~" H 1525 850 50  0001 C CNN
+	1    1525 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E23CF50
+P 1525 950
+AR Path="/5E1BB8D2/5E23CF50" Ref="#PWR?"  Part="1" 
+AR Path="/5E1BB75E/5E23CF50" Ref="#PWR0110"  Part="1" 
+F 0 "#PWR0110" H 1525 700 50  0001 C CNN
+F 1 "GND" H 1530 777 50  0000 C CNN
+F 2 "" H 1525 950 50  0001 C CNN
+F 3 "" H 1525 950 50  0001 C CNN
+	1    1525 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E23CF56
+P 1850 950
+AR Path="/5E1BB8D2/5E23CF56" Ref="#PWR?"  Part="1" 
+AR Path="/5E1BB75E/5E23CF56" Ref="#PWR0111"  Part="1" 
+F 0 "#PWR0111" H 1850 700 50  0001 C CNN
+F 1 "GND" H 1855 777 50  0000 C CNN
+F 2 "" H 1850 950 50  0001 C CNN
+F 3 "" H 1850 950 50  0001 C CNN
+	1    1850 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 750  1675 750 
+Wire Wire Line
+	1675 750  1675 675 
+Connection ~ 1675 750 
+Wire Wire Line
+	1675 750  1525 750 
+Wire Wire Line
+	1525 750  1200 750 
+Wire Wire Line
+	1200 750  1200 800 
+Connection ~ 1525 750 
+$Comp
+L 74xx:74HC04 U201
+U 2 1 5E2D475E
+P 1200 2400
+F 0 "U201" H 1200 2717 50  0000 C CNN
+F 1 "74HCU04E" H 1200 2626 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 1200 2400 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 1200 2400 50  0001 C CNN
+	2    1200 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC04 U201
+U 3 1 5E2D60FD
+P 1200 2900
+F 0 "U201" H 1200 3217 50  0000 C CNN
+F 1 "74HCU04E" H 1200 3126 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 1200 2900 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 1200 2900 50  0001 C CNN
+	3    1200 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC04 U201
+U 4 1 5E2D7380
+P 1200 3375
+F 0 "U201" H 1200 3692 50  0000 C CNN
+F 1 "74HCU04E" H 1200 3601 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 1200 3375 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 1200 3375 50  0001 C CNN
+	4    1200 3375
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC04 U201
+U 5 1 5E2D7DAC
+P 1200 3850
+F 0 "U201" H 1200 4167 50  0000 C CNN
+F 1 "74HCU04E" H 1200 4076 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 1200 3850 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 1200 3850 50  0001 C CNN
+	5    1200 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC04 U201
+U 6 1 5E2D8EB6
+P 1200 4325
+F 0 "U201" H 1200 4642 50  0000 C CNN
+F 1 "74HCU04E" H 1200 4551 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 1200 4325 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 1200 4325 50  0001 C CNN
+	6    1200 4325
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0203
+U 1 1 5E2DA04B
+P 900 2400
+F 0 "#PWR0203" H 900 2250 50  0001 C CNN
+F 1 "+5V" V 915 2528 50  0000 L CNN
+F 2 "" H 900 2400 50  0001 C CNN
+F 3 "" H 900 2400 50  0001 C CNN
+	1    900  2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR0204
+U 1 1 5E2DB164
+P 900 2900
+F 0 "#PWR0204" H 900 2750 50  0001 C CNN
+F 1 "+5V" V 915 3028 50  0000 L CNN
+F 2 "" H 900 2900 50  0001 C CNN
+F 3 "" H 900 2900 50  0001 C CNN
+	1    900  2900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR0205
+U 1 1 5E2DB53E
+P 900 3375
+F 0 "#PWR0205" H 900 3225 50  0001 C CNN
+F 1 "+5V" V 915 3503 50  0000 L CNN
+F 2 "" H 900 3375 50  0001 C CNN
+F 3 "" H 900 3375 50  0001 C CNN
+	1    900  3375
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR0206
+U 1 1 5E2DB916
+P 900 3850
+F 0 "#PWR0206" H 900 3700 50  0001 C CNN
+F 1 "+5V" V 915 3978 50  0000 L CNN
+F 2 "" H 900 3850 50  0001 C CNN
+F 3 "" H 900 3850 50  0001 C CNN
+	1    900  3850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR0207
+U 1 1 5E2DBA8E
+P 900 4325
+F 0 "#PWR0207" H 900 4175 50  0001 C CNN
+F 1 "+5V" V 915 4453 50  0000 L CNN
+F 2 "" H 900 4325 50  0001 C CNN
+F 3 "" H 900 4325 50  0001 C CNN
+	1    900  4325
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 1500 4325
+NoConn ~ 1500 3850
+NoConn ~ 1500 3375
+NoConn ~ 1500 2900
+NoConn ~ 1500 2400
+$EndSCHEMATC

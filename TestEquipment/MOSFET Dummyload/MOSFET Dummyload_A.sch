@@ -1,0 +1,261 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "2020-07-12"
+Rev "B"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5EB5D4EE
+P 1500 1400
+F 0 "H1" H 1600 1403 50  0000 L CNN
+F 1 "MountingHole_Pad" H 1600 1358 50  0001 L CNN
+F 2 "footprints:113 BK Mounting Hole" H 1500 1400 50  0001 C CNN
+F 3 "~" H 1500 1400 50  0001 C CNN
+	1    1500 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5EB5EE99
+P 1800 1400
+F 0 "H2" H 1900 1403 50  0000 L CNN
+F 1 "MountingHole_Pad" H 1900 1358 50  0001 L CNN
+F 2 "footprints:113 BK Mounting Hole" H 1800 1400 50  0001 C CNN
+F 3 "~" H 1800 1400 50  0001 C CNN
+	1    1800 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 5EB5F48E
+P 2100 1400
+F 0 "H3" H 2200 1403 50  0000 L CNN
+F 1 "MountingHole_Pad" H 2200 1358 50  0001 L CNN
+F 2 "footprints:113 BK Mounting Hole" H 2100 1400 50  0001 C CNN
+F 3 "~" H 2100 1400 50  0001 C CNN
+	1    2100 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 5EB5F9A3
+P 2400 1400
+F 0 "H4" H 2500 1403 50  0000 L CNN
+F 1 "MountingHole_Pad" H 2500 1358 50  0001 L CNN
+F 2 "footprints:113 BK Mounting Hole" H 2400 1400 50  0001 C CNN
+F 3 "~" H 2400 1400 50  0001 C CNN
+	1    2400 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5EB5FE20
+P 1500 1600
+F 0 "#PWR02" H 1500 1350 50  0001 C CNN
+F 1 "GND" H 1505 1427 50  0000 C CNN
+F 2 "" H 1500 1600 50  0001 C CNN
+F 3 "" H 1500 1600 50  0001 C CNN
+	1    1500 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 1600 1500 1500
+$Comp
+L power:GND #PWR03
+U 1 1 5EB6079C
+P 1800 1600
+F 0 "#PWR03" H 1800 1350 50  0001 C CNN
+F 1 "GND" H 1805 1427 50  0000 C CNN
+F 2 "" H 1800 1600 50  0001 C CNN
+F 3 "" H 1800 1600 50  0001 C CNN
+	1    1800 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 1600 1800 1500
+$Comp
+L power:GND #PWR04
+U 1 1 5EB60C70
+P 2100 1600
+F 0 "#PWR04" H 2100 1350 50  0001 C CNN
+F 1 "GND" H 2105 1427 50  0000 C CNN
+F 2 "" H 2100 1600 50  0001 C CNN
+F 3 "" H 2100 1600 50  0001 C CNN
+	1    2100 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 1600 2100 1500
+$Comp
+L power:GND #PWR05
+U 1 1 5EB611F8
+P 2400 1600
+F 0 "#PWR05" H 2400 1350 50  0001 C CNN
+F 1 "GND" H 2405 1427 50  0000 C CNN
+F 2 "" H 2400 1600 50  0001 C CNN
+F 3 "" H 2400 1600 50  0001 C CNN
+	1    2400 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 1600 2400 1500
+$Comp
+L Amplifier_Operational:LM324 U?
+U 1 1 5F0B8270
+P 4750 3100
+F 0 "U?" H 4750 3467 50  0000 C CNN
+F 1 "LM324" H 4750 3376 50  0000 C CNN
+F 2 "" H 4700 3200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 4800 3300 50  0001 C CNN
+	1    4750 3100
+	1    0    0    -1  
+$EndComp
+Text Label 5200 1700 0    50   ~ 0
+DUT_IN
+$Comp
+L power:+12V #PWR?
+U 1 1 5F0C29AD
+P 4500 1650
+F 0 "#PWR?" H 4500 1500 50  0001 C CNN
+F 1 "+12V" V 4515 1778 50  0000 L CNN
+F 2 "" H 4500 1650 50  0001 C CNN
+F 3 "" H 4500 1650 50  0001 C CNN
+	1    4500 1650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4500 1650 4500 1500
+$Comp
+L Connector_Generic:Conn_01x08 J?
+U 1 1 5F0C33FC
+P 4800 1300
+F 0 "J?" V 4764 812 50  0000 R CNN
+F 1 "Conn_01x08" V 4673 812 50  0000 R CNN
+F 2 "" H 4800 1300 50  0001 C CNN
+F 3 "~" H 4800 1300 50  0001 C CNN
+	1    4800 1300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4500 1650 4600 1650
+Wire Wire Line
+	4600 1650 4600 1500
+Connection ~ 4500 1650
+Wire Wire Line
+	5200 1500 5200 1600
+Wire Wire Line
+	5100 1500 5100 1600
+Wire Wire Line
+	5100 1600 5200 1600
+Connection ~ 5200 1600
+Wire Wire Line
+	5200 1600 5200 1700
+$Comp
+L power:GND #PWR?
+U 1 1 5F0C97F7
+P 4700 1650
+F 0 "#PWR?" H 4700 1400 50  0001 C CNN
+F 1 "GND" H 4705 1477 50  0000 C CNN
+F 2 "" H 4700 1650 50  0001 C CNN
+F 3 "" H 4700 1650 50  0001 C CNN
+	1    4700 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 1650 4700 1600
+Wire Wire Line
+	4700 1600 4800 1600
+Wire Wire Line
+	4800 1600 4800 1500
+Connection ~ 4700 1600
+Wire Wire Line
+	4700 1600 4700 1500
+NoConn ~ 4900 1500
+NoConn ~ 5000 1500
+$Comp
+L dk_Transistors-FETs-MOSFETs-Single:IRF510PBF Q?
+U 1 1 5F0CF6C3
+P 5700 3000
+F 0 "Q?" H 5808 3053 60  0000 L CNN
+F 1 "TBD" H 5808 2947 60  0000 L CNN
+F 2 "" H 5900 3200 60  0001 L CNN
+F 3 "" H 5900 3300 60  0001 L CNN
+F 4 "" H 5900 3400 60  0001 L CNN "Digi-Key_PN"
+F 5 "" H 5900 3500 60  0001 L CNN "MPN"
+F 6 "" H 5900 3600 60  0001 L CNN "Category"
+F 7 "" H 5900 3700 60  0001 L CNN "Family"
+F 8 "" H 5900 3800 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "" H 5900 3900 60  0001 L CNN "DK_Detail_Page"
+F 10 "" H 5900 4000 60  0001 L CNN "Description"
+F 11 "" H 5900 4100 60  0001 L CNN "Manufacturer"
+F 12 "" H 5900 4200 60  0001 L CNN "Status"
+	1    5700 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 3100 5400 3100
+Wire Wire Line
+	5700 2800 5700 2600
+Text Label 5700 2600 0    50   ~ 0
+DUT_IN
+Wire Wire Line
+	4450 3200 4400 3200
+Wire Wire Line
+	4400 3200 4400 3500
+Wire Wire Line
+	4400 3500 5700 3500
+Wire Wire Line
+	5700 3200 5700 3500
+Connection ~ 5700 3500
+Wire Wire Line
+	5700 3500 5700 3800
+$Comp
+L Device:R_Shunt R?
+U 1 1 5F0D29AE
+P 5700 4000
+F 0 "R?" H 5612 4046 50  0000 R CNN
+F 1 "R_Shunt" H 5612 3955 50  0000 R CNN
+F 2 "" V 5630 4000 50  0001 C CNN
+F 3 "~" H 5700 4000 50  0001 C CNN
+	1    5700 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LM324 U?
+U 2 1 5F0D518F
+P 6450 4000
+F 0 "U?" H 6450 4367 50  0000 C CNN
+F 1 "LM324" H 6450 4276 50  0000 C CNN
+F 2 "" H 6400 4100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 6500 4200 50  0001 C CNN
+	2    6450 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 3900 6150 3900
+Wire Wire Line
+	5850 4100 6150 4100
+$Comp
+L power:GND #PWR?
+U 1 1 5F0D61F0
+P 5700 4300
+F 0 "#PWR?" H 5700 4050 50  0001 C CNN
+F 1 "GND" H 5705 4127 50  0000 C CNN
+F 2 "" H 5700 4300 50  0001 C CNN
+F 3 "" H 5700 4300 50  0001 C CNN
+	1    5700 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 4300 5700 4200
+$EndSCHEMATC
