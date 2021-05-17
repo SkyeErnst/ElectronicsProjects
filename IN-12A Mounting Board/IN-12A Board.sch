@@ -1,0 +1,452 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L nixies-us:IN-12A NX3
+U 1 1 60084AC6
+P 7600 2350
+F 0 "NX3" H 7550 3195 45  0000 C CNN
+F 1 "IN-12A" H 7600 2350 45  0001 L BNN
+F 2 "Nixie Footprints US:nixies-us-IN-12" H 7630 2500 20  0001 C CNN
+F 3 "" H 7600 2350 50  0001 C CNN
+	1    7600 2350
+	1    0    0    -1  
+$EndComp
+Text Notes 8100 1100 0    50   ~ 0
+Hour Display
+Text Notes 3650 4350 0    50   ~ 0
+Minute Display\n
+$Comp
+L Connector_Generic:Conn_01x11 J3
+U 1 1 6009601E
+P 5950 2350
+F 0 "J3" H 5868 1625 50  0000 C CNN
+F 1 "Conn_01x11" H 5868 1716 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x11_P2.54mm_Vertical" H 5950 2350 50  0001 C CNN
+F 3 "~" H 5950 2350 50  0001 C CNN
+	1    5950 2350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7100 2750 7100 2850
+Wire Wire Line
+	7100 2850 6150 2850
+Wire Wire Line
+	7100 1850 6250 1850
+Wire Wire Line
+	6250 1850 6250 2750
+Wire Wire Line
+	6250 2750 6150 2750
+Wire Wire Line
+	7100 1950 6300 1950
+Wire Wire Line
+	6300 1950 6300 2650
+Wire Wire Line
+	6300 2650 6150 2650
+Wire Wire Line
+	7100 2050 6350 2050
+Wire Wire Line
+	6350 2050 6350 2550
+Wire Wire Line
+	6350 2550 6150 2550
+Wire Wire Line
+	7100 2150 6400 2150
+Wire Wire Line
+	6400 2150 6400 2450
+Wire Wire Line
+	6400 2450 6150 2450
+Wire Wire Line
+	7100 2250 6450 2250
+Wire Wire Line
+	6450 2250 6450 2350
+Wire Wire Line
+	6450 2350 6150 2350
+Wire Wire Line
+	6150 2250 6200 2250
+Wire Wire Line
+	6200 2250 6200 2300
+Wire Wire Line
+	7100 2350 7050 2350
+Wire Wire Line
+	7050 2350 7050 2300
+Wire Wire Line
+	7050 2300 6200 2300
+Wire Wire Line
+	7100 2450 7000 2450
+Wire Wire Line
+	7000 2450 7000 2200
+Wire Wire Line
+	7000 2200 6200 2200
+Wire Wire Line
+	6200 2200 6200 2150
+Wire Wire Line
+	6200 2150 6150 2150
+Wire Wire Line
+	7100 2550 6950 2550
+Wire Wire Line
+	6950 2550 6950 2100
+Wire Wire Line
+	6950 2100 6200 2100
+Wire Wire Line
+	6200 2100 6200 2050
+Wire Wire Line
+	6200 2050 6150 2050
+Wire Wire Line
+	7100 2650 6900 2650
+Wire Wire Line
+	6900 2650 6900 2000
+Wire Wire Line
+	6900 2000 6200 2000
+Wire Wire Line
+	6200 2000 6200 1950
+Wire Wire Line
+	6200 1950 6150 1950
+Wire Wire Line
+	8000 2350 8000 1350
+Wire Wire Line
+	8000 1350 6350 1350
+Wire Wire Line
+	6350 1350 6350 1800
+Wire Wire Line
+	6350 1800 6200 1800
+Wire Wire Line
+	6200 1800 6200 1850
+Wire Wire Line
+	6200 1850 6150 1850
+$Comp
+L nixies-us:IN-12A NX4
+U 1 1 6009EF01
+P 10200 2400
+F 0 "NX4" H 10150 3245 45  0000 C CNN
+F 1 "IN-12A" H 10200 2400 45  0001 L BNN
+F 2 "Nixie Footprints US:nixies-us-IN-12" H 10230 2550 20  0001 C CNN
+F 3 "" H 10200 2400 50  0001 C CNN
+	1    10200 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x11 J4
+U 1 1 6009EF07
+P 8550 2400
+F 0 "J4" H 8468 1675 50  0000 C CNN
+F 1 "Conn_01x11" H 8468 1766 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x11_P2.54mm_Vertical" H 8550 2400 50  0001 C CNN
+F 3 "~" H 8550 2400 50  0001 C CNN
+	1    8550 2400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9700 2800 9700 2900
+Wire Wire Line
+	9700 2900 8750 2900
+Wire Wire Line
+	9700 1900 8850 1900
+Wire Wire Line
+	8850 1900 8850 2800
+Wire Wire Line
+	8850 2800 8750 2800
+Wire Wire Line
+	9700 2000 8900 2000
+Wire Wire Line
+	8900 2000 8900 2700
+Wire Wire Line
+	8900 2700 8750 2700
+Wire Wire Line
+	9700 2100 8950 2100
+Wire Wire Line
+	8950 2100 8950 2600
+Wire Wire Line
+	8950 2600 8750 2600
+Wire Wire Line
+	9700 2200 9000 2200
+Wire Wire Line
+	9000 2200 9000 2500
+Wire Wire Line
+	9000 2500 8750 2500
+Wire Wire Line
+	9700 2300 9050 2300
+Wire Wire Line
+	9050 2300 9050 2400
+Wire Wire Line
+	9050 2400 8750 2400
+Wire Wire Line
+	8750 2300 8800 2300
+Wire Wire Line
+	8800 2300 8800 2350
+Wire Wire Line
+	9700 2400 9650 2400
+Wire Wire Line
+	9650 2400 9650 2350
+Wire Wire Line
+	9650 2350 8800 2350
+Wire Wire Line
+	9700 2500 9600 2500
+Wire Wire Line
+	9600 2500 9600 2250
+Wire Wire Line
+	9600 2250 8800 2250
+Wire Wire Line
+	8800 2250 8800 2200
+Wire Wire Line
+	8800 2200 8750 2200
+Wire Wire Line
+	9700 2600 9550 2600
+Wire Wire Line
+	9550 2600 9550 2150
+Wire Wire Line
+	9550 2150 8800 2150
+Wire Wire Line
+	8800 2150 8800 2100
+Wire Wire Line
+	8800 2100 8750 2100
+Wire Wire Line
+	9700 2700 9500 2700
+Wire Wire Line
+	9500 2700 9500 2050
+Wire Wire Line
+	9500 2050 8800 2050
+Wire Wire Line
+	8800 2050 8800 2000
+Wire Wire Line
+	8800 2000 8750 2000
+Wire Wire Line
+	10600 2400 10600 1400
+Wire Wire Line
+	10600 1400 8950 1400
+Wire Wire Line
+	8950 1400 8950 1850
+Wire Wire Line
+	8950 1850 8800 1850
+Wire Wire Line
+	8800 1850 8800 1900
+Wire Wire Line
+	8800 1900 8750 1900
+$Comp
+L nixies-us:IN-12A NX1
+U 1 1 600A295F
+P 3150 5900
+F 0 "NX1" H 3100 6745 45  0000 C CNN
+F 1 "IN-12A" H 3150 5900 45  0001 L BNN
+F 2 "Nixie Footprints US:nixies-us-IN-12" H 3180 6050 20  0001 C CNN
+F 3 "" H 3150 5900 50  0001 C CNN
+	1    3150 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x11 J1
+U 1 1 600A2965
+P 1500 5900
+F 0 "J1" H 1418 5175 50  0000 C CNN
+F 1 "Conn_01x11" H 1418 5266 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x11_P2.54mm_Vertical" H 1500 5900 50  0001 C CNN
+F 3 "~" H 1500 5900 50  0001 C CNN
+	1    1500 5900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2650 6300 2650 6400
+Wire Wire Line
+	2650 6400 1700 6400
+Wire Wire Line
+	2650 5400 1800 5400
+Wire Wire Line
+	1800 5400 1800 6300
+Wire Wire Line
+	1800 6300 1700 6300
+Wire Wire Line
+	2650 5500 1850 5500
+Wire Wire Line
+	1850 5500 1850 6200
+Wire Wire Line
+	1850 6200 1700 6200
+Wire Wire Line
+	2650 5600 1900 5600
+Wire Wire Line
+	1900 5600 1900 6100
+Wire Wire Line
+	1900 6100 1700 6100
+Wire Wire Line
+	2650 5700 1950 5700
+Wire Wire Line
+	1950 5700 1950 6000
+Wire Wire Line
+	1950 6000 1700 6000
+Wire Wire Line
+	2650 5800 2000 5800
+Wire Wire Line
+	2000 5800 2000 5900
+Wire Wire Line
+	2000 5900 1700 5900
+Wire Wire Line
+	1700 5800 1750 5800
+Wire Wire Line
+	1750 5800 1750 5850
+Wire Wire Line
+	2650 5900 2600 5900
+Wire Wire Line
+	2600 5900 2600 5850
+Wire Wire Line
+	2600 5850 1750 5850
+Wire Wire Line
+	2650 6000 2550 6000
+Wire Wire Line
+	2550 6000 2550 5750
+Wire Wire Line
+	2550 5750 1750 5750
+Wire Wire Line
+	1750 5750 1750 5700
+Wire Wire Line
+	1750 5700 1700 5700
+Wire Wire Line
+	2650 6100 2500 6100
+Wire Wire Line
+	2500 6100 2500 5650
+Wire Wire Line
+	2500 5650 1750 5650
+Wire Wire Line
+	1750 5650 1750 5600
+Wire Wire Line
+	1750 5600 1700 5600
+Wire Wire Line
+	2650 6200 2450 6200
+Wire Wire Line
+	2450 6200 2450 5550
+Wire Wire Line
+	2450 5550 1750 5550
+Wire Wire Line
+	1750 5550 1750 5500
+Wire Wire Line
+	1750 5500 1700 5500
+Wire Wire Line
+	3550 5900 3550 4900
+Wire Wire Line
+	3550 4900 1900 4900
+Wire Wire Line
+	1900 4900 1900 5350
+Wire Wire Line
+	1900 5350 1750 5350
+Wire Wire Line
+	1750 5350 1750 5400
+Wire Wire Line
+	1750 5400 1700 5400
+$Comp
+L nixies-us:IN-12A NX2
+U 1 1 600A84AF
+P 5750 5950
+F 0 "NX2" H 5700 6795 45  0000 C CNN
+F 1 "IN-12A" H 5750 5950 45  0001 L BNN
+F 2 "Nixie Footprints US:nixies-us-IN-12" H 5780 6100 20  0001 C CNN
+F 3 "" H 5750 5950 50  0001 C CNN
+	1    5750 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x11 J2
+U 1 1 600A84B5
+P 4100 5950
+F 0 "J2" H 4018 5225 50  0000 C CNN
+F 1 "Conn_01x11" H 4018 5316 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x11_P2.54mm_Vertical" H 4100 5950 50  0001 C CNN
+F 3 "~" H 4100 5950 50  0001 C CNN
+	1    4100 5950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5250 6350 5250 6450
+Wire Wire Line
+	5250 6450 4300 6450
+Wire Wire Line
+	5250 5450 4400 5450
+Wire Wire Line
+	4400 5450 4400 6350
+Wire Wire Line
+	4400 6350 4300 6350
+Wire Wire Line
+	5250 5550 4450 5550
+Wire Wire Line
+	4450 5550 4450 6250
+Wire Wire Line
+	4450 6250 4300 6250
+Wire Wire Line
+	5250 5650 4500 5650
+Wire Wire Line
+	4500 5650 4500 6150
+Wire Wire Line
+	4500 6150 4300 6150
+Wire Wire Line
+	5250 5750 4550 5750
+Wire Wire Line
+	4550 5750 4550 6050
+Wire Wire Line
+	4550 6050 4300 6050
+Wire Wire Line
+	5250 5850 4600 5850
+Wire Wire Line
+	4600 5850 4600 5950
+Wire Wire Line
+	4600 5950 4300 5950
+Wire Wire Line
+	4300 5850 4350 5850
+Wire Wire Line
+	4350 5850 4350 5900
+Wire Wire Line
+	5250 5950 5200 5950
+Wire Wire Line
+	5200 5950 5200 5900
+Wire Wire Line
+	5200 5900 4350 5900
+Wire Wire Line
+	5250 6050 5150 6050
+Wire Wire Line
+	5150 6050 5150 5800
+Wire Wire Line
+	5150 5800 4350 5800
+Wire Wire Line
+	4350 5800 4350 5750
+Wire Wire Line
+	4350 5750 4300 5750
+Wire Wire Line
+	5250 6150 5100 6150
+Wire Wire Line
+	5100 6150 5100 5700
+Wire Wire Line
+	5100 5700 4350 5700
+Wire Wire Line
+	4350 5700 4350 5650
+Wire Wire Line
+	4350 5650 4300 5650
+Wire Wire Line
+	5250 6250 5050 6250
+Wire Wire Line
+	5050 6250 5050 5600
+Wire Wire Line
+	5050 5600 4350 5600
+Wire Wire Line
+	4350 5600 4350 5550
+Wire Wire Line
+	4350 5550 4300 5550
+Wire Wire Line
+	6150 5950 6150 4950
+Wire Wire Line
+	6150 4950 4500 4950
+Wire Wire Line
+	4500 4950 4500 5400
+Wire Wire Line
+	4500 5400 4350 5400
+Wire Wire Line
+	4350 5400 4350 5450
+Wire Wire Line
+	4350 5450 4300 5450
+$EndSCHEMATC

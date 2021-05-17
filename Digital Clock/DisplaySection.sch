@@ -1,0 +1,480 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 74xx_IEEE:7447 U?
+U 1 1 5E340685
+P 2900 1450
+F 0 "U?" H 2900 2066 50  0000 C CNN
+F 1 "7447" H 2900 1975 50  0000 C CNN
+F 2 "" H 2900 1450 50  0001 C CNN
+F 3 "" H 2900 1450 50  0001 C CNN
+	1    2900 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx_IEEE:7447 U?
+U 1 1 5E344435
+P 2900 2700
+F 0 "U?" H 2900 3316 50  0000 C CNN
+F 1 "7447" H 2900 3225 50  0000 C CNN
+F 2 "" H 2900 2700 50  0001 C CNN
+F 3 "" H 2900 2700 50  0001 C CNN
+	1    2900 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx_IEEE:7447 U?
+U 1 1 5E344E1C
+P 2900 3900
+F 0 "U?" H 2900 4516 50  0000 C CNN
+F 1 "7447" H 2900 4425 50  0000 C CNN
+F 2 "" H 2900 3900 50  0001 C CNN
+F 3 "" H 2900 3900 50  0001 C CNN
+	1    2900 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx_IEEE:7447 U?
+U 1 1 5E345524
+P 2900 5100
+F 0 "U?" H 2900 5716 50  0000 C CNN
+F 1 "7447" H 2900 5625 50  0000 C CNN
+F 2 "" H 2900 5100 50  0001 C CNN
+F 3 "" H 2900 5100 50  0001 C CNN
+	1    2900 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Display_Character:LTS-6960HR AFF?
+U 1 1 5E3460A6
+P 6250 1500
+F 0 "AFF?" H 6250 2167 50  0000 C CNN
+F 1 "LTS-6960HR" H 6250 2076 50  0000 C CNN
+F 2 "Display_7Segment:7SegmentLED_LTS6760_LTS6780" H 6250 900 50  0001 C CNN
+F 3 "https://datasheet.octopart.com/LTS-6960HR-Lite-On-datasheet-11803242.pdf" H 6250 1500 50  0001 C CNN
+	1    6250 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Display_Character:LTS-6960HR AFF?
+U 1 1 5E346FA8
+P 6250 2650
+F 0 "AFF?" H 6250 3317 50  0000 C CNN
+F 1 "LTS-6960HR" H 6250 3226 50  0000 C CNN
+F 2 "Display_7Segment:7SegmentLED_LTS6760_LTS6780" H 6250 2050 50  0001 C CNN
+F 3 "https://datasheet.octopart.com/LTS-6960HR-Lite-On-datasheet-11803242.pdf" H 6250 2650 50  0001 C CNN
+	1    6250 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Display_Character:LTS-6960HR AFF?
+U 1 1 5E348D0B
+P 6250 4200
+F 0 "AFF?" H 6250 4867 50  0000 C CNN
+F 1 "LTS-6960HR" H 6250 4776 50  0000 C CNN
+F 2 "Display_7Segment:7SegmentLED_LTS6760_LTS6780" H 6250 3600 50  0001 C CNN
+F 3 "https://datasheet.octopart.com/LTS-6960HR-Lite-On-datasheet-11803242.pdf" H 6250 4200 50  0001 C CNN
+	1    6250 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Display_Character:LTS-6960HR AFF?
+U 1 1 5E348D11
+P 6250 5350
+F 0 "AFF?" H 6250 6017 50  0000 C CNN
+F 1 "LTS-6960HR" H 6250 5926 50  0000 C CNN
+F 2 "Display_7Segment:7SegmentLED_LTS6760_LTS6780" H 6250 4750 50  0001 C CNN
+F 3 "https://datasheet.octopart.com/LTS-6960HR-Lite-On-datasheet-11803242.pdf" H 6250 5350 50  0001 C CNN
+	1    6250 5350
+	1    0    0    -1  
+$EndComp
+Text HLabel 2350 1100 0    50   Input ~ 0
+1stP_HH_O
+Text HLabel 2350 1200 0    50   Input ~ 0
+2ndP_HH_O
+Text HLabel 2350 1300 0    50   Input ~ 0
+3rdP_HH_O
+Text HLabel 2350 1400 0    50   Input ~ 0
+4thP_HH_O
+Text HLabel 2350 2350 0    50   Input ~ 0
+1stP_H_O
+Text HLabel 2350 2450 0    50   Input ~ 0
+2ndP_H_O
+Text HLabel 2350 2550 0    50   Input ~ 0
+3rdP_H_O
+Text HLabel 2350 2650 0    50   Input ~ 0
+4thP_H_O
+Text HLabel 2350 3550 0    50   Input ~ 0
+1stP_MM_O
+Text HLabel 2350 3650 0    50   Input ~ 0
+2ndP_MM_O
+Text HLabel 2350 3750 0    50   Input ~ 0
+3rdP_MM_O
+Text HLabel 2350 3850 0    50   Input ~ 0
+4thP_MM_O
+Text HLabel 2350 4750 0    50   Input ~ 0
+1stP_M_O
+Text HLabel 2350 4850 0    50   Input ~ 0
+2ndP_M_O
+Text HLabel 2350 4950 0    50   Input ~ 0
+3rdP_M_O
+Text HLabel 2350 5050 0    50   Input ~ 0
+4thP_M_O
+$Comp
+L power:+5V #PWR?
+U 1 1 5E34C630
+P 2350 4000
+F 0 "#PWR?" H 2350 3850 50  0001 C CNN
+F 1 "+5V" V 2365 4128 50  0000 L CNN
+F 2 "" H 2350 4000 50  0001 C CNN
+F 3 "" H 2350 4000 50  0001 C CNN
+	1    2350 4000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E34D3C2
+P 2350 4100
+F 0 "#PWR?" H 2350 3950 50  0001 C CNN
+F 1 "+5V" V 2365 4228 50  0000 L CNN
+F 2 "" H 2350 4100 50  0001 C CNN
+F 3 "" H 2350 4100 50  0001 C CNN
+	1    2350 4100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E34D8D6
+P 2350 5200
+F 0 "#PWR?" H 2350 5050 50  0001 C CNN
+F 1 "+5V" V 2365 5328 50  0000 L CNN
+F 2 "" H 2350 5200 50  0001 C CNN
+F 3 "" H 2350 5200 50  0001 C CNN
+	1    2350 5200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E34DFAC
+P 2350 5300
+F 0 "#PWR?" H 2350 5150 50  0001 C CNN
+F 1 "+5V" V 2365 5428 50  0000 L CNN
+F 2 "" H 2350 5300 50  0001 C CNN
+F 3 "" H 2350 5300 50  0001 C CNN
+	1    2350 5300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E34E6CE
+P 2350 2800
+F 0 "#PWR?" H 2350 2650 50  0001 C CNN
+F 1 "+5V" V 2365 2928 50  0000 L CNN
+F 2 "" H 2350 2800 50  0001 C CNN
+F 3 "" H 2350 2800 50  0001 C CNN
+	1    2350 2800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E34E6D4
+P 2350 2900
+F 0 "#PWR?" H 2350 2750 50  0001 C CNN
+F 1 "+5V" V 2365 3028 50  0000 L CNN
+F 2 "" H 2350 2900 50  0001 C CNN
+F 3 "" H 2350 2900 50  0001 C CNN
+	1    2350 2900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E34EDA0
+P 2350 1550
+F 0 "#PWR?" H 2350 1400 50  0001 C CNN
+F 1 "+5V" V 2365 1678 50  0000 L CNN
+F 2 "" H 2350 1550 50  0001 C CNN
+F 3 "" H 2350 1550 50  0001 C CNN
+	1    2350 1550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E34EDA6
+P 2350 1650
+F 0 "#PWR?" H 2350 1500 50  0001 C CNN
+F 1 "+5V" V 2365 1778 50  0000 L CNN
+F 2 "" H 2350 1650 50  0001 C CNN
+F 3 "" H 2350 1650 50  0001 C CNN
+	1    2350 1650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5750 1100 3550 1100
+Wire Wire Line
+	3550 1100 3550 1150
+Wire Wire Line
+	3550 1150 3450 1150
+Wire Wire Line
+	3450 1250 3600 1250
+Wire Wire Line
+	3600 1250 3600 1200
+Wire Wire Line
+	3600 1200 5750 1200
+Wire Wire Line
+	3450 1350 3650 1350
+Wire Wire Line
+	3650 1350 3650 1300
+Wire Wire Line
+	3650 1300 5750 1300
+Wire Wire Line
+	3450 1450 3700 1450
+Wire Wire Line
+	3700 1450 3700 1400
+Wire Wire Line
+	3700 1400 5750 1400
+Wire Wire Line
+	3450 1550 3750 1550
+Wire Wire Line
+	3750 1550 3750 1500
+Wire Wire Line
+	3750 1500 5750 1500
+Wire Wire Line
+	3450 1650 3800 1650
+Wire Wire Line
+	3800 1650 3800 1600
+Wire Wire Line
+	3800 1600 5750 1600
+Wire Wire Line
+	3450 1750 3850 1750
+Wire Wire Line
+	3850 1750 3850 1700
+Wire Wire Line
+	3850 1700 5750 1700
+Wire Wire Line
+	3450 2400 5350 2400
+Wire Wire Line
+	5350 2400 5350 2250
+Wire Wire Line
+	5350 2250 5750 2250
+Wire Wire Line
+	5750 2350 5400 2350
+Wire Wire Line
+	5400 2350 5400 2500
+Wire Wire Line
+	5400 2500 3450 2500
+Wire Wire Line
+	3450 2600 5450 2600
+Wire Wire Line
+	5450 2600 5450 2450
+Wire Wire Line
+	5450 2450 5750 2450
+Wire Wire Line
+	5750 2550 5500 2550
+Wire Wire Line
+	5500 2700 3450 2700
+Wire Wire Line
+	5500 2550 5500 2700
+Wire Wire Line
+	3450 2800 5550 2800
+Wire Wire Line
+	5550 2800 5550 2650
+Wire Wire Line
+	5550 2650 5750 2650
+Wire Wire Line
+	5750 2750 5600 2750
+Wire Wire Line
+	5600 2750 5600 2900
+Wire Wire Line
+	5600 2900 3450 2900
+Wire Wire Line
+	3450 3000 5650 3000
+Wire Wire Line
+	5650 3000 5650 2850
+Wire Wire Line
+	5650 2850 5750 2850
+Wire Wire Line
+	5750 3800 4300 3800
+Wire Wire Line
+	4300 3800 4300 3600
+Wire Wire Line
+	4300 3600 3450 3600
+Wire Wire Line
+	3450 3700 4250 3700
+Wire Wire Line
+	4250 3700 4250 3900
+Wire Wire Line
+	4250 3900 5750 3900
+Wire Wire Line
+	5750 4000 4200 4000
+Wire Wire Line
+	4200 4000 4200 3800
+Wire Wire Line
+	4200 3800 3450 3800
+Wire Wire Line
+	3450 3900 4150 3900
+Wire Wire Line
+	4150 3900 4150 4100
+Wire Wire Line
+	4150 4100 5750 4100
+Wire Wire Line
+	5750 4200 4100 4200
+Wire Wire Line
+	4100 4200 4100 4000
+Wire Wire Line
+	4100 4000 3450 4000
+Wire Wire Line
+	3450 4100 4050 4100
+Wire Wire Line
+	4050 4100 4050 4300
+Wire Wire Line
+	4050 4300 5750 4300
+Wire Wire Line
+	5750 4400 4000 4400
+Wire Wire Line
+	4000 4400 4000 4200
+Wire Wire Line
+	4000 4200 3450 4200
+Wire Wire Line
+	3450 4800 4750 4800
+Wire Wire Line
+	4750 4800 4750 4950
+Wire Wire Line
+	4750 4950 5750 4950
+Wire Wire Line
+	5750 5050 4700 5050
+Wire Wire Line
+	4700 5050 4700 4900
+Wire Wire Line
+	4700 4900 3450 4900
+Wire Wire Line
+	3450 5000 4650 5000
+Wire Wire Line
+	4650 5000 4650 5150
+Wire Wire Line
+	4650 5150 5750 5150
+Wire Wire Line
+	5750 5250 4600 5250
+Wire Wire Line
+	4600 5250 4600 5100
+Wire Wire Line
+	4600 5100 3450 5100
+Wire Wire Line
+	3450 5200 4550 5200
+Wire Wire Line
+	4550 5200 4550 5350
+Wire Wire Line
+	4550 5350 5750 5350
+Wire Wire Line
+	5750 5450 4500 5450
+Wire Wire Line
+	4500 5450 4500 5300
+Wire Wire Line
+	4500 5300 3450 5300
+Wire Wire Line
+	3450 5400 4450 5400
+Wire Wire Line
+	4450 5400 4450 5550
+Wire Wire Line
+	4450 5550 5750 5550
+$Comp
+L Device:R R?
+U 1 1 5E36A317
+P 6900 1100
+F 0 "R?" V 6693 1100 50  0000 C CNN
+F 1 "270" V 6784 1100 50  0000 C CNN
+F 2 "" V 6830 1100 50  0001 C CNN
+F 3 "~" H 6900 1100 50  0001 C CNN
+	1    6900 1100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E36BC2B
+P 6900 2250
+F 0 "R?" V 6693 2250 50  0000 C CNN
+F 1 "270" V 6784 2250 50  0000 C CNN
+F 2 "" V 6830 2250 50  0001 C CNN
+F 3 "~" H 6900 2250 50  0001 C CNN
+	1    6900 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E36E00C
+P 6900 3800
+F 0 "R?" V 6693 3800 50  0000 C CNN
+F 1 "270" V 6784 3800 50  0000 C CNN
+F 2 "" V 6830 3800 50  0001 C CNN
+F 3 "~" H 6900 3800 50  0001 C CNN
+	1    6900 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E3702FA
+P 6900 4950
+F 0 "R?" V 6693 4950 50  0000 C CNN
+F 1 "270" V 6784 4950 50  0000 C CNN
+F 2 "" V 6830 4950 50  0001 C CNN
+F 3 "~" H 6900 4950 50  0001 C CNN
+	1    6900 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E372508
+P 7050 1100
+F 0 "#PWR?" H 7050 950 50  0001 C CNN
+F 1 "+5V" V 7065 1228 50  0000 L CNN
+F 2 "" H 7050 1100 50  0001 C CNN
+F 3 "" H 7050 1100 50  0001 C CNN
+	1    7050 1100
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E372FA8
+P 7050 2250
+F 0 "#PWR?" H 7050 2100 50  0001 C CNN
+F 1 "+5V" V 7065 2378 50  0000 L CNN
+F 2 "" H 7050 2250 50  0001 C CNN
+F 3 "" H 7050 2250 50  0001 C CNN
+	1    7050 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E3734C7
+P 7050 3800
+F 0 "#PWR?" H 7050 3650 50  0001 C CNN
+F 1 "+5V" V 7065 3928 50  0000 L CNN
+F 2 "" H 7050 3800 50  0001 C CNN
+F 3 "" H 7050 3800 50  0001 C CNN
+	1    7050 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E373EBE
+P 7050 4950
+F 0 "#PWR?" H 7050 4800 50  0001 C CNN
+F 1 "+5V" V 7065 5078 50  0000 L CNN
+F 2 "" H 7050 4950 50  0001 C CNN
+F 3 "" H 7050 4950 50  0001 C CNN
+	1    7050 4950
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC

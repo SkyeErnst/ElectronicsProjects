@@ -1,0 +1,355 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 8
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 4xxx:4040 U302
+U 1 1 5E1C5371
+P 2000 1600
+F 0 "U302" H 2000 2581 50  0000 C CNN
+F 1 "SN74HC4040N" H 2000 2490 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_LongPads" H 2000 1600 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4020bms-24bms-40bms.pdf" H 2000 1600 50  0001 C CNN
+	1    2000 1600
+	1    0    0    -1  
+$EndComp
+Text HLabel 1500 1100 0    50   Input ~ 0
+Oscillator32768Output
+$Comp
+L 4xxx:4040 U303
+U 1 1 5E1C9DED
+P 3200 1600
+F 0 "U303" H 3200 2581 50  0000 C CNN
+F 1 "SN74HC4040N" H 3200 2490 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_LongPads" H 3200 1600 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4020bms-24bms-40bms.pdf" H 3200 1600 50  0001 C CNN
+	1    3200 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0302
+U 1 1 5E1CB508
+P 2000 800
+F 0 "#PWR0302" H 2000 650 50  0001 C CNN
+F 1 "+5V" V 2015 928 50  0000 L CNN
+F 2 "" H 2000 800 50  0001 C CNN
+F 3 "" H 2000 800 50  0001 C CNN
+	1    2000 800 
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0307
+U 1 1 5E1CBB5B
+P 2000 2500
+F 0 "#PWR0307" H 2000 2250 50  0001 C CNN
+F 1 "GND" H 2005 2327 50  0000 C CNN
+F 2 "" H 2000 2500 50  0001 C CNN
+F 3 "" H 2000 2500 50  0001 C CNN
+	1    2000 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 2200 2550 2200
+Wire Wire Line
+	2550 2200 2550 1100
+Wire Wire Line
+	2550 1100 2700 1100
+$Comp
+L 4xxx:4040 U305
+U 1 1 5E1CCA8A
+P 4950 1600
+F 0 "U305" H 4950 2581 50  0000 C CNN
+F 1 "SN74HC4040N" H 4950 2490 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_LongPads" H 4950 1600 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4020bms-24bms-40bms.pdf" H 4950 1600 50  0001 C CNN
+	1    4950 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0308
+U 1 1 5E1D0C8E
+P 3200 2500
+F 0 "#PWR0308" H 3200 2250 50  0001 C CNN
+F 1 "GND" H 3205 2327 50  0000 C CNN
+F 2 "" H 3200 2500 50  0001 C CNN
+F 3 "" H 3200 2500 50  0001 C CNN
+	1    3200 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0303
+U 1 1 5E1D1F30
+P 3200 800
+F 0 "#PWR0303" H 3200 650 50  0001 C CNN
+F 1 "+5V" V 3215 928 50  0000 L CNN
+F 2 "" H 3200 800 50  0001 C CNN
+F 3 "" H 3200 800 50  0001 C CNN
+	1    3200 800 
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR0304
+U 1 1 5E1D22BC
+P 4950 800
+F 0 "#PWR0304" H 4950 650 50  0001 C CNN
+F 1 "+5V" V 4965 928 50  0000 L CNN
+F 2 "" H 4950 800 50  0001 C CNN
+F 3 "" H 4950 800 50  0001 C CNN
+	1    4950 800 
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0309
+U 1 1 5E1D275C
+P 4950 2500
+F 0 "#PWR0309" H 4950 2250 50  0001 C CNN
+F 1 "GND" H 4955 2327 50  0000 C CNN
+F 2 "" H 4950 2500 50  0001 C CNN
+F 3 "" H 4950 2500 50  0001 C CNN
+	1    4950 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 1300 4350 1100
+Wire Wire Line
+	4350 1100 4450 1100
+Wire Wire Line
+	4450 2750 4450 1400
+Text HLabel 9000 1000 2    50   Output ~ 0
+SecondsOutput
+$Comp
+L dk_Logic-Gates-and-Inverters:SN74LS04N U301
+U 1 1 5E2123ED
+P 7050 1300
+F 0 "U301" H 7050 2103 60  0000 C CNN
+F 1 "74S04" H 7050 1997 60  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 7250 1500 60  0001 L CNN
+F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74ls04" H 7250 1600 60  0001 L CNN
+F 4 "296-1629-5-ND" H 7250 1700 60  0001 L CNN "Digi-Key_PN"
+F 5 "SN74LS04N" H 7250 1800 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 7250 1900 60  0001 L CNN "Category"
+F 7 "Logic - Gates and Inverters" H 7250 2000 60  0001 L CNN "Family"
+F 8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74ls04" H 7250 2100 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/texas-instruments/SN74LS04N/296-1629-5-ND/277275" H 7250 2200 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC INVERTER 6CH 6-INP 14DIP" H 7250 2300 60  0001 L CNN "Description"
+F 11 "Texas Instruments" H 7250 2400 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 7250 2500 60  0001 L CNN "Status"
+	1    7050 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0305
+U 1 1 5E22948F
+P 7050 1800
+F 0 "#PWR0305" H 7050 1550 50  0001 C CNN
+F 1 "GND" H 7055 1627 50  0000 C CNN
+F 2 "" H 7050 1800 50  0001 C CNN
+F 3 "" H 7050 1800 50  0001 C CNN
+	1    7050 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0301
+U 1 1 5E229CC4
+P 7050 700
+F 0 "#PWR0301" H 7050 550 50  0001 C CNN
+F 1 "+5V" V 7065 828 50  0000 L CNN
+F 2 "" H 7050 700 50  0001 C CNN
+F 3 "" H 7050 700 50  0001 C CNN
+	1    7050 700 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5450 1100 6450 1100
+Wire Wire Line
+	6450 1400 6750 1400
+Wire Wire Line
+	5450 1200 6400 1200
+Wire Wire Line
+	6400 1500 6750 1500
+Wire Wire Line
+	7350 1500 7850 1500
+Wire Wire Line
+	5450 1300 6350 1300
+Wire Wire Line
+	5450 1400 6300 1400
+Wire Wire Line
+	5450 1500 6250 1500
+Wire Wire Line
+	5450 1600 6200 1600
+Wire Wire Line
+	6400 1200 6400 1500
+Wire Wire Line
+	6450 1100 6450 1400
+Wire Wire Line
+	7350 1400 7900 1400
+Wire Wire Line
+	6600 650  6600 1000
+Wire Wire Line
+	6600 1100 6750 1100
+Wire Wire Line
+	6600 1000 6750 1000
+Connection ~ 6600 1000
+Wire Wire Line
+	6600 1000 6600 1100
+Wire Wire Line
+	7350 1100 10550 1100
+Wire Wire Line
+	10550 1100 10550 2750
+Wire Wire Line
+	10550 2750 4450 2750
+Wire Wire Line
+	7350 1000 9000 1000
+NoConn ~ 2500 1100
+NoConn ~ 2500 1200
+NoConn ~ 2500 1300
+NoConn ~ 2500 1400
+NoConn ~ 2500 1500
+NoConn ~ 2500 1600
+NoConn ~ 2500 1700
+NoConn ~ 2500 1800
+NoConn ~ 2500 1900
+NoConn ~ 2500 2000
+NoConn ~ 2500 2100
+NoConn ~ 3700 1100
+NoConn ~ 3700 1200
+NoConn ~ 3700 1500
+NoConn ~ 3700 1600
+NoConn ~ 3700 1700
+NoConn ~ 3700 1800
+NoConn ~ 3700 1900
+NoConn ~ 3700 2000
+NoConn ~ 3700 2100
+NoConn ~ 3700 2200
+NoConn ~ 5450 1700
+NoConn ~ 5450 1800
+NoConn ~ 5450 1900
+NoConn ~ 5450 2000
+NoConn ~ 5450 2100
+NoConn ~ 5450 2200
+NoConn ~ 7350 1200
+NoConn ~ 7350 1300
+NoConn ~ 6750 1200
+NoConn ~ 6750 1300
+$Comp
+L power:+5V #PWR0310
+U 1 1 5E1E5294
+P 10100 2050
+F 0 "#PWR0310" H 10100 1900 50  0001 C CNN
+F 1 "+5V" V 10115 2178 50  0000 L CNN
+F 2 "" H 10100 2050 50  0001 C CNN
+F 3 "" H 10100 2050 50  0001 C CNN
+	1    10100 2050
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR0306
+U 1 1 5E1E60BD
+P 10100 2150
+F 0 "#PWR0306" H 10100 2000 50  0001 C CNN
+F 1 "+5V" V 10115 2278 50  0000 L CNN
+F 2 "" H 10100 2150 50  0001 C CNN
+F 3 "" H 10100 2150 50  0001 C CNN
+	1    10100 2150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6200 1600 6200 2350
+Wire Wire Line
+	6200 2350 7900 2350
+Wire Wire Line
+	6250 1500 6250 2250
+Wire Wire Line
+	6250 2250 7900 2250
+Wire Wire Line
+	6300 1400 6300 2150
+Wire Wire Line
+	6300 2150 7900 2150
+Wire Wire Line
+	6350 1300 6350 2050
+Wire Wire Line
+	6350 2050 7900 2050
+Wire Wire Line
+	7900 1400 7900 1850
+$Comp
+L Digital-Clock-rescue:CD74HC30E-74HC30E-Digital-Clock-rescue U304
+U 1 1 5E43BB7F
+P 7900 1850
+AR Path="/5E43BB7F" Ref="U304"  Part="1" 
+AR Path="/5E1BB8D2/5E43BB7F" Ref="U304"  Part="1" 
+F 0 "U304" H 9000 2237 60  0000 C CNN
+F 1 "CD74HC30E" H 9000 2131 60  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 9000 2090 60  0001 C CNN
+F 3 "" H 7900 1850 60  0000 C CNN
+	1    7900 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 1500 7850 1950
+Wire Wire Line
+	7850 1950 7900 1950
+$Comp
+L power:GND #PWR0103
+U 1 1 5E44DA8B
+P 7900 2450
+F 0 "#PWR0103" H 7900 2200 50  0001 C CNN
+F 1 "GND" V 7905 2322 50  0000 R CNN
+F 2 "" H 7900 2450 50  0001 C CNN
+F 3 "" H 7900 2450 50  0001 C CNN
+	1    7900 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR0104
+U 1 1 5E44EA8F
+P 10100 1850
+F 0 "#PWR0104" H 10100 1700 50  0001 C CNN
+F 1 "+5V" V 10115 1978 50  0000 L CNN
+F 2 "" H 10100 1850 50  0001 C CNN
+F 3 "" H 10100 1850 50  0001 C CNN
+	1    10100 1850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10100 2450 10450 2450
+Wire Wire Line
+	10450 2450 10450 650 
+Wire Wire Line
+	6600 650  10450 650 
+$Comp
+L power:GND #PWR0102
+U 1 1 5E510B40
+P 1500 1400
+F 0 "#PWR0102" H 1500 1150 50  0001 C CNN
+F 1 "GND" V 1505 1272 50  0000 R CNN
+F 2 "" H 1500 1400 50  0001 C CNN
+F 3 "" H 1500 1400 50  0001 C CNN
+	1    1500 1400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0110
+U 1 1 5E5116BC
+P 2700 1400
+F 0 "#PWR0110" H 2700 1150 50  0001 C CNN
+F 1 "GND" H 2705 1227 50  0000 C CNN
+F 2 "" H 2700 1400 50  0001 C CNN
+F 3 "" H 2700 1400 50  0001 C CNN
+	1    2700 1400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4350 1300 3700 1300
+NoConn ~ 3700 1400
+$EndSCHEMATC

@@ -1,0 +1,69 @@
+Reference Material - https://www.youtube.com/watch?v=Ijb_SzJ9Fs0
+
+Resistor values near output op amps are nominal
+
+Testing each of the output op amps sets of TI 48Z (~ THS3095)
+Left:
+13.3v on Vout without prior output of the generator
+After both generators have been activated reads -13mV~
+After activating channel 1 Left Vout reads 13.3v
+After activating channel 2 Left Vout reads -30mV
+
+
+
+Right:
+13.3v on Vout without prior output of the generator
+After both generators have been activated reads -7V~
+After activating channel 1 Right Vout reads -13mV~
+After activating channel 2 Right Vout reads 13.3V
+
+
+DAC PIN Readout
+
+No Output or Former Output
+Pin 67
+254.8mV
+Pin 66
+254mV
+
+Pin 58
+253.8mV
+Pin 59
+253.6mV
+
+1Khz Sinewave, Amplitude 5Vp-p Channel 1
+Pin 67
+nocmV
+Pin 66
+nocmV
+
+Pin 58
+203mV
+Pin 59
+203mV
+
+1Khz Sinewave, Amplitude 5Vp-p Channel 2
+Pin 67
+203mV
+Pin 66
+202.3mV
+
+Pin 58
+203mV
+Pin 59
+203mV
+
+
+OP AMP OSCILLISCOPE TEST
+CHANNEL 2
++Vin
+-Vin
+
+AD8512 Test
+Before any channel is turned on, the two AD8512s have about -6.5mV/-17-18mV on their OUT Bs and As. It seems to fluctuate in an increasingly negative trend.
+
+A 6.3mV, B 7.1mV
+Front most AD8512 results which changed when the first channel was enabled with the default waveform.
+
+A 6.6mV, B 6.8mV 
+Rear most AD8512 results which changed when the second channel was enabled with the default waveform.

@@ -1,0 +1,29 @@
+There is a minimum current load that must be met to make the choke work and then there is the output capacitor size, as well as maximum load currents.
+
+The minimum current is aproximately equal to:
+
+Imin (mA) = [Vin(RMS)] / [L(H)]
+
+You can calculate the ripple of the choke-cap system as follows:
+
+[Vrip(RMS)] / [VDC] = 1 / [ 6 * sqrt(2) * 2 * PI * f * L * C]
+
+L = inductance
+f = AC line frequency
+C = capacitance
+VDC = DC voltage at cap
+PI = 3.14...
+
+There is more to the process. Maximum peak current through the choke is:
+
+Iac (pos peak) = [0.544 * Vin (RMS)] / [2 * PI * f * L]
+
+You need to consider other things with the design, such as snubber networks.
+
+When I built my amp I bailed on the idea I had of originally adding a choke. This is just my opinion, but chokes were very popular decades ago and for good reason. Banks of large capacitance for filters simply were not practical. Today you can buy huge capacitors which simply did not exist in the 1940s, '50s, and '60s. The solution was a filtering choke (and a slide rule).
+
+Again, my opinion... Today a brute force capacitance approach is easy and it offers another advantage; reserve power.
+
+AC Ripple, the ultimate target we are trying to slay, can be calculated by:
+
+Delta V = I / [2 * f * C]

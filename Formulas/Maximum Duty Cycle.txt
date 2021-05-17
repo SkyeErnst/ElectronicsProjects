@@ -1,0 +1,1 @@
+Maximum Duty Cycle: D = Vout / Vin * n 

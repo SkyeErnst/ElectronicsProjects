@@ -1,0 +1,505 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 8
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 2300 1100 0    50   Input ~ 0
+1stP_HH_O
+Text HLabel 2300 1200 0    50   Input ~ 0
+2ndP_HH_O
+Text HLabel 2300 1300 0    50   Input ~ 0
+3rdP_HH_O
+Text HLabel 2300 1400 0    50   Input ~ 0
+4thP_HH_O
+Text HLabel 1550 2750 0    50   Input ~ 0
+1stP_H_O
+Text HLabel 1550 2850 0    50   Input ~ 0
+2ndP_H_O
+Text HLabel 1550 2950 0    50   Input ~ 0
+3rdP_H_O
+Text HLabel 1550 3050 0    50   Input ~ 0
+4thP_H_O
+Text HLabel 2350 4400 0    50   Input ~ 0
+1stP_MM_O
+Text HLabel 2350 4500 0    50   Input ~ 0
+2ndP_MM_O
+Text HLabel 2350 4600 0    50   Input ~ 0
+3rdP_MM_O
+Text HLabel 2350 4700 0    50   Input ~ 0
+4thP_MM_O
+Text HLabel 1550 6100 0    50   Input ~ 0
+1stP_M_O
+Text HLabel 1550 6200 0    50   Input ~ 0
+2ndP_M_O
+Text HLabel 1550 6300 0    50   Input ~ 0
+3rdP_M_O
+Text HLabel 1550 6400 0    50   Input ~ 0
+4thP_M_O
+$Comp
+L Device:LED D601
+U 1 1 5E219A98
+P 2150 7600
+F 0 "D601" H 2150 7500 50  0000 C CNN
+F 1 "GREEN" H 2143 7436 50  0001 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 2150 7600 50  0001 C CNN
+F 3 "~" H 2150 7600 50  0001 C CNN
+	1    2150 7600
+	-1   0    0    1   
+$EndComp
+Text HLabel 1350 7600 0    50   Input ~ 0
+AM_PM_INDICATOR
+Wire Wire Line
+	1350 7600 2000 7600
+$Comp
+L Device:R_Small R605
+U 1 1 5E21DF8F
+P 2600 7600
+F 0 "R605" V 2500 7600 50  0000 C CNN
+F 1 "220" V 2600 7600 39  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P12.70mm_Horizontal" H 2600 7600 50  0001 C CNN
+F 3 "~" H 2600 7600 50  0001 C CNN
+	1    2600 7600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2500 7600 2300 7600
+$Comp
+L power:GND #PWR0621
+U 1 1 5E2213A6
+P 2800 7600
+F 0 "#PWR0621" H 2800 7350 50  0001 C CNN
+F 1 "GND" V 2805 7472 50  0000 R CNN
+F 2 "" H 2800 7600 50  0001 C CNN
+F 3 "" H 2800 7600 50  0001 C CNN
+	1    2800 7600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2800 7600 2700 7600
+$Comp
+L CustomComponents:K155NA1 U4
+U 1 1 5E534FCB
+P 2950 4850
+F 0 "U4" H 2950 5781 50  0000 C CNN
+F 1 "K155NA1" H 2950 5690 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm" H 2950 4850 50  0001 C CNN
+F 3 "datasheets/k155na1.pdf" H 2950 4850 50  0001 C CNN
+	1    2950 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 5300 3750 5300
+Wire Wire Line
+	3750 5300 3750 4300
+Wire Wire Line
+	3750 4300 6800 4300
+Wire Wire Line
+	3550 5200 6800 5200
+Wire Wire Line
+	3550 4400 3800 4400
+Wire Wire Line
+	3800 4400 3800 5100
+Wire Wire Line
+	3800 5100 6800 5100
+Wire Wire Line
+	3550 4500 6800 4500
+Wire Wire Line
+	3550 4600 3850 4600
+Wire Wire Line
+	3850 4600 3850 4400
+Wire Wire Line
+	3850 4400 6800 4400
+Wire Wire Line
+	3550 4700 3850 4700
+Wire Wire Line
+	3850 4700 3850 5000
+Wire Wire Line
+	3850 5000 6800 5000
+Wire Wire Line
+	3550 4800 3900 4800
+Wire Wire Line
+	3900 4800 3900 4600
+Wire Wire Line
+	3900 4600 6800 4600
+Wire Wire Line
+	3550 4900 3950 4900
+Wire Wire Line
+	3950 4900 3950 4700
+Wire Wire Line
+	3950 4700 6800 4700
+Wire Wire Line
+	3550 5000 3700 5000
+Wire Wire Line
+	3700 5000 3700 4950
+Wire Wire Line
+	3700 4950 4000 4950
+Wire Wire Line
+	4000 4950 4000 4900
+Wire Wire Line
+	4000 4900 6800 4900
+Wire Wire Line
+	6800 4800 6300 4800
+Wire Wire Line
+	6300 4800 6300 5250
+Wire Wire Line
+	6300 5250 3650 5250
+Wire Wire Line
+	3650 5250 3650 5100
+Wire Wire Line
+	3650 5100 3550 5100
+$Comp
+L power:GND #PWR0111
+U 1 1 5E5458A0
+P 2700 5600
+F 0 "#PWR0111" H 2700 5350 50  0001 C CNN
+F 1 "GND" H 2705 5427 50  0000 C CNN
+F 2 "" H 2700 5600 50  0001 C CNN
+F 3 "" H 2700 5600 50  0001 C CNN
+	1    2700 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0112
+U 1 1 5E545EF3
+P 2700 4100
+F 0 "#PWR0112" H 2700 3950 50  0001 C CNN
+F 1 "+5V" H 2715 4273 50  0000 C CNN
+F 2 "" H 2700 4100 50  0001 C CNN
+F 3 "" H 2700 4100 50  0001 C CNN
+	1    2700 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L CustomComponents:K155NA1 U1
+U 1 1 5E54BC7D
+P 2150 3200
+F 0 "U1" H 2150 4131 50  0000 C CNN
+F 1 "K155NA1" H 2150 4040 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm" H 2150 3200 50  0001 C CNN
+F 3 "datasheets/k155na1.pdf" H 2150 3200 50  0001 C CNN
+	1    2150 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 3650 2950 3650
+Wire Wire Line
+	2950 3650 2950 2650
+Wire Wire Line
+	2950 2650 6000 2650
+Wire Wire Line
+	2750 3550 6000 3550
+Wire Wire Line
+	2750 2750 3000 2750
+Wire Wire Line
+	3000 2750 3000 3450
+Wire Wire Line
+	3000 3450 6000 3450
+Wire Wire Line
+	2750 2850 6000 2850
+Wire Wire Line
+	2750 2950 3050 2950
+Wire Wire Line
+	3050 2950 3050 2750
+Wire Wire Line
+	3050 2750 6000 2750
+Wire Wire Line
+	2750 3050 3050 3050
+Wire Wire Line
+	3050 3050 3050 3350
+Wire Wire Line
+	3050 3350 6000 3350
+Wire Wire Line
+	2750 3150 3100 3150
+Wire Wire Line
+	3100 3150 3100 2950
+Wire Wire Line
+	3100 2950 6000 2950
+Wire Wire Line
+	2750 3250 3150 3250
+Wire Wire Line
+	3150 3250 3150 3050
+Wire Wire Line
+	3150 3050 6000 3050
+Wire Wire Line
+	2750 3350 2900 3350
+Wire Wire Line
+	2900 3350 2900 3300
+Wire Wire Line
+	2900 3300 3200 3300
+Wire Wire Line
+	3200 3300 3200 3250
+Wire Wire Line
+	3200 3250 6000 3250
+Wire Wire Line
+	6000 3150 5500 3150
+Wire Wire Line
+	5500 3150 5500 3600
+Wire Wire Line
+	5500 3600 2850 3600
+Wire Wire Line
+	2850 3600 2850 3450
+Wire Wire Line
+	2850 3450 2750 3450
+$Comp
+L power:GND #PWR0113
+U 1 1 5E54BCA8
+P 1900 3950
+F 0 "#PWR0113" H 1900 3700 50  0001 C CNN
+F 1 "GND" H 1905 3777 50  0000 C CNN
+F 2 "" H 1900 3950 50  0001 C CNN
+F 3 "" H 1900 3950 50  0001 C CNN
+	1    1900 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0114
+U 1 1 5E54BCAE
+P 1900 2450
+F 0 "#PWR0114" H 1900 2300 50  0001 C CNN
+F 1 "+5V" H 1915 2623 50  0000 C CNN
+F 2 "" H 1900 2450 50  0001 C CNN
+F 3 "" H 1900 2450 50  0001 C CNN
+	1    1900 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L CustomComponents:K155NA1 U3
+U 1 1 5E553006
+P 2900 1550
+F 0 "U3" H 2900 2481 50  0000 C CNN
+F 1 "K155NA1" H 2900 2390 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm" H 2900 1550 50  0001 C CNN
+F 3 "datasheets/k155na1.pdf" H 2900 1550 50  0001 C CNN
+	1    2900 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 2000 3700 2000
+Wire Wire Line
+	3700 2000 3700 1000
+Wire Wire Line
+	3700 1000 6750 1000
+Wire Wire Line
+	3500 1900 6750 1900
+Wire Wire Line
+	3500 1100 3750 1100
+Wire Wire Line
+	3750 1100 3750 1800
+Wire Wire Line
+	3750 1800 6750 1800
+Wire Wire Line
+	3500 1200 6750 1200
+Wire Wire Line
+	3500 1300 3800 1300
+Wire Wire Line
+	3800 1300 3800 1100
+Wire Wire Line
+	3800 1100 6750 1100
+Wire Wire Line
+	3500 1400 3800 1400
+Wire Wire Line
+	3800 1400 3800 1700
+Wire Wire Line
+	3800 1700 6750 1700
+Wire Wire Line
+	3500 1500 3850 1500
+Wire Wire Line
+	3850 1500 3850 1300
+Wire Wire Line
+	3850 1300 6750 1300
+Wire Wire Line
+	3500 1600 3900 1600
+Wire Wire Line
+	3900 1600 3900 1400
+Wire Wire Line
+	3900 1400 6750 1400
+Wire Wire Line
+	3500 1700 3650 1700
+Wire Wire Line
+	3650 1700 3650 1650
+Wire Wire Line
+	3650 1650 3950 1650
+Wire Wire Line
+	3950 1650 3950 1600
+Wire Wire Line
+	3950 1600 6750 1600
+Wire Wire Line
+	6750 1500 6250 1500
+Wire Wire Line
+	6250 1500 6250 1950
+Wire Wire Line
+	6250 1950 3600 1950
+Wire Wire Line
+	3600 1950 3600 1800
+Wire Wire Line
+	3600 1800 3500 1800
+$Comp
+L power:GND #PWR0115
+U 1 1 5E553031
+P 2650 2300
+F 0 "#PWR0115" H 2650 2050 50  0001 C CNN
+F 1 "GND" H 2655 2127 50  0000 C CNN
+F 2 "" H 2650 2300 50  0001 C CNN
+F 3 "" H 2650 2300 50  0001 C CNN
+	1    2650 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0116
+U 1 1 5E553037
+P 2650 800
+F 0 "#PWR0116" H 2650 650 50  0001 C CNN
+F 1 "+5V" H 2665 973 50  0000 C CNN
+F 2 "" H 2650 800 50  0001 C CNN
+F 3 "" H 2650 800 50  0001 C CNN
+	1    2650 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L CustomComponents:K155NA1 U2
+U 1 1 5E56272B
+P 2150 6550
+F 0 "U2" H 2150 7481 50  0000 C CNN
+F 1 "K155NA1" H 2150 7390 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm" H 2150 6550 50  0001 C CNN
+F 3 "datasheets/k155na1.pdf" H 2150 6550 50  0001 C CNN
+	1    2150 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 7000 2950 7000
+Wire Wire Line
+	2950 7000 2950 6000
+Wire Wire Line
+	2950 6000 6000 6000
+Wire Wire Line
+	2750 6900 6000 6900
+Wire Wire Line
+	2750 6100 3000 6100
+Wire Wire Line
+	3000 6100 3000 6800
+Wire Wire Line
+	3000 6800 6000 6800
+Wire Wire Line
+	2750 6200 6000 6200
+Wire Wire Line
+	2750 6300 3050 6300
+Wire Wire Line
+	3050 6300 3050 6100
+Wire Wire Line
+	3050 6100 6000 6100
+Wire Wire Line
+	2750 6400 3050 6400
+Wire Wire Line
+	3050 6400 3050 6700
+Wire Wire Line
+	3050 6700 6000 6700
+Wire Wire Line
+	2750 6500 3100 6500
+Wire Wire Line
+	3100 6500 3100 6300
+Wire Wire Line
+	3100 6300 6000 6300
+Wire Wire Line
+	2750 6600 3150 6600
+Wire Wire Line
+	3150 6600 3150 6400
+Wire Wire Line
+	3150 6400 6000 6400
+Wire Wire Line
+	2750 6700 2900 6700
+Wire Wire Line
+	2900 6700 2900 6650
+Wire Wire Line
+	2900 6650 3200 6650
+Wire Wire Line
+	3200 6650 3200 6600
+Wire Wire Line
+	3200 6600 6000 6600
+Wire Wire Line
+	6000 6500 5500 6500
+Wire Wire Line
+	5500 6500 5500 6950
+Wire Wire Line
+	5500 6950 2850 6950
+Wire Wire Line
+	2850 6950 2850 6800
+Wire Wire Line
+	2850 6800 2750 6800
+$Comp
+L power:GND #PWR0117
+U 1 1 5E562756
+P 1900 7300
+F 0 "#PWR0117" H 1900 7050 50  0001 C CNN
+F 1 "GND" H 1905 7127 50  0000 C CNN
+F 2 "" H 1900 7300 50  0001 C CNN
+F 3 "" H 1900 7300 50  0001 C CNN
+	1    1900 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0118
+U 1 1 5E56275C
+P 1900 5800
+F 0 "#PWR0118" H 1900 5650 50  0001 C CNN
+F 1 "+5V" H 1915 5973 50  0000 C CNN
+F 2 "" H 1900 5800 50  0001 C CNN
+F 3 "" H 1900 5800 50  0001 C CNN
+	1    1900 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic_MountingPin:Conn_01x10_MountingPin J2
+U 1 1 600C5BB8
+P 6200 6400
+F 0 "J2" H 6288 6314 50  0000 L CNN
+F 1 "Conn_01x10_MountingPin" H 6288 6223 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical" H 6200 6400 50  0001 C CNN
+F 3 "~" H 6200 6400 50  0001 C CNN
+	1    6200 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic_MountingPin:Conn_01x10_MountingPin J4
+U 1 1 600C7408
+P 7000 4700
+F 0 "J4" H 7088 4614 50  0000 L CNN
+F 1 "Conn_01x10_MountingPin" H 7088 4523 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical" H 7000 4700 50  0001 C CNN
+F 3 "~" H 7000 4700 50  0001 C CNN
+	1    7000 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic_MountingPin:Conn_01x10_MountingPin J1
+U 1 1 600C958E
+P 6200 3050
+F 0 "J1" H 6288 2964 50  0000 L CNN
+F 1 "Conn_01x10_MountingPin" H 6288 2873 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical" H 6200 3050 50  0001 C CNN
+F 3 "~" H 6200 3050 50  0001 C CNN
+	1    6200 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic_MountingPin:Conn_01x10_MountingPin J3
+U 1 1 600D4B53
+P 6950 1400
+F 0 "J3" H 7038 1314 50  0000 L CNN
+F 1 "Conn_01x10_MountingPin" H 7038 1223 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical" H 6950 1400 50  0001 C CNN
+F 3 "~" H 6950 1400 50  0001 C CNN
+	1    6950 1400
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

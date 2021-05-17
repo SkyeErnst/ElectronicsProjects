@@ -1,0 +1,8 @@
+C = Capacitor Value
+Iload = Current Load
+f = Frequency
+Vpk-pk ripple = Amount of drop between peaks that is acceptable. (E.G. a 170v peak with this variable as 160v means that the valley of the wave drops to 160v at a minimum, roughly.
+
+C= I t
+--------
+   ΔV
