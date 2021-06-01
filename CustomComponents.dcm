@@ -12,6 +12,12 @@ K HCMOS BUS 3State
 F http://www.ti.com/lit/gpn/sn74HC245
 $ENDCMP
 #
+$CMP AD711
+D OPAmp symbol for simulation only
+K simulation
+F ~
+$ENDCMP
+#
 $CMP Transformer_DP_Tapped_Secondary
 D Transformer, split primary, dual secondary
 K transformer coil magnet
