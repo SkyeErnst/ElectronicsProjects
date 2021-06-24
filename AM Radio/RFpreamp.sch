@@ -3,10 +3,10 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 7
+Sheet 3 8
 Title ""
-Date ""
-Rev ""
+Date "2021-06-24"
+Rev "A"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Text HLabel 2650 3000 0    50   Input ~ 0
-RF_IN
+RF_PREAMP_IN
 Wire Wire Line
 	2650 3000 2800 3000
 $Comp

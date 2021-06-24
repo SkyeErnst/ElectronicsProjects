@@ -3,10 +3,10 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 7
+Sheet 2 8
 Title ""
-Date ""
-Rev ""
+Date "2021-06-24"
+Rev "A"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -289,7 +289,7 @@ Wire Wire Line
 Text HLabel 2850 3950 0    50   Input ~ 0
 RF_IN
 Text HLabel 8700 3950 2    50   Output ~ 0
-RF_OUT_FILTERED
+RF_FILTERED_OUT
 $Comp
 L power:GNDA #PWR0108
 U 1 1 6058FCC7
