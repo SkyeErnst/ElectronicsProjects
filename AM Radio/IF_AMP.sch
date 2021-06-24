@@ -18,7 +18,7 @@ IF_AMP_IN
 Text HLabel 7050 2600 2    50   Output ~ 0
 IF_AMP_OUT
 Wire Wire Line
-	3600 3000 3850 3000
+	3600 3000 3750 3000
 $Comp
 L power:+5V #PWR0130
 U 1 1 6086AB0D
@@ -184,7 +184,7 @@ L Connector:TestPoint TP501
 U 1 1 6086AB71
 P 6450 2250
 F 0 "TP501" H 6508 2368 50  0000 L CNN
-F 1 "TP_Preamp_Out" H 6508 2277 50  0000 L CNN
+F 1 "TP_IF_Amp_Out" H 6508 2277 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Pad_2.5x2.5mm" H 6650 2250 50  0001 C CNN
 F 3 "~" H 6650 2250 50  0001 C CNN
 	1    6450 2250
@@ -228,4 +228,20 @@ F 3 "~" H 6700 2600 50  0001 C CNN
 	1    6700 2600
 	0    1    1    0   
 $EndComp
+$Comp
+L Connector:TestPoint TP7
+U 1 1 60C3B2C7
+P 3750 2500
+F 0 "TP7" H 3808 2618 50  0000 L CNN
+F 1 "TP_IF_Amp_In" H 3808 2527 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_2.5x2.5mm" H 3950 2500 50  0001 C CNN
+F 3 "~" H 3950 2500 50  0001 C CNN
+	1    3750 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 2500 3750 3000
+Connection ~ 3750 3000
+Wire Wire Line
+	3750 3000 3850 3000
 $EndSCHEMATC

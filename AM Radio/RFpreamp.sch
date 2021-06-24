@@ -16,7 +16,7 @@ $EndDescr
 Text HLabel 2650 3000 0    50   Input ~ 0
 RF_IN
 Wire Wire Line
-	2650 3000 2900 3000
+	2650 3000 2800 3000
 $Comp
 L power:+5V #PWR0109
 U 1 1 605406BD
@@ -228,4 +228,20 @@ F 3 "~" H 5750 2600 50  0001 C CNN
 	1    5750 2600
 	0    1    1    0   
 $EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 60C026F3
+P 2800 2400
+F 0 "TP2" H 2858 2518 50  0000 L CNN
+F 1 "TP_Preamp_Out" H 2858 2427 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_2.5x2.5mm" H 3000 2400 50  0001 C CNN
+F 3 "~" H 3000 2400 50  0001 C CNN
+	1    2800 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 2400 2800 3000
+Connection ~ 2800 3000
+Wire Wire Line
+	2800 3000 2900 3000
 $EndSCHEMATC

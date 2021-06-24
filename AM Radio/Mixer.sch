@@ -172,7 +172,7 @@ Wire Wire Line
 Wire Wire Line
 	12300 4100 12200 4100
 Wire Wire Line
-	12200 4100 12200 4450
+	12200 4100 12200 4300
 Wire Wire Line
 	12200 4450 12250 4450
 Text HLabel 12250 4450 2    50   Output ~ 0
@@ -861,7 +861,7 @@ $Comp
 L Device:C_Small C404
 U 1 1 60849931
 P 4600 5450
-F 0 "C404" H 4400 5500 50  0000 L CNN
+F 0 "C404" H 4300 5500 50  0000 L CNN
 F 1 "0.1uF" H 4300 5400 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4600 5450 50  0001 C CNN
 F 3 "~" H 4600 5450 50  0001 C CNN
@@ -902,7 +902,7 @@ Connection ~ 8300 4450
 Wire Wire Line
 	8300 4450 8300 4500
 Wire Wire Line
-	9000 4000 9550 4000
+	9000 4000 9350 4000
 $Comp
 L CustomComponents:AD711 U401
 U 1 1 60BFAB2D
@@ -986,7 +986,7 @@ Wire Wire Line
 	5400 5150 5400 5900
 Connection ~ 5400 5900
 Wire Wire Line
-	3700 5800 4100 5800
+	3700 5800 3950 5800
 Wire Wire Line
 	2900 6050 2950 6050
 $Comp
@@ -1020,4 +1020,81 @@ Wire Wire Line
 	1900 7200 2950 7200
 Wire Wire Line
 	2200 5000 2200 5650
+$Comp
+L Connector:TestPoint TP?
+U 1 1 60C0401A
+P 11950 4850
+AR Path="/6053DD24/60C0401A" Ref="TP?"  Part="1" 
+AR Path="/60594038/60C0401A" Ref="TP3"  Part="1" 
+F 0 "TP3" V 12150 4850 50  0000 L CNN
+F 1 "TP_IF_Out" V 12050 4850 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_2.5x2.5mm" H 12150 4850 50  0001 C CNN
+F 3 "~" H 12150 4850 50  0001 C CNN
+	1    11950 4850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	11950 4850 12100 4850
+Wire Wire Line
+	12100 4850 12100 4300
+Wire Wire Line
+	12100 4300 12200 4300
+Connection ~ 12200 4300
+Wire Wire Line
+	12200 4300 12200 4450
+$Comp
+L Connector:TestPoint TP?
+U 1 1 60C104E8
+P 1300 5950
+AR Path="/6053DD24/60C104E8" Ref="TP?"  Part="1" 
+AR Path="/60594038/60C104E8" Ref="TP6"  Part="1" 
+F 0 "TP6" V 1500 5950 50  0000 L CNN
+F 1 "TP_LO_Static_Divider" V 1400 5950 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_2.5x2.5mm" H 1500 5950 50  0001 C CNN
+F 3 "~" H 1500 5950 50  0001 C CNN
+	1    1300 5950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1300 5950 1400 5950
+$Comp
+L Connector:TestPoint TP?
+U 1 1 60C21E7F
+P 3900 5200
+AR Path="/6053DD24/60C21E7F" Ref="TP?"  Part="1" 
+AR Path="/60594038/60C21E7F" Ref="TP4"  Part="1" 
+F 0 "TP4" V 4100 5200 50  0000 L CNN
+F 1 "TP_LO_Pot_Divider" V 4000 5200 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_2.5x2.5mm" H 4100 5200 50  0001 C CNN
+F 3 "~" H 4100 5200 50  0001 C CNN
+	1    3900 5200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3900 5200 3950 5200
+Wire Wire Line
+	3950 5200 3950 5800
+Connection ~ 3950 5800
+Wire Wire Line
+	3950 5800 4100 5800
+$Comp
+L Connector:TestPoint TP?
+U 1 1 60C2E679
+P 9300 5200
+AR Path="/6053DD24/60C2E679" Ref="TP?"  Part="1" 
+AR Path="/60594038/60C2E679" Ref="TP5"  Part="1" 
+F 0 "TP5" V 9500 5200 50  0000 L CNN
+F 1 "TP_LO_Out" V 9400 5200 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_2.5x2.5mm" H 9500 5200 50  0001 C CNN
+F 3 "~" H 9500 5200 50  0001 C CNN
+	1    9300 5200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9300 5200 9350 5200
+Wire Wire Line
+	9350 5200 9350 4000
+Connection ~ 9350 4000
+Wire Wire Line
+	9350 4000 9550 4000
 $EndSCHEMATC
