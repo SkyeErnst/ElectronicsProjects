@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name AM-Mixer-and-LO-Test-Board-rescue)(type Legacy)(uri "${KIPRJMOD}/AM Mixer and LO Test Board-rescue.lib")(options "")(descr ""))
+)
